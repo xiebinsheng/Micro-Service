@@ -1,0 +1,311 @@
+2021-05-06 15:04:13.881 +08:00 [INF] Starting IdentityService.Host.
+2021-05-06 15:04:20.901 +08:00 [INF] Loaded ABP modules:
+2021-05-06 15:04:20.904 +08:00 [INF] - InternalGateway.Host.InternalGatewayHostModule
+2021-05-06 15:04:20.905 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-05-06 15:04:20.905 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-05-06 15:04:20.906 +08:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-05-06 15:04:20.907 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-05-06 15:04:20.907 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-05-06 15:04:20.908 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-05-06 15:04:20.909 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2021-05-06 15:04:20.909 +08:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-05-06 15:04:20.910 +08:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2021-05-06 15:04:20.911 +08:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-05-06 15:04:20.911 +08:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2021-05-06 15:04:20.912 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-05-06 15:04:20.912 +08:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2021-05-06 15:04:20.913 +08:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-05-06 15:04:20.914 +08:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2021-05-06 15:04:20.915 +08:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-05-06 15:04:20.915 +08:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-05-06 15:04:20.916 +08:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-05-06 15:04:20.916 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2021-05-06 15:04:20.917 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-05-06 15:04:20.917 +08:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-05-06 15:04:20.918 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-05-06 15:04:20.919 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-05-06 15:04:20.919 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2021-05-06 15:04:20.923 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2021-05-06 15:04:20.923 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingModule
+2021-05-06 15:04:20.924 +08:00 [INF]             - Volo.Abp.Json.AbpJsonModule
+2021-05-06 15:04:20.924 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2021-05-06 15:04:20.925 +08:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2021-05-06 15:04:20.927 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2021-05-06 15:04:20.927 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-05-06 15:04:20.928 +08:00 [INF]           - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-05-06 15:04:20.929 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-05-06 15:04:20.930 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-05-06 15:04:20.931 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-05-06 15:04:20.932 +08:00 [INF]         - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-05-06 15:04:20.933 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-05-06 15:04:20.934 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-05-06 15:04:20.935 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-05-06 15:04:20.939 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-05-06 15:04:20.940 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2021-05-06 15:04:20.941 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2021-05-06 15:04:20.941 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-05-06 15:04:20.942 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-05-06 15:04:20.943 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-05-06 15:04:20.944 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2021-05-06 15:04:20.945 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-05-06 15:04:20.946 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-05-06 15:04:20.947 +08:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-05-06 15:04:20.948 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-05-06 15:04:20.949 +08:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-05-06 15:04:20.950 +08:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-05-06 15:04:20.951 +08:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-05-06 15:04:20.955 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-05-06 15:04:20.956 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-05-06 15:04:20.957 +08:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2021-05-06 15:04:20.958 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2021-05-06 15:04:20.959 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2021-05-06 15:04:20.960 +08:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2021-05-06 15:04:20.961 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2021-05-06 15:04:20.962 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2021-05-06 15:04:20.963 +08:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-05-06 15:04:21.343 +08:00 [INF] Initialized all ABP modules.
+2021-05-06 15:04:21.388 +08:00 [INF] Now listening on: http://localhost:50002
+2021-05-06 15:04:21.391 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-06 15:04:21.392 +08:00 [INF] Hosting environment: Development
+2021-05-06 15:04:21.395 +08:00 [INF] Content root path: E:\2_Repositories\Micro-Service\Gateways\InternalGateway.Host
+2021-05-06 15:04:22.118 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/ - -
+2021-05-06 15:04:22.867 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:04:22.908 +08:00 [DBG] requestId: 0HM8GBKM7PAK5:00000002, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-06 15:04:22.914 +08:00 [DBG] requestId: 0HM8GBKM7PAK5:00000002, previousRequestId: no previous request id, message: Upstream url path is /
+2021-05-06 15:04:22.919 +08:00 [WRN] requestId: 0HM8GBKM7PAK5:00000002, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2021-05-06 15:04:22.922 +08:00 [WRN] requestId: 0HM8GBKM7PAK5:00000002, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2021-05-06 15:04:22.925 +08:00 [DBG] requestId: 0HM8GBKM7PAK5:00000002, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-06 15:04:22.943 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/ - - - 404 0 - 825.1232ms
+2021-05-06 15:04:30.825 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/swagger/index.html - -
+2021-05-06 15:04:30.830 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:04:30.899 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/swagger/index.html - - - 200 - text/html;charset=utf-8 73.8560ms
+2021-05-06 15:04:30.921 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/swagger/swagger-ui-bundle.js - -
+2021-05-06 15:04:30.921 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/swagger/swagger-ui.css - -
+2021-05-06 15:04:30.945 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/swagger/swagger-ui-standalone-preset.js - -
+2021-05-06 15:04:30.945 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:04:30.947 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:04:30.948 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:04:31.026 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-05-06 15:04:31.026 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-05-06 15:04:31.026 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-05-06 15:04:31.035 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/swagger/swagger-ui-bundle.js - - - 200 1097461 application/javascript 113.5927ms
+2021-05-06 15:04:31.035 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/swagger/swagger-ui.css - - - 200 143410 text/css 113.5938ms
+2021-05-06 15:04:31.035 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/swagger/swagger-ui-standalone-preset.js - - - 200 336841 application/javascript 96.9731ms
+2021-05-06 15:04:31.195 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/swagger/v1/swagger.json - -
+2021-05-06 15:04:31.196 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:04:31.226 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/swagger/favicon-32x32.png - -
+2021-05-06 15:04:31.231 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:04:31.235 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-05-06 15:04:31.237 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/swagger/favicon-32x32.png - - - 200 628 image/png 10.9752ms
+2021-05-06 15:04:31.449 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 254.0138ms
+2021-05-06 15:05:11.611 +08:00 [INF] Starting IdentityService.Host.
+2021-05-06 15:05:13.838 +08:00 [INF] Loaded ABP modules:
+2021-05-06 15:05:13.840 +08:00 [INF] - InternalGateway.Host.InternalGatewayHostModule
+2021-05-06 15:05:13.841 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-05-06 15:05:13.842 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-05-06 15:05:13.842 +08:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-05-06 15:05:13.843 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-05-06 15:05:13.844 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-05-06 15:05:13.845 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-05-06 15:05:13.846 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2021-05-06 15:05:13.847 +08:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-05-06 15:05:13.848 +08:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2021-05-06 15:05:13.849 +08:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-05-06 15:05:13.849 +08:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2021-05-06 15:05:13.850 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-05-06 15:05:13.851 +08:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2021-05-06 15:05:13.851 +08:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-05-06 15:05:13.852 +08:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2021-05-06 15:05:13.853 +08:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-05-06 15:05:13.853 +08:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-05-06 15:05:13.854 +08:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-05-06 15:05:13.854 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2021-05-06 15:05:13.855 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-05-06 15:05:13.856 +08:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-05-06 15:05:13.856 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-05-06 15:05:13.857 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-05-06 15:05:13.857 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2021-05-06 15:05:13.858 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2021-05-06 15:05:13.859 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingModule
+2021-05-06 15:05:13.859 +08:00 [INF]             - Volo.Abp.Json.AbpJsonModule
+2021-05-06 15:05:13.860 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2021-05-06 15:05:13.862 +08:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2021-05-06 15:05:13.863 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2021-05-06 15:05:13.864 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-05-06 15:05:13.865 +08:00 [INF]           - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-05-06 15:05:13.866 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-05-06 15:05:13.866 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-05-06 15:05:13.867 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-05-06 15:05:13.868 +08:00 [INF]         - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-05-06 15:05:13.869 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-05-06 15:05:13.870 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-05-06 15:05:13.871 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-05-06 15:05:13.872 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-05-06 15:05:13.872 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2021-05-06 15:05:13.873 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2021-05-06 15:05:13.874 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-05-06 15:05:13.875 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-05-06 15:05:13.876 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-05-06 15:05:13.877 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2021-05-06 15:05:13.878 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-05-06 15:05:13.879 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-05-06 15:05:13.880 +08:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-05-06 15:05:13.881 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-05-06 15:05:13.882 +08:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-05-06 15:05:13.882 +08:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-05-06 15:05:13.883 +08:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-05-06 15:05:13.884 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-05-06 15:05:13.885 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-05-06 15:05:13.886 +08:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2021-05-06 15:05:13.887 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2021-05-06 15:05:13.887 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2021-05-06 15:05:13.888 +08:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2021-05-06 15:05:13.889 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2021-05-06 15:05:13.890 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2021-05-06 15:05:13.891 +08:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-05-06 15:05:14.253 +08:00 [INF] Initialized all ABP modules.
+2021-05-06 15:05:14.289 +08:00 [INF] Now listening on: http://localhost:50002
+2021-05-06 15:05:14.290 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-06 15:05:14.291 +08:00 [INF] Hosting environment: Development
+2021-05-06 15:05:14.292 +08:00 [INF] Content root path: E:\2_Repositories\Micro-Service\Gateways\InternalGateway.Host
+2021-05-06 15:05:15.400 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/Swagger - -
+2021-05-06 15:05:15.696 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:05:15.760 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/Swagger - - - 301 0 - 360.1511ms
+2021-05-06 15:05:15.768 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/Swagger/index.html - -
+2021-05-06 15:05:15.774 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:05:15.857 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/Swagger/index.html - - - 200 - text/html;charset=utf-8 88.3972ms
+2021-05-06 15:05:15.881 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/Swagger/swagger-ui.css - -
+2021-05-06 15:05:15.881 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/Swagger/swagger-ui-bundle.js - -
+2021-05-06 15:05:15.882 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/Swagger/swagger-ui-standalone-preset.js - -
+2021-05-06 15:05:15.883 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:05:15.885 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:05:15.887 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:05:15.950 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-05-06 15:05:15.950 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-05-06 15:05:15.950 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-05-06 15:05:15.961 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/Swagger/swagger-ui-standalone-preset.js - - - 200 336841 application/javascript 78.7732ms
+2021-05-06 15:05:15.961 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/Swagger/swagger-ui.css - - - 200 143410 text/css 80.1285ms
+2021-05-06 15:05:15.961 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/Swagger/swagger-ui-bundle.js - - - 200 1097461 application/javascript 80.1285ms
+2021-05-06 15:05:16.115 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/swagger/v1/swagger.json - -
+2021-05-06 15:05:16.116 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:05:16.158 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/Swagger/favicon-32x32.png - -
+2021-05-06 15:05:16.165 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:05:16.170 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-05-06 15:05:16.172 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/Swagger/favicon-32x32.png - - - 200 628 image/png 13.1932ms
+2021-05-06 15:05:16.415 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 300.6279ms
+2021-05-06 15:17:06.050 +08:00 [INF] Starting IdentityService.Host.
+2021-05-06 15:17:08.389 +08:00 [INF] Loaded ABP modules:
+2021-05-06 15:17:08.392 +08:00 [INF] - InternalGateway.Host.InternalGatewayHostModule
+2021-05-06 15:17:08.393 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-05-06 15:17:08.394 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-05-06 15:17:08.394 +08:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-05-06 15:17:08.395 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-05-06 15:17:08.396 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-05-06 15:17:08.397 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-05-06 15:17:08.397 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2021-05-06 15:17:08.398 +08:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-05-06 15:17:08.399 +08:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2021-05-06 15:17:08.400 +08:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-05-06 15:17:08.400 +08:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2021-05-06 15:17:08.401 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-05-06 15:17:08.402 +08:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2021-05-06 15:17:08.402 +08:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-05-06 15:17:08.403 +08:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2021-05-06 15:17:08.404 +08:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-05-06 15:17:08.405 +08:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-05-06 15:17:08.405 +08:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-05-06 15:17:08.406 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2021-05-06 15:17:08.407 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-05-06 15:17:08.407 +08:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-05-06 15:17:08.408 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-05-06 15:17:08.409 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-05-06 15:17:08.409 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2021-05-06 15:17:08.410 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2021-05-06 15:17:08.411 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingModule
+2021-05-06 15:17:08.411 +08:00 [INF]             - Volo.Abp.Json.AbpJsonModule
+2021-05-06 15:17:08.412 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2021-05-06 15:17:08.414 +08:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2021-05-06 15:17:08.415 +08:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2021-05-06 15:17:08.416 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-05-06 15:17:08.418 +08:00 [INF]           - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-05-06 15:17:08.419 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-05-06 15:17:08.420 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-05-06 15:17:08.421 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-05-06 15:17:08.422 +08:00 [INF]         - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-05-06 15:17:08.423 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-05-06 15:17:08.424 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-05-06 15:17:08.425 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-05-06 15:17:08.426 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-05-06 15:17:08.427 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2021-05-06 15:17:08.435 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2021-05-06 15:17:08.438 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-05-06 15:17:08.439 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-05-06 15:17:08.440 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-05-06 15:17:08.441 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2021-05-06 15:17:08.449 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-05-06 15:17:08.451 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-05-06 15:17:08.452 +08:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-05-06 15:17:08.455 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-05-06 15:17:08.456 +08:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-05-06 15:17:08.457 +08:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-05-06 15:17:08.458 +08:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-05-06 15:17:08.458 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-05-06 15:17:08.459 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-05-06 15:17:08.460 +08:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2021-05-06 15:17:08.461 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2021-05-06 15:17:08.462 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2021-05-06 15:17:08.463 +08:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2021-05-06 15:17:08.464 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2021-05-06 15:17:08.466 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2021-05-06 15:17:08.467 +08:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-05-06 15:17:08.885 +08:00 [INF] Initialized all ABP modules.
+2021-05-06 15:17:08.923 +08:00 [INF] Now listening on: http://localhost:50002
+2021-05-06 15:17:08.926 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-06 15:17:08.929 +08:00 [INF] Hosting environment: Development
+2021-05-06 15:17:08.930 +08:00 [INF] Content root path: E:\2_Repositories\Micro-Service\Gateways\InternalGateway.Host
+2021-05-06 15:17:09.942 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/Swagger/index.html - -
+2021-05-06 15:17:10.372 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:17:10.514 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/Swagger/index.html - - - 200 - text/html;charset=utf-8 572.0631ms
+2021-05-06 15:17:10.791 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/swagger/v1/swagger.json - -
+2021-05-06 15:17:10.793 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:17:11.111 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 320.0737ms
+2021-05-06 15:53:35.568 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/api/abp/api-definition - -
+2021-05-06 15:53:35.571 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:53:35.575 +08:00 [DBG] requestId: 0HM8GBRR0JJ63:00000002, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-06 15:53:35.580 +08:00 [DBG] requestId: 0HM8GBRR0JJ63:00000002, previousRequestId: no previous request id, message: Upstream url path is /api/abp/api-definition
+2021-05-06 15:53:35.588 +08:00 [WRN] requestId: 0HM8GBRR0JJ63:00000002, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /api/abp/api-definition, verb: GET.
+2021-05-06 15:53:35.590 +08:00 [WRN] requestId: 0HM8GBRR0JJ63:00000002, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /api/abp/api-definition, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/api/abp/api-definition, request method: GET
+2021-05-06 15:53:35.595 +08:00 [DBG] requestId: 0HM8GBRR0JJ63:00000002, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-06 15:53:35.598 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/api/abp/api-definition - - - 404 0 - 30.6085ms
+2021-05-06 15:54:47.235 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/api/abp/api-definition - -
+2021-05-06 15:54:47.236 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:54:47.238 +08:00 [DBG] requestId: 0HM8GBRR0JJ64:00000002, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-06 15:54:47.239 +08:00 [DBG] requestId: 0HM8GBRR0JJ64:00000002, previousRequestId: no previous request id, message: Upstream url path is /api/abp/api-definition
+2021-05-06 15:54:47.243 +08:00 [WRN] requestId: 0HM8GBRR0JJ64:00000002, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /api/abp/api-definition, verb: GET.
+2021-05-06 15:54:47.245 +08:00 [WRN] requestId: 0HM8GBRR0JJ64:00000002, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /api/abp/api-definition, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/api/abp/api-definition, request method: GET
+2021-05-06 15:54:47.247 +08:00 [DBG] requestId: 0HM8GBRR0JJ64:00000002, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-06 15:54:47.249 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/api/abp/api-definition - - - 404 0 - 14.3585ms
+2021-05-06 15:57:37.595 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/api/abp/api-definition - -
+2021-05-06 15:57:37.596 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 15:57:37.598 +08:00 [DBG] requestId: 0HM8GBRR0JJ65:00000002, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-06 15:57:37.598 +08:00 [DBG] requestId: 0HM8GBRR0JJ65:00000002, previousRequestId: no previous request id, message: Upstream url path is /api/abp/api-definition
+2021-05-06 15:57:37.599 +08:00 [WRN] requestId: 0HM8GBRR0JJ65:00000002, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /api/abp/api-definition, verb: GET.
+2021-05-06 15:57:37.600 +08:00 [WRN] requestId: 0HM8GBRR0JJ65:00000002, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /api/abp/api-definition, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/api/abp/api-definition, request method: GET
+2021-05-06 15:57:37.601 +08:00 [DBG] requestId: 0HM8GBRR0JJ65:00000002, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-06 15:57:37.602 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/api/abp/api-definition - - - 404 0 - 6.4844ms
+2021-05-06 16:06:20.808 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/api/abp/api-definition - -
+2021-05-06 16:06:20.810 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 16:06:20.811 +08:00 [DBG] requestId: 0HM8GBRR0JJ66:00000002, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-06 16:06:20.811 +08:00 [DBG] requestId: 0HM8GBRR0JJ66:00000002, previousRequestId: no previous request id, message: Upstream url path is /api/abp/api-definition
+2021-05-06 16:06:20.812 +08:00 [WRN] requestId: 0HM8GBRR0JJ66:00000002, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /api/abp/api-definition, verb: GET.
+2021-05-06 16:06:20.814 +08:00 [WRN] requestId: 0HM8GBRR0JJ66:00000002, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /api/abp/api-definition, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/api/abp/api-definition, request method: GET
+2021-05-06 16:06:20.817 +08:00 [DBG] requestId: 0HM8GBRR0JJ66:00000002, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-06 16:06:20.820 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/api/abp/api-definition - - - 404 0 - 11.3962ms
+2021-05-06 16:07:53.969 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50002/api/abp/api-definition - -
+2021-05-06 16:07:53.991 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-06 16:07:53.993 +08:00 [DBG] requestId: 0HM8GBRR0JJ66:00000003, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-06 16:07:53.995 +08:00 [DBG] requestId: 0HM8GBRR0JJ66:00000003, previousRequestId: no previous request id, message: Upstream url path is /api/abp/api-definition
+2021-05-06 16:07:53.996 +08:00 [WRN] requestId: 0HM8GBRR0JJ66:00000003, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /api/abp/api-definition, verb: GET.
+2021-05-06 16:07:53.998 +08:00 [WRN] requestId: 0HM8GBRR0JJ66:00000003, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /api/abp/api-definition, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/api/abp/api-definition, request method: GET
+2021-05-06 16:07:54.002 +08:00 [DBG] requestId: 0HM8GBRR0JJ66:00000003, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-06 16:07:54.004 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50002/api/abp/api-definition - - - 404 0 - 35.9298ms

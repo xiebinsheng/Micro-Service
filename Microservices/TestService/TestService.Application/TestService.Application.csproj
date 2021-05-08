@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>TestService.Application</AssemblyName>
+    <RootNamespace>TestService.Application</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Account.Application" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.Http.Client.IdentityModel" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.Identity.HttpApi.Client" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestService.Application.Contracts\TestService.Application.Contracts.csproj" />
+    <ProjectReference Include="..\TestService.Domain\TestService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

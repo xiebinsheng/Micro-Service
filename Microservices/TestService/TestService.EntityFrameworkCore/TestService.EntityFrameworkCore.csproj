@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AuditLogging.EntityFrameworkCore" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.SqlServer" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestService.Domain\TestService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
