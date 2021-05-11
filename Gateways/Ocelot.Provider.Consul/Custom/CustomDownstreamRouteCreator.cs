@@ -29,7 +29,7 @@ namespace Ocelot.Provider.Consul.Custom
 
         public Response<DownstreamRouteHolder> Get(string upstreamUrlPath, string upstreamQueryString, string upstreamHttpMethod, IInternalConfiguration configuration, string upstreamHost)
         {
-            var serviceName = IsSystemApi(upstreamUrlPath) ? "BaseService" : GetServiceName(upstreamUrlPath);
+            var serviceName = IsSystemApi(upstreamUrlPath) ? "baseService" : GetServiceName(upstreamUrlPath);
             //var downstreamPath = IsSystemApi(upstreamUrlPath) ? upstreamUrlPath : GetDownstreamPath(upstreamUrlPath);
             var downstreamPath = upstreamUrlPath;
 
@@ -98,7 +98,12 @@ namespace Ocelot.Provider.Consul.Custom
             // 系统api列表
             List<string> systemApi = new List<string>()
             {
-                "/api/abp/","/api/account/","/api/permission-management/"
+                "/api/abp/",
+                "/api/account/",
+                "/api/permission-management/",
+                "/api/feature-management/",
+                "/api/identity/",
+                "/api/multi-tenancy"
             };
 
             foreach (var item in systemApi)

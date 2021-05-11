@@ -9,7 +9,7 @@ namespace TestService
         typeof(TestServiceDomainModule),
         //typeof(AbpAccountApplicationModule),
         typeof(TestServiceApplicationContractsModule),
-         typeof(AbpHttpClientIdentityModelModule),
+        typeof(AbpHttpClientIdentityModelModule),
         typeof(AbpIdentityHttpApiClientModule),
         typeof(AbpAutoMapperModule)
         //typeof(AbpIdentityApplicationModule),

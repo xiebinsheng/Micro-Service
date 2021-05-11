@@ -4595,3 +4595,1070 @@ Error Number:208,State:1,Class:16
 2021-05-07 19:15:26.418 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
 2021-05-07 19:15:26.420 +08:00 [DBG] Start key discovery request
 2021-05-07 19:15:26.422 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 15.8054ms
+2021-05-08 10:24:51.340 +08:00 [INF] Starting AuthenticationServer.Host.
+2021-05-08 10:24:54.697 +08:00 [INF] Loaded ABP modules:
+2021-05-08 10:24:54.701 +08:00 [INF] - AuthenticationServer.Host.AuthenticationServerHostModule
+2021-05-08 10:24:54.702 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-05-08 10:24:54.702 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-05-08 10:24:54.703 +08:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-05-08 10:24:54.703 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-05-08 10:24:54.704 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-05-08 10:24:54.704 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-05-08 10:24:54.705 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-05-08 10:24:54.706 +08:00 [INF]             - Volo.Abp.Data.AbpDataModule
+2021-05-08 10:24:54.706 +08:00 [INF]               - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-05-08 10:24:54.707 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-05-08 10:24:54.707 +08:00 [INF]                 - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-05-08 10:24:54.708 +08:00 [INF]               - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-05-08 10:24:54.708 +08:00 [INF]               - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-05-08 10:24:54.709 +08:00 [INF]             - Volo.Abp.Security.AbpSecurityModule
+2021-05-08 10:24:54.709 +08:00 [INF]         - Volo.Abp.Localization.AbpLocalizationModule
+2021-05-08 10:24:54.710 +08:00 [INF]           - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-05-08 10:24:54.710 +08:00 [INF]           - Volo.Abp.Settings.AbpSettingsModule
+2021-05-08 10:24:54.711 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2021-05-08 10:24:54.712 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2021-05-08 10:24:54.712 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2021-05-08 10:24:54.713 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2021-05-08 10:24:54.713 +08:00 [INF]           - Volo.Abp.Threading.AbpThreadingModule
+2021-05-08 10:24:54.714 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-05-08 10:24:54.714 +08:00 [INF]         - Volo.Abp.Guids.AbpGuidsModule
+2021-05-08 10:24:54.717 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-05-08 10:24:54.718 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-05-08 10:24:54.718 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-05-08 10:24:54.719 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-05-08 10:24:54.721 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2021-05-08 10:24:54.722 +08:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-05-08 10:24:54.723 +08:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-05-08 10:24:54.723 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-05-08 10:24:54.724 +08:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-05-08 10:24:54.725 +08:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-05-08 10:24:54.726 +08:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-05-08 10:24:54.727 +08:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-05-08 10:24:54.728 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-05-08 10:24:54.729 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-05-08 10:24:54.730 +08:00 [INF]   - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2021-05-08 10:24:54.730 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityDomainModule
+2021-05-08 10:24:54.733 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-05-08 10:24:54.735 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-05-08 10:24:54.735 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2021-05-08 10:24:54.736 +08:00 [INF]       - Volo.Abp.Users.AbpUsersDomainModule
+2021-05-08 10:24:54.737 +08:00 [INF]         - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-05-08 10:24:54.738 +08:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-05-08 10:24:54.739 +08:00 [INF]     - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2021-05-08 10:24:54.740 +08:00 [INF]   - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-05-08 10:24:54.740 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2021-05-08 10:24:54.741 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-05-08 10:24:54.742 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-05-08 10:24:54.743 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-05-08 10:24:54.744 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-05-08 10:24:54.745 +08:00 [INF]   - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2021-05-08 10:24:54.746 +08:00 [INF]     - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2021-05-08 10:24:54.748 +08:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2021-05-08 10:24:54.749 +08:00 [INF]       - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2021-05-08 10:24:54.750 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-05-08 10:24:54.751 +08:00 [INF]   - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+2021-05-08 10:24:54.751 +08:00 [INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+2021-05-08 10:24:54.752 +08:00 [INF]       - Volo.Abp.Account.AbpAccountHttpApiModule
+2021-05-08 10:24:54.753 +08:00 [INF]         - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2021-05-08 10:24:54.754 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-05-08 10:24:54.755 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-05-08 10:24:54.756 +08:00 [INF]             - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-05-08 10:24:54.757 +08:00 [INF]               - Volo.Abp.Http.AbpHttpModule
+2021-05-08 10:24:54.758 +08:00 [INF]                 - Volo.Abp.Minify.AbpMinifyModule
+2021-05-08 10:24:54.758 +08:00 [INF]             - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-05-08 10:24:54.759 +08:00 [INF]             - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-05-08 10:24:54.760 +08:00 [INF]             - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-05-08 10:24:54.761 +08:00 [INF]               - Volo.Abp.UI.AbpUiModule
+2021-05-08 10:24:54.762 +08:00 [INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2021-05-08 10:24:54.766 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2021-05-08 10:24:54.767 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2021-05-08 10:24:54.768 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2021-05-08 10:24:54.769 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2021-05-08 10:24:54.770 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2021-05-08 10:24:54.771 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2021-05-08 10:24:54.772 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2021-05-08 10:24:54.772 +08:00 [INF]   - Volo.Abp.Account.AbpAccountApplicationModule
+2021-05-08 10:24:54.773 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationModule
+2021-05-08 10:24:54.774 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-05-08 10:24:54.775 +08:00 [INF]     - Volo.Abp.Emailing.AbpEmailingModule
+2021-05-08 10:24:54.776 +08:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2021-05-08 10:24:54.777 +08:00 [INF]       - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2021-05-08 10:24:54.779 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2021-05-08 10:24:54.780 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2021-05-08 10:24:54.780 +08:00 [INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-05-08 10:24:54.821 +08:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2021-05-08 10:24:54.855 +08:00 [INF] Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f
+2021-05-08 10:24:56.049 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2021-05-08 10:24:56.051 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2021-05-08 10:24:56.053 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2021-05-08 10:24:56.054 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2021-05-08 10:24:56.055 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2021-05-08 10:24:56.058 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2021-05-08 10:25:00.354 +08:00 [INF] Initialized all ABP modules.
+2021-05-08 10:25:00.398 +08:00 [INF] Now listening on: http://localhost:50000
+2021-05-08 10:25:00.400 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-08 10:25:00.401 +08:00 [INF] Hosting environment: Development
+2021-05-08 10:25:00.404 +08:00 [INF] Content root path: E:\2_Repositories\Micro-Service\AuthenticationServer
+2021-05-08 10:34:26.088 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-08 10:34:26.159 +08:00 [DBG] Login Url: /Account/Login
+2021-05-08 10:34:26.160 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-05-08 10:34:26.162 +08:00 [DBG] Logout Url: /Account/Logout
+2021-05-08 10:34:26.163 +08:00 [DBG] ConsentUrl Url: /Consent
+2021-05-08 10:34:26.164 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-05-08 10:34:26.167 +08:00 [DBG] Error Url: /Account/Error
+2021-05-08 10:34:26.168 +08:00 [DBG] Error Id Parameter: errorId
+2021-05-08 10:34:26.184 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-08 10:34:26.664 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-08 10:34:26.667 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-08 10:34:26.671 +08:00 [DBG] Start token request.
+2021-05-08 10:34:26.673 +08:00 [DBG] Start client validation
+2021-05-08 10:34:26.676 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-08 10:34:26.678 +08:00 [DBG] Start parsing for secret in post body
+2021-05-08 10:34:26.691 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-08 10:34:26.693 +08:00 [DBG] Secret id found: public-website-client
+2021-05-08 10:34:26.857 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-08 10:34:26.876 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-08 10:34:26.877 +08:00 [DBG] Client validation success
+2021-05-08 10:34:26.889 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8HP761OABQ:00000002","TimeStamp":"2021-05-08T02:34:26.0000000Z","ProcessId":3864,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-08 10:34:26.912 +08:00 [DBG] Start token request validation
+2021-05-08 10:34:26.920 +08:00 [DBG] Start resource owner password token request validation
+2021-05-08 10:34:27.324 +08:00 [INF] Credentials validated for username: admin
+2021-05-08 10:34:27.646 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8HP761OABQ:00000002","TimeStamp":"2021-05-08T02:34:27.0000000Z","ProcessId":3864,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-08 10:34:27.659 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-08 10:34:27.666 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-08 10:34:27.693 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-08 10:34:27.695 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-08 10:34:27.800 +08:00 [DBG] Creating refresh token
+2021-05-08 10:34:27.802 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-08 10:34:27.937 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****F709","$type":"Token"},{"TokenType":"access_token","TokenValue":"****k6_Q","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8HP761OABQ:00000002","TimeStamp":"2021-05-08T02:34:27.0000000Z","ProcessId":3864,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-08 10:34:27.955 +08:00 [DBG] Token request success.
+2021-05-08 10:34:27.973 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 1885.7994ms
+2021-05-08 10:41:23.139 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-08 10:41:23.143 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-08 10:41:23.150 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-08 10:41:23.151 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-08 10:41:23.154 +08:00 [DBG] Start discovery request
+2021-05-08 10:41:23.325 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 185.2972ms
+2021-05-08 10:41:23.355 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-08 10:41:23.357 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-08 10:41:23.363 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-08 10:41:23.365 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-08 10:41:23.370 +08:00 [DBG] Start key discovery request
+2021-05-08 10:41:23.376 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 21.2965ms
+2021-05-08 10:41:23.535 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-08 10:41:23.537 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-08 10:41:23.542 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-08 10:41:23.544 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-08 10:41:23.545 +08:00 [DBG] Start discovery request
+2021-05-08 10:41:23.560 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 25.1098ms
+2021-05-08 10:41:23.676 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-08 10:41:23.678 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-08 10:41:23.685 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-08 10:41:23.686 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-08 10:41:23.689 +08:00 [DBG] Start key discovery request
+2021-05-08 10:41:23.691 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 14.1904ms
+2021-05-08 19:16:44.663 +08:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2021-05-08 19:16:44.670 +08:00 [INF] Application is shutting down...
+2021-05-10 09:48:48.468 +08:00 [INF] Starting AuthenticationServer.Host.
+2021-05-10 09:48:59.753 +08:00 [INF] Loaded ABP modules:
+2021-05-10 09:48:59.755 +08:00 [INF] - AuthenticationServer.Host.AuthenticationServerHostModule
+2021-05-10 09:48:59.756 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-05-10 09:48:59.756 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-05-10 09:48:59.757 +08:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-05-10 09:48:59.758 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-05-10 09:48:59.758 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-05-10 09:48:59.759 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-05-10 09:48:59.759 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-05-10 09:48:59.760 +08:00 [INF]             - Volo.Abp.Data.AbpDataModule
+2021-05-10 09:48:59.760 +08:00 [INF]               - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-05-10 09:48:59.761 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-05-10 09:48:59.761 +08:00 [INF]                 - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-05-10 09:48:59.762 +08:00 [INF]               - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-05-10 09:48:59.763 +08:00 [INF]               - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-05-10 09:48:59.763 +08:00 [INF]             - Volo.Abp.Security.AbpSecurityModule
+2021-05-10 09:48:59.764 +08:00 [INF]         - Volo.Abp.Localization.AbpLocalizationModule
+2021-05-10 09:48:59.764 +08:00 [INF]           - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-05-10 09:48:59.765 +08:00 [INF]           - Volo.Abp.Settings.AbpSettingsModule
+2021-05-10 09:48:59.766 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2021-05-10 09:48:59.767 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2021-05-10 09:48:59.769 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2021-05-10 09:48:59.770 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2021-05-10 09:48:59.771 +08:00 [INF]           - Volo.Abp.Threading.AbpThreadingModule
+2021-05-10 09:48:59.771 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-05-10 09:48:59.772 +08:00 [INF]         - Volo.Abp.Guids.AbpGuidsModule
+2021-05-10 09:48:59.772 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-05-10 09:48:59.773 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-05-10 09:48:59.773 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-05-10 09:48:59.774 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-05-10 09:48:59.775 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2021-05-10 09:48:59.776 +08:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-05-10 09:48:59.777 +08:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-05-10 09:48:59.777 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-05-10 09:48:59.778 +08:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-05-10 09:48:59.779 +08:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-05-10 09:48:59.780 +08:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-05-10 09:48:59.781 +08:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-05-10 09:48:59.782 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-05-10 09:48:59.785 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-05-10 09:48:59.786 +08:00 [INF]   - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2021-05-10 09:48:59.788 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityDomainModule
+2021-05-10 09:48:59.788 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-05-10 09:48:59.789 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-05-10 09:48:59.790 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2021-05-10 09:48:59.791 +08:00 [INF]       - Volo.Abp.Users.AbpUsersDomainModule
+2021-05-10 09:48:59.792 +08:00 [INF]         - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-05-10 09:48:59.793 +08:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-05-10 09:48:59.794 +08:00 [INF]     - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2021-05-10 09:48:59.794 +08:00 [INF]   - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-05-10 09:48:59.795 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2021-05-10 09:48:59.796 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-05-10 09:48:59.797 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-05-10 09:48:59.798 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-05-10 09:48:59.801 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-05-10 09:48:59.802 +08:00 [INF]   - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2021-05-10 09:48:59.803 +08:00 [INF]     - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2021-05-10 09:48:59.804 +08:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2021-05-10 09:48:59.805 +08:00 [INF]       - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2021-05-10 09:48:59.806 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-05-10 09:48:59.807 +08:00 [INF]   - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+2021-05-10 09:48:59.808 +08:00 [INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+2021-05-10 09:48:59.808 +08:00 [INF]       - Volo.Abp.Account.AbpAccountHttpApiModule
+2021-05-10 09:48:59.809 +08:00 [INF]         - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2021-05-10 09:48:59.810 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-05-10 09:48:59.811 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-05-10 09:48:59.812 +08:00 [INF]             - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-05-10 09:48:59.813 +08:00 [INF]               - Volo.Abp.Http.AbpHttpModule
+2021-05-10 09:48:59.814 +08:00 [INF]                 - Volo.Abp.Minify.AbpMinifyModule
+2021-05-10 09:48:59.814 +08:00 [INF]             - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-05-10 09:48:59.818 +08:00 [INF]             - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-05-10 09:48:59.819 +08:00 [INF]             - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-05-10 09:48:59.820 +08:00 [INF]               - Volo.Abp.UI.AbpUiModule
+2021-05-10 09:48:59.821 +08:00 [INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2021-05-10 09:48:59.822 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2021-05-10 09:48:59.823 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2021-05-10 09:48:59.824 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2021-05-10 09:48:59.825 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2021-05-10 09:48:59.826 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2021-05-10 09:48:59.826 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2021-05-10 09:48:59.827 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2021-05-10 09:48:59.828 +08:00 [INF]   - Volo.Abp.Account.AbpAccountApplicationModule
+2021-05-10 09:48:59.829 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationModule
+2021-05-10 09:48:59.830 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-05-10 09:48:59.832 +08:00 [INF]     - Volo.Abp.Emailing.AbpEmailingModule
+2021-05-10 09:48:59.838 +08:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2021-05-10 09:48:59.839 +08:00 [INF]       - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2021-05-10 09:48:59.840 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2021-05-10 09:48:59.841 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2021-05-10 09:48:59.842 +08:00 [INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-05-10 09:49:00.325 +08:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2021-05-10 09:49:00.356 +08:00 [INF] Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f
+2021-05-10 09:49:01.537 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2021-05-10 09:49:01.539 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2021-05-10 09:49:01.539 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2021-05-10 09:49:01.540 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2021-05-10 09:49:01.541 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2021-05-10 09:49:01.542 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2021-05-10 09:49:06.752 +08:00 [INF] Initialized all ABP modules.
+2021-05-10 09:49:06.791 +08:00 [INF] Now listening on: http://localhost:50000
+2021-05-10 09:49:06.793 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-10 09:49:06.794 +08:00 [INF] Hosting environment: Development
+2021-05-10 09:49:06.795 +08:00 [INF] Content root path: E:\2_Repositories\Micro-Service\AuthenticationServer
+2021-05-10 09:49:10.899 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-10 09:49:10.970 +08:00 [DBG] Login Url: /Account/Login
+2021-05-10 09:49:10.971 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-05-10 09:49:10.973 +08:00 [DBG] Logout Url: /Account/Logout
+2021-05-10 09:49:10.974 +08:00 [DBG] ConsentUrl Url: /Consent
+2021-05-10 09:49:10.975 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-05-10 09:49:10.976 +08:00 [DBG] Error Url: /Account/Error
+2021-05-10 09:49:10.978 +08:00 [DBG] Error Id Parameter: errorId
+2021-05-10 09:49:10.998 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 09:49:11.475 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 09:49:11.478 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 09:49:11.482 +08:00 [DBG] Start token request.
+2021-05-10 09:49:11.485 +08:00 [DBG] Start client validation
+2021-05-10 09:49:11.489 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 09:49:11.490 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 09:49:11.504 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 09:49:11.505 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 09:49:11.620 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 09:49:11.795 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 09:49:11.797 +08:00 [DBG] Client validation success
+2021-05-10 09:49:11.807 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:00000002","TimeStamp":"2021-05-10T01:49:11.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 09:49:11.828 +08:00 [DBG] Start token request validation
+2021-05-10 09:49:11.835 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 09:49:12.241 +08:00 [INF] Credentials validated for username: admin
+2021-05-10 09:49:12.544 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000002","TimeStamp":"2021-05-10T01:49:12.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 09:49:12.555 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 09:49:12.564 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 09:49:12.590 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 09:49:12.593 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-10 09:49:12.850 +08:00 [DBG] Creating refresh token
+2021-05-10 09:49:12.852 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 09:49:12.939 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****D889","$type":"Token"},{"TokenType":"access_token","TokenValue":"****R_iA","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000002","TimeStamp":"2021-05-10T01:49:12.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 09:49:12.959 +08:00 [DBG] Token request success.
+2021-05-10 09:49:12.982 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 2084.5573ms
+2021-05-10 09:49:15.430 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-10 09:49:15.434 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 09:49:15.449 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 09:49:15.451 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 09:49:15.453 +08:00 [DBG] Start token request.
+2021-05-10 09:49:15.454 +08:00 [DBG] Start client validation
+2021-05-10 09:49:15.454 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 09:49:15.455 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 09:49:15.456 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 09:49:15.458 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 09:49:15.479 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 09:49:15.480 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 09:49:15.481 +08:00 [DBG] Client validation success
+2021-05-10 09:49:15.482 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:00000003","TimeStamp":"2021-05-10T01:49:15.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 09:49:15.491 +08:00 [DBG] Start token request validation
+2021-05-10 09:49:15.492 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 09:49:15.574 +08:00 [INF] Credentials validated for username: admin
+2021-05-10 09:49:15.599 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000003","TimeStamp":"2021-05-10T01:49:15.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 09:49:15.612 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 09:49:15.613 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 09:49:15.627 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 09:49:15.628 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-10 09:49:15.640 +08:00 [DBG] Creating refresh token
+2021-05-10 09:49:15.641 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 09:49:15.649 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****F61E","$type":"Token"},{"TokenType":"access_token","TokenValue":"****WKMg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000003","TimeStamp":"2021-05-10T01:49:15.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 09:49:15.666 +08:00 [DBG] Token request success.
+2021-05-10 09:49:15.667 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 237.4636ms
+2021-05-10 09:52:01.959 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-10 09:52:01.964 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 09:52:01.977 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 09:52:01.978 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 09:52:01.980 +08:00 [DBG] Start token request.
+2021-05-10 09:52:01.981 +08:00 [DBG] Start client validation
+2021-05-10 09:52:01.983 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 09:52:01.983 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 09:52:01.984 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 09:52:01.985 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 09:52:01.999 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 09:52:02.000 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 09:52:02.001 +08:00 [DBG] Client validation success
+2021-05-10 09:52:02.002 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:00000004","TimeStamp":"2021-05-10T01:52:02.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 09:52:02.009 +08:00 [DBG] Start token request validation
+2021-05-10 09:52:02.009 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 09:52:02.107 +08:00 [INF] Credentials validated for username: admin
+2021-05-10 09:52:02.150 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000004","TimeStamp":"2021-05-10T01:52:02.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 09:52:02.160 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 09:52:02.161 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 09:52:02.172 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 09:52:02.173 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-10 09:52:02.185 +08:00 [DBG] Creating refresh token
+2021-05-10 09:52:02.186 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 09:52:02.192 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****EC2E","$type":"Token"},{"TokenType":"access_token","TokenValue":"****aFWg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000004","TimeStamp":"2021-05-10T01:52:02.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 09:52:02.209 +08:00 [DBG] Token request success.
+2021-05-10 09:52:02.210 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 250.8723ms
+2021-05-10 11:03:40.836 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-10 11:03:40.838 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-10 11:03:40.844 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-10 11:03:40.846 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-10 11:03:40.850 +08:00 [DBG] Start discovery request
+2021-05-10 11:03:41.087 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 250.5362ms
+2021-05-10 11:03:41.296 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-10 11:03:41.299 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-10 11:03:41.305 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-10 11:03:41.306 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-10 11:03:41.308 +08:00 [DBG] Start key discovery request
+2021-05-10 11:03:41.316 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 20.4641ms
+2021-05-10 11:03:46.362 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-10 11:03:46.366 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-10 11:03:46.372 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-10 11:03:46.373 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-10 11:03:46.374 +08:00 [DBG] Start discovery request
+2021-05-10 11:03:46.383 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 20.7459ms
+2021-05-10 11:03:46.498 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-10 11:03:46.501 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-10 11:03:46.505 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-10 11:03:46.507 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-10 11:03:46.508 +08:00 [DBG] Start key discovery request
+2021-05-10 11:03:46.509 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 10.8096ms
+2021-05-10 11:17:33.461 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-10 11:17:33.464 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 11:17:33.472 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 11:17:33.473 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 11:17:33.474 +08:00 [DBG] Start token request.
+2021-05-10 11:17:33.475 +08:00 [DBG] Start client validation
+2021-05-10 11:17:33.476 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 11:17:33.477 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 11:17:33.477 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 11:17:33.478 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 11:17:33.548 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 11:17:33.550 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 11:17:33.551 +08:00 [DBG] Client validation success
+2021-05-10 11:17:33.552 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:00000005","TimeStamp":"2021-05-10T03:17:33.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 11:17:33.559 +08:00 [DBG] Start token request validation
+2021-05-10 11:17:33.559 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 11:17:33.698 +08:00 [INF] Credentials validated for username: admin
+2021-05-10 11:17:33.747 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000005","TimeStamp":"2021-05-10T03:17:33.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 11:17:33.760 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 11:17:33.761 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 11:17:33.771 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 11:17:33.772 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-10 11:17:33.785 +08:00 [DBG] Creating refresh token
+2021-05-10 11:17:33.786 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 11:17:33.794 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****1931","$type":"Token"},{"TokenType":"access_token","TokenValue":"****hAqw","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000005","TimeStamp":"2021-05-10T03:17:33.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 11:17:33.809 +08:00 [DBG] Token request success.
+2021-05-10 11:17:33.810 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 348.8829ms
+2021-05-10 11:18:26.439 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-10 11:18:26.459 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 11:18:26.468 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 11:18:26.469 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 11:18:26.470 +08:00 [DBG] Start token request.
+2021-05-10 11:18:26.471 +08:00 [DBG] Start client validation
+2021-05-10 11:18:26.473 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 11:18:26.474 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 11:18:26.475 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 11:18:26.476 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 11:18:26.490 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 11:18:26.492 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 11:18:26.493 +08:00 [DBG] Client validation success
+2021-05-10 11:18:26.494 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:00000006","TimeStamp":"2021-05-10T03:18:26.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 11:18:26.501 +08:00 [DBG] Start token request validation
+2021-05-10 11:18:26.502 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 11:18:26.575 +08:00 [INF] Credentials validated for username: admin
+2021-05-10 11:18:26.614 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000006","TimeStamp":"2021-05-10T03:18:26.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 11:18:26.624 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 11:18:26.625 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 11:18:26.634 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 11:18:26.635 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-10 11:18:26.645 +08:00 [DBG] Creating refresh token
+2021-05-10 11:18:26.646 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 11:18:26.653 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****5205","$type":"Token"},{"TokenType":"access_token","TokenValue":"****IFHA","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000006","TimeStamp":"2021-05-10T03:18:26.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 11:18:26.667 +08:00 [DBG] Token request success.
+2021-05-10 11:18:26.668 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 229.3429ms
+2021-05-10 11:26:07.565 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token - 0
+2021-05-10 11:26:07.583 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 11:26:07.593 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 11:26:07.595 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 11:26:07.596 +08:00 [WRN] Invalid HTTP request for token endpoint
+2021-05-10 11:26:07.600 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token - 0 - 400 - application/json;+charset=UTF-8 41.4698ms
+2021-05-10 11:26:17.525 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token multipart/form-data;+boundary=--------------------------444730019526441106542920 647
+2021-05-10 11:26:17.529 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 11:26:17.542 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 11:26:17.544 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 11:26:17.546 +08:00 [WRN] Invalid HTTP request for token endpoint
+2021-05-10 11:26:17.547 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token multipart/form-data;+boundary=--------------------------444730019526441106542920 647 - 400 - application/json;+charset=UTF-8 21.9150ms
+2021-05-10 11:26:26.922 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token - 0
+2021-05-10 11:26:26.925 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 11:26:26.943 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 11:26:26.945 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 11:26:26.946 +08:00 [WRN] Invalid HTTP request for token endpoint
+2021-05-10 11:26:26.949 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token - 0 - 400 - application/json;+charset=UTF-8 25.6864ms
+2021-05-10 11:26:39.305 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token - 0
+2021-05-10 11:26:39.309 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 11:26:39.317 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 11:26:39.319 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 11:26:39.321 +08:00 [WRN] Invalid HTTP request for token endpoint
+2021-05-10 11:26:39.322 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token - 0 - 400 - application/json;+charset=UTF-8 16.9440ms
+2021-05-10 11:26:40.214 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token - 0
+2021-05-10 11:26:40.216 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 11:26:40.225 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 11:26:40.226 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 11:26:40.227 +08:00 [WRN] Invalid HTTP request for token endpoint
+2021-05-10 11:26:40.228 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token - 0 - 400 - application/json;+charset=UTF-8 14.5728ms
+2021-05-10 11:26:59.423 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-10 11:26:59.426 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 11:26:59.436 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 11:26:59.438 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 11:26:59.439 +08:00 [DBG] Start token request.
+2021-05-10 11:26:59.440 +08:00 [DBG] Start client validation
+2021-05-10 11:26:59.441 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 11:26:59.442 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 11:26:59.442 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 11:26:59.443 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 11:26:59.460 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 11:26:59.462 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 11:26:59.464 +08:00 [DBG] Client validation success
+2021-05-10 11:26:59.466 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:0000000C","TimeStamp":"2021-05-10T03:26:59.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 11:26:59.474 +08:00 [DBG] Start token request validation
+2021-05-10 11:26:59.474 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 11:26:59.559 +08:00 [INF] Credentials validated for username: admin
+2021-05-10 11:26:59.602 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:0000000C","TimeStamp":"2021-05-10T03:26:59.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 11:26:59.614 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 11:26:59.615 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 11:26:59.624 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 11:26:59.625 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-10 11:26:59.637 +08:00 [DBG] Creating refresh token
+2021-05-10 11:26:59.638 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 11:26:59.643 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****567C","$type":"Token"},{"TokenType":"access_token","TokenValue":"****nfZg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:0000000C","TimeStamp":"2021-05-10T03:26:59.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 11:26:59.658 +08:00 [DBG] Token request success.
+2021-05-10 11:26:59.658 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 235.7267ms
+2021-05-10 13:30:09.110 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-10 13:30:09.119 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 13:30:09.129 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 13:30:09.131 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 13:30:09.133 +08:00 [DBG] Start token request.
+2021-05-10 13:30:09.133 +08:00 [DBG] Start client validation
+2021-05-10 13:30:09.134 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 13:30:09.136 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 13:30:09.137 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 13:30:09.138 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 13:30:09.196 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 13:30:09.198 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 13:30:09.199 +08:00 [DBG] Client validation success
+2021-05-10 13:30:09.199 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:0000000D","TimeStamp":"2021-05-10T05:30:09.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 13:30:09.208 +08:00 [DBG] Start token request validation
+2021-05-10 13:30:09.209 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 13:30:09.328 +08:00 [INF] Credentials validated for username: admin
+2021-05-10 13:30:09.415 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:0000000D","TimeStamp":"2021-05-10T05:30:09.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 13:30:09.426 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 13:30:09.427 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 13:30:09.439 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 13:30:09.440 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-10 13:30:09.451 +08:00 [DBG] Creating refresh token
+2021-05-10 13:30:09.452 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 13:30:09.461 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****5341","$type":"Token"},{"TokenType":"access_token","TokenValue":"****q12g","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:0000000D","TimeStamp":"2021-05-10T05:30:09.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 13:30:09.477 +08:00 [DBG] Token request success.
+2021-05-10 13:30:09.478 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 367.2547ms
+2021-05-10 13:31:03.370 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-10 13:31:03.382 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 13:31:03.393 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 13:31:03.395 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 13:31:03.397 +08:00 [DBG] Start token request.
+2021-05-10 13:31:03.398 +08:00 [DBG] Start client validation
+2021-05-10 13:31:03.399 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 13:31:03.400 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 13:31:03.401 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 13:31:03.402 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 13:31:03.412 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 13:31:03.413 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 13:31:03.414 +08:00 [DBG] Client validation success
+2021-05-10 13:31:03.415 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:0000000E","TimeStamp":"2021-05-10T05:31:03.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 13:31:03.424 +08:00 [DBG] Start token request validation
+2021-05-10 13:31:03.425 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 13:31:03.518 +08:00 [INF] Credentials validated for username: admin
+2021-05-10 13:31:03.561 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:0000000E","TimeStamp":"2021-05-10T05:31:03.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 13:31:03.572 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 13:31:03.573 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 13:31:03.583 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 13:31:03.584 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-10 13:31:03.596 +08:00 [DBG] Creating refresh token
+2021-05-10 13:31:03.597 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 13:31:03.609 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****95FB","$type":"Token"},{"TokenType":"access_token","TokenValue":"****Kyng","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:0000000E","TimeStamp":"2021-05-10T05:31:03.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 13:31:03.623 +08:00 [DBG] Token request success.
+2021-05-10 13:31:03.624 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 253.5895ms
+2021-05-10 13:39:24.226 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/api/identity/roles/all - -
+2021-05-10 13:39:24.289 +08:00 [INF] Executing endpoint 'Volo.Abp.Identity.IdentityRoleController.GetAllListAsync (Volo.Abp.Identity.HttpApi)'
+2021-05-10 13:39:24.323 +08:00 [INF] Route matched with {area = "identity", controller = "Role", action = "GetAllList", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[Volo.Abp.Identity.IdentityRoleDto]] GetAllListAsync() on controller Volo.Abp.Identity.IdentityRoleController (Volo.Abp.Identity.HttpApi).
+2021-05-10 13:39:24.404 +08:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: AbpIdentity.Roles
+2021-05-10 13:39:24.441 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": "Volo.Authorization:010001",
+  "message": "Authorization failed! Given policy has not granted.",
+  "details": null,
+  "data": {},
+  "validationErrors": null
+}
+
+2021-05-10 13:39:24.445 +08:00 [WRN] Exception of type 'Volo.Abp.Authorization.AbpAuthorizationException' was thrown.
+Volo.Abp.Authorization.AbpAuthorizationException: Exception of type 'Volo.Abp.Authorization.AbpAuthorizationException' was thrown.
+   at Microsoft.AspNetCore.Authorization.AbpAuthorizationServiceExtensions.CheckAsync(IAuthorizationService authorizationService, AuthorizationPolicy policy)
+   at Volo.Abp.Authorization.MethodInvocationAuthorizationService.CheckAsync(MethodInvocationAuthorizationContext context)
+   at Volo.Abp.Authorization.AuthorizationInterceptor.AuthorizeAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method3921(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2021-05-10 13:39:24.480 +08:00 [WRN] Code:Volo.Authorization:010001
+2021-05-10 13:39:24.489 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2021-05-10 13:39:24.503 +08:00 [INF] Executed action Volo.Abp.Identity.IdentityRoleController.GetAllListAsync (Volo.Abp.Identity.HttpApi) in 173.1587ms
+2021-05-10 13:39:24.505 +08:00 [INF] Executed endpoint 'Volo.Abp.Identity.IdentityRoleController.GetAllListAsync (Volo.Abp.Identity.HttpApi)'
+2021-05-10 13:39:24.627 +08:00 [DBG] Added 0 entity changes to the current audit log
+2021-05-10 13:39:24.628 +08:00 [DBG] Added 0 entity changes to the current audit log
+2021-05-10 13:39:24.633 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/api/identity/roles/all - - - 401 - application/json;+charset=utf-8 406.3675ms
+2021-05-10 13:40:48.988 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-10 13:40:48.990 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 13:40:49.000 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 13:40:49.001 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 13:40:49.003 +08:00 [DBG] Start token request.
+2021-05-10 13:40:49.004 +08:00 [DBG] Start client validation
+2021-05-10 13:40:49.005 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 13:40:49.007 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 13:40:49.008 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 13:40:49.009 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 13:40:49.024 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 13:40:49.026 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 13:40:49.028 +08:00 [DBG] Client validation success
+2021-05-10 13:40:49.028 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:00000010","TimeStamp":"2021-05-10T05:40:49.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 13:40:49.037 +08:00 [DBG] Start token request validation
+2021-05-10 13:40:49.039 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 13:40:49.123 +08:00 [INF] Credentials validated for username: admin
+2021-05-10 13:40:49.174 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000010","TimeStamp":"2021-05-10T05:40:49.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 13:40:49.185 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 13:40:49.186 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 13:40:49.200 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 13:40:49.202 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-10 13:40:49.222 +08:00 [DBG] Creating refresh token
+2021-05-10 13:40:49.223 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 13:40:49.231 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****4D5C","$type":"Token"},{"TokenType":"access_token","TokenValue":"****oHGg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000010","TimeStamp":"2021-05-10T05:40:49.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 13:40:49.247 +08:00 [DBG] Token request success.
+2021-05-10 13:40:49.248 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 260.0722ms
+2021-05-10 14:14:34.052 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-10 14:14:34.056 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 14:14:34.065 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 14:14:34.066 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 14:14:34.067 +08:00 [DBG] Start token request.
+2021-05-10 14:14:34.069 +08:00 [DBG] Start client validation
+2021-05-10 14:14:34.069 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 14:14:34.070 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 14:14:34.071 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 14:14:34.073 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 14:14:34.144 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 14:14:34.146 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 14:14:34.147 +08:00 [DBG] Client validation success
+2021-05-10 14:14:34.148 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:00000011","TimeStamp":"2021-05-10T06:14:34.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 14:14:34.155 +08:00 [DBG] Start token request validation
+2021-05-10 14:14:34.156 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 14:14:34.265 +08:00 [INF] Credentials validated for username: admin
+2021-05-10 14:14:34.301 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000011","TimeStamp":"2021-05-10T06:14:34.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 14:14:34.313 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 14:14:34.314 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 14:14:34.325 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 14:14:34.326 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-10 14:14:34.338 +08:00 [DBG] Creating refresh token
+2021-05-10 14:14:34.339 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 14:14:34.345 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****6717","$type":"Token"},{"TokenType":"access_token","TokenValue":"****QwUQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000011","TimeStamp":"2021-05-10T06:14:34.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 14:14:34.359 +08:00 [DBG] Token request success.
+2021-05-10 14:14:34.360 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 308.0288ms
+2021-05-10 14:14:36.922 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-10 14:14:36.924 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-10 14:14:36.929 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-10 14:14:36.930 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-10 14:14:36.932 +08:00 [DBG] Start discovery request
+2021-05-10 14:14:36.957 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 35.2570ms
+2021-05-10 14:14:37.063 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-10 14:14:37.066 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-10 14:14:37.071 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-10 14:14:37.073 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-10 14:14:37.074 +08:00 [DBG] Start key discovery request
+2021-05-10 14:14:37.075 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 11.7394ms
+2021-05-10 14:19:02.328 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-10 14:19:02.335 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-10 14:19:02.343 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-10 14:19:02.345 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-10 14:19:02.346 +08:00 [DBG] Start discovery request
+2021-05-10 14:19:02.354 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 26.8310ms
+2021-05-10 14:19:02.467 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-10 14:19:02.470 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-10 14:19:02.476 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-10 14:19:02.478 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-10 14:19:02.480 +08:00 [DBG] Start key discovery request
+2021-05-10 14:19:02.481 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 14.0916ms
+2021-05-10 15:25:03.504 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-10 15:25:03.518 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 15:25:03.528 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 15:25:03.530 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 15:25:03.531 +08:00 [DBG] Start token request.
+2021-05-10 15:25:03.532 +08:00 [DBG] Start client validation
+2021-05-10 15:25:03.533 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 15:25:03.534 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 15:25:03.535 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 15:25:03.537 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 15:25:03.642 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 15:25:03.650 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 15:25:03.651 +08:00 [DBG] Client validation success
+2021-05-10 15:25:03.653 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:00000012","TimeStamp":"2021-05-10T07:25:03.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 15:25:03.662 +08:00 [DBG] Start token request validation
+2021-05-10 15:25:03.662 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 15:25:03.759 +08:00 [INF] Credentials validated for username: admin
+2021-05-10 15:25:03.816 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000012","TimeStamp":"2021-05-10T07:25:03.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 15:25:03.840 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 15:25:03.841 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 15:25:03.851 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 15:25:03.852 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-10 15:25:03.862 +08:00 [DBG] Creating refresh token
+2021-05-10 15:25:03.863 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 15:25:03.872 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****84F0","$type":"Token"},{"TokenType":"access_token","TokenValue":"****V0CQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000012","TimeStamp":"2021-05-10T07:25:03.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 15:25:03.887 +08:00 [DBG] Token request success.
+2021-05-10 15:25:03.888 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 384.3449ms
+2021-05-10 15:58:15.387 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-10 15:58:15.404 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 15:58:15.414 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 15:58:15.416 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 15:58:15.417 +08:00 [DBG] Start token request.
+2021-05-10 15:58:15.418 +08:00 [DBG] Start client validation
+2021-05-10 15:58:15.418 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 15:58:15.419 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 15:58:15.420 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 15:58:15.421 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 15:58:15.482 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 15:58:15.484 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 15:58:15.485 +08:00 [DBG] Client validation success
+2021-05-10 15:58:15.486 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:00000013","TimeStamp":"2021-05-10T07:58:15.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 15:58:15.494 +08:00 [DBG] Start token request validation
+2021-05-10 15:58:15.495 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 15:58:15.610 +08:00 [INF] Credentials validated for username: admin
+2021-05-10 15:58:15.651 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000013","TimeStamp":"2021-05-10T07:58:15.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 15:58:15.661 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 15:58:15.663 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 15:58:15.672 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 15:58:15.673 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-10 15:58:15.684 +08:00 [DBG] Creating refresh token
+2021-05-10 15:58:15.685 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 15:58:15.691 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****C344","$type":"Token"},{"TokenType":"access_token","TokenValue":"****qq4Q","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000013","TimeStamp":"2021-05-10T07:58:15.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 15:58:15.705 +08:00 [DBG] Token request success.
+2021-05-10 15:58:15.706 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 318.4726ms
+2021-05-10 15:58:19.182 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-10 15:58:19.184 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-10 15:58:19.189 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-10 15:58:19.190 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-10 15:58:19.192 +08:00 [DBG] Start discovery request
+2021-05-10 15:58:19.219 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 37.5427ms
+2021-05-10 15:58:19.333 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-10 15:58:19.335 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-10 15:58:19.340 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-10 15:58:19.342 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-10 15:58:19.343 +08:00 [DBG] Start key discovery request
+2021-05-10 15:58:19.344 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 11.3269ms
+2021-05-10 16:00:48.235 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-10 16:00:48.237 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-10 16:00:48.242 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-10 16:00:48.243 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-10 16:00:48.245 +08:00 [DBG] Start discovery request
+2021-05-10 16:00:48.253 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 17.2076ms
+2021-05-10 16:00:48.360 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-10 16:00:48.363 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-10 16:00:48.368 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-10 16:00:48.370 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-10 16:00:48.371 +08:00 [DBG] Start key discovery request
+2021-05-10 16:00:48.372 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 11.6366ms
+2021-05-10 16:04:33.578 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-10 16:04:33.586 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-10 16:04:33.591 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-10 16:04:33.594 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-10 16:04:33.595 +08:00 [DBG] Start discovery request
+2021-05-10 16:04:33.614 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 36.0966ms
+2021-05-10 16:04:33.734 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-10 16:04:33.736 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-10 16:04:33.741 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-10 16:04:33.743 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-10 16:04:33.744 +08:00 [DBG] Start key discovery request
+2021-05-10 16:04:33.745 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 11.7329ms
+2021-05-10 16:57:26.910 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-10 16:57:26.913 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 16:57:26.926 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 16:57:26.930 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 16:57:26.931 +08:00 [DBG] Start token request.
+2021-05-10 16:57:26.932 +08:00 [DBG] Start client validation
+2021-05-10 16:57:26.933 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 16:57:26.933 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 16:57:26.935 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 16:57:26.936 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 16:57:27.018 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 16:57:27.019 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 16:57:27.020 +08:00 [DBG] Client validation success
+2021-05-10 16:57:27.022 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:00000014","TimeStamp":"2021-05-10T08:57:27.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 16:57:27.030 +08:00 [DBG] Start token request validation
+2021-05-10 16:57:27.031 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 16:57:27.150 +08:00 [INF] Credentials validated for username: admin
+2021-05-10 16:57:27.221 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000014","TimeStamp":"2021-05-10T08:57:27.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 16:57:27.235 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 16:57:27.236 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 16:57:27.248 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 16:57:27.249 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-10 16:57:27.261 +08:00 [DBG] Creating refresh token
+2021-05-10 16:57:27.262 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 16:57:27.269 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****BA8A","$type":"Token"},{"TokenType":"access_token","TokenValue":"****U4Fg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000014","TimeStamp":"2021-05-10T08:57:27.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 16:57:27.283 +08:00 [DBG] Token request success.
+2021-05-10 16:57:27.284 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 373.4607ms
+2021-05-10 17:06:22.450 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-10 17:06:22.457 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-10 17:06:22.465 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-10 17:06:22.467 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-10 17:06:22.468 +08:00 [DBG] Start discovery request
+2021-05-10 17:06:22.526 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 77.0818ms
+2021-05-10 17:06:22.659 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-10 17:06:22.661 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-10 17:06:22.666 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-10 17:06:22.667 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-10 17:06:22.669 +08:00 [DBG] Start key discovery request
+2021-05-10 17:06:22.670 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 10.8041ms
+2021-05-10 17:07:40.565 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-10 17:07:40.568 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-10 17:07:40.572 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-10 17:07:40.574 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-10 17:07:40.575 +08:00 [DBG] Start discovery request
+2021-05-10 17:07:40.583 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 17.2586ms
+2021-05-10 17:07:40.713 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-10 17:07:40.716 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-10 17:07:40.721 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-10 17:07:40.722 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-10 17:07:40.723 +08:00 [DBG] Start key discovery request
+2021-05-10 17:07:40.724 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 11.2814ms
+2021-05-10 17:08:45.246 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-10 17:08:45.248 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-10 17:08:45.253 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-10 17:08:45.255 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-10 17:08:45.257 +08:00 [DBG] Start discovery request
+2021-05-10 17:08:45.265 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 18.7328ms
+2021-05-10 17:08:45.377 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-10 17:08:45.379 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-10 17:08:45.384 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-10 17:08:45.385 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-10 17:08:45.386 +08:00 [DBG] Start key discovery request
+2021-05-10 17:08:45.387 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 10.2530ms
+2021-05-10 20:18:36.924 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 110
+2021-05-10 20:18:36.929 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 20:18:36.944 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 20:18:36.947 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 20:18:36.948 +08:00 [DBG] Start token request.
+2021-05-10 20:18:36.951 +08:00 [DBG] Start client validation
+2021-05-10 20:18:36.952 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 20:18:36.954 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 20:18:36.955 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 20:18:36.955 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 20:18:37.032 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 20:18:37.033 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 20:18:37.034 +08:00 [DBG] Client validation success
+2021-05-10 20:18:37.035 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:00000015","TimeStamp":"2021-05-10T12:18:37.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 20:18:37.043 +08:00 [DBG] Start token request validation
+2021-05-10 20:18:37.044 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 20:18:37.128 +08:00 [INF] No user found matching username: test12
+2021-05-10 20:18:37.148 +08:00 [INF] User authentication failed: Invalid username or password!, details: {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"test12","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"test12","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 20:18:37.160 +08:00 [INF] {"Username":"test12","Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"Invalid username or password!","ActivityId":"0HM8JAN7979G7:00000015","TimeStamp":"2021-05-10T12:18:37.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2021-05-10 20:18:37.169 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Error":"invalid_grant","ErrorDescription":"Invalid username or password!","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HM8JAN7979G7:00000015","TimeStamp":"2021-05-10T12:18:37.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2021-05-10 20:18:37.179 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 110 - 400 - application/json;+charset=UTF-8 255.2154ms
+2021-05-10 20:18:43.468 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 110
+2021-05-10 20:18:43.471 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 20:18:43.480 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 20:18:43.482 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 20:18:43.484 +08:00 [DBG] Start token request.
+2021-05-10 20:18:43.485 +08:00 [DBG] Start client validation
+2021-05-10 20:18:43.485 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 20:18:43.486 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 20:18:43.487 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 20:18:43.487 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 20:18:43.497 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 20:18:43.499 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 20:18:43.500 +08:00 [DBG] Client validation success
+2021-05-10 20:18:43.501 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:00000016","TimeStamp":"2021-05-10T12:18:43.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 20:18:43.509 +08:00 [DBG] Start token request validation
+2021-05-10 20:18:43.509 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 20:18:43.546 +08:00 [INF] No user found matching username: test12
+2021-05-10 20:18:43.559 +08:00 [INF] User authentication failed: Invalid username or password!, details: {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"test12","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"test12","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 20:18:43.570 +08:00 [INF] {"Username":"test12","Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"Invalid username or password!","ActivityId":"0HM8JAN7979G7:00000016","TimeStamp":"2021-05-10T12:18:43.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2021-05-10 20:18:43.578 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Error":"invalid_grant","ErrorDescription":"Invalid username or password!","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HM8JAN7979G7:00000016","TimeStamp":"2021-05-10T12:18:43.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2021-05-10 20:18:43.590 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 110 - 400 - application/json;+charset=UTF-8 121.2745ms
+2021-05-10 20:19:10.520 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 110
+2021-05-10 20:19:10.521 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 20:19:10.530 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 20:19:10.532 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 20:19:10.533 +08:00 [DBG] Start token request.
+2021-05-10 20:19:10.534 +08:00 [DBG] Start client validation
+2021-05-10 20:19:10.534 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 20:19:10.535 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 20:19:10.536 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 20:19:10.537 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 20:19:10.547 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 20:19:10.548 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 20:19:10.549 +08:00 [DBG] Client validation success
+2021-05-10 20:19:10.550 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:00000017","TimeStamp":"2021-05-10T12:19:10.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 20:19:10.560 +08:00 [DBG] Start token request validation
+2021-05-10 20:19:10.561 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 20:19:10.641 +08:00 [INF] No user found matching username: test12
+2021-05-10 20:19:10.655 +08:00 [INF] User authentication failed: Invalid username or password!, details: {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"test12","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"test12","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 20:19:10.666 +08:00 [INF] {"Username":"test12","Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"Invalid username or password!","ActivityId":"0HM8JAN7979G7:00000017","TimeStamp":"2021-05-10T12:19:10.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2021-05-10 20:19:10.676 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Error":"invalid_grant","ErrorDescription":"Invalid username or password!","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HM8JAN7979G7:00000017","TimeStamp":"2021-05-10T12:19:10.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2021-05-10 20:19:10.688 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 110 - 400 - application/json;+charset=UTF-8 168.7869ms
+2021-05-10 20:19:24.641 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-10 20:19:24.644 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 20:19:24.654 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 20:19:24.656 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 20:19:24.657 +08:00 [DBG] Start token request.
+2021-05-10 20:19:24.658 +08:00 [DBG] Start client validation
+2021-05-10 20:19:24.659 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 20:19:24.660 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 20:19:24.661 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 20:19:24.662 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 20:19:24.670 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 20:19:24.671 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 20:19:24.673 +08:00 [DBG] Client validation success
+2021-05-10 20:19:24.673 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:00000018","TimeStamp":"2021-05-10T12:19:24.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 20:19:24.682 +08:00 [DBG] Start token request validation
+2021-05-10 20:19:24.683 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 20:19:24.720 +08:00 [INF] No user found matching username: test1
+2021-05-10 20:19:24.728 +08:00 [INF] User authentication failed: Invalid username or password!, details: {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"test1","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"test1","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 20:19:24.744 +08:00 [INF] {"Username":"test1","Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"Invalid username or password!","ActivityId":"0HM8JAN7979G7:00000018","TimeStamp":"2021-05-10T12:19:24.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2021-05-10 20:19:24.756 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Error":"invalid_grant","ErrorDescription":"Invalid username or password!","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HM8JAN7979G7:00000018","TimeStamp":"2021-05-10T12:19:24.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2021-05-10 20:19:24.771 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 400 - application/json;+charset=UTF-8 130.5897ms
+2021-05-10 20:19:36.846 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-10 20:19:36.848 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 20:19:36.860 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 20:19:36.892 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 20:19:36.893 +08:00 [DBG] Start token request.
+2021-05-10 20:19:36.894 +08:00 [DBG] Start client validation
+2021-05-10 20:19:36.895 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 20:19:36.896 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 20:19:36.896 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 20:19:36.897 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 20:19:36.906 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 20:19:36.908 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 20:19:36.909 +08:00 [DBG] Client validation success
+2021-05-10 20:19:36.910 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:00000019","TimeStamp":"2021-05-10T12:19:36.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 20:19:36.919 +08:00 [DBG] Start token request validation
+2021-05-10 20:19:36.920 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 20:19:36.988 +08:00 [INF] Credentials validated for username: admin
+2021-05-10 20:19:37.027 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000019","TimeStamp":"2021-05-10T12:19:37.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 20:19:37.037 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 20:19:37.038 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 20:19:37.047 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 20:19:37.048 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-10 20:19:37.060 +08:00 [DBG] Creating refresh token
+2021-05-10 20:19:37.060 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 20:19:37.067 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****117F","$type":"Token"},{"TokenType":"access_token","TokenValue":"****x_iQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:00000019","TimeStamp":"2021-05-10T12:19:37.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 20:19:37.081 +08:00 [DBG] Token request success.
+2021-05-10 20:19:37.082 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 236.6848ms
+2021-05-10 20:21:01.849 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 110
+2021-05-10 20:21:01.851 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 20:21:01.861 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 20:21:01.863 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 20:21:01.864 +08:00 [DBG] Start token request.
+2021-05-10 20:21:01.865 +08:00 [DBG] Start client validation
+2021-05-10 20:21:01.866 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 20:21:01.867 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 20:21:01.868 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 20:21:01.869 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 20:21:01.879 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 20:21:01.881 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 20:21:01.882 +08:00 [DBG] Client validation success
+2021-05-10 20:21:01.883 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:0000001A","TimeStamp":"2021-05-10T12:21:01.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 20:21:01.891 +08:00 [DBG] Start token request validation
+2021-05-10 20:21:01.892 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 20:21:01.988 +08:00 [INF] Credentials validated for username: test12
+2021-05-10 20:21:02.013 +08:00 [INF] {"Username":"test12","Provider":null,"ProviderUserId":null,"SubjectId":"4137b08b-6aed-7cd9-d363-39fc671aba77","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:0000001A","TimeStamp":"2021-05-10T12:21:02.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 20:21:02.024 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 20:21:02.025 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"test12","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"test12","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 20:21:02.035 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 20:21:02.035 +08:00 [DBG] Getting claims for access token for subject: 4137b08b-6aed-7cd9-d363-39fc671aba77
+2021-05-10 20:21:02.046 +08:00 [DBG] Creating refresh token
+2021-05-10 20:21:02.047 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 20:21:02.052 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"4137b08b-6aed-7cd9-d363-39fc671aba77","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****C351","$type":"Token"},{"TokenType":"access_token","TokenValue":"****pYUw","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:0000001A","TimeStamp":"2021-05-10T12:21:02.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 20:21:02.066 +08:00 [DBG] Token request success.
+2021-05-10 20:21:02.067 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 110 - 200 - application/json;+charset=UTF-8 218.1613ms
+2021-05-10 20:23:43.717 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/api/identity/my-profile/change-password application/json 66
+2021-05-10 20:23:43.722 +08:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2021-05-10 20:23:43.723 +08:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2021-05-10 20:23:43.739 +08:00 [DBG] Added 0 entity changes to the current audit log
+2021-05-10 20:23:43.740 +08:00 [DBG] Added 0 entity changes to the current audit log
+2021-05-10 20:23:43.741 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/api/identity/my-profile/change-password application/json 66 - 405 0 - 23.6137ms
+2021-05-10 20:24:07.035 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 110
+2021-05-10 20:24:07.038 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 20:24:07.049 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 20:24:07.051 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 20:24:07.052 +08:00 [DBG] Start token request.
+2021-05-10 20:24:07.053 +08:00 [DBG] Start client validation
+2021-05-10 20:24:07.054 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 20:24:07.055 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 20:24:07.056 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 20:24:07.057 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 20:24:07.072 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 20:24:07.073 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 20:24:07.074 +08:00 [DBG] Client validation success
+2021-05-10 20:24:07.075 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:0000001C","TimeStamp":"2021-05-10T12:24:07.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 20:24:07.082 +08:00 [DBG] Start token request validation
+2021-05-10 20:24:07.084 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 20:24:07.180 +08:00 [INF] Credentials validated for username: test12
+2021-05-10 20:24:07.231 +08:00 [INF] {"Username":"test12","Provider":null,"ProviderUserId":null,"SubjectId":"4137b08b-6aed-7cd9-d363-39fc671aba77","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:0000001C","TimeStamp":"2021-05-10T12:24:07.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 20:24:07.246 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 20:24:07.247 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"test12","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"test12","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 20:24:07.258 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 20:24:07.260 +08:00 [DBG] Getting claims for access token for subject: 4137b08b-6aed-7cd9-d363-39fc671aba77
+2021-05-10 20:24:07.275 +08:00 [DBG] Creating refresh token
+2021-05-10 20:24:07.277 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 20:24:07.285 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"4137b08b-6aed-7cd9-d363-39fc671aba77","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****E939","$type":"Token"},{"TokenType":"access_token","TokenValue":"****_7BQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:0000001C","TimeStamp":"2021-05-10T12:24:07.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 20:24:07.301 +08:00 [DBG] Token request success.
+2021-05-10 20:24:07.302 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 110 - 200 - application/json;+charset=UTF-8 267.3318ms
+2021-05-10 20:24:38.646 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 110
+2021-05-10 20:24:38.649 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 20:24:38.659 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 20:24:38.660 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 20:24:38.662 +08:00 [DBG] Start token request.
+2021-05-10 20:24:38.663 +08:00 [DBG] Start client validation
+2021-05-10 20:24:38.664 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 20:24:38.665 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 20:24:38.666 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 20:24:38.667 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 20:24:38.681 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 20:24:38.684 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 20:24:38.686 +08:00 [DBG] Client validation success
+2021-05-10 20:24:38.687 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:0000001D","TimeStamp":"2021-05-10T12:24:38.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 20:24:38.694 +08:00 [DBG] Start token request validation
+2021-05-10 20:24:38.695 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 20:24:38.762 +08:00 [INF] Credentials validated for username: test12
+2021-05-10 20:24:38.791 +08:00 [INF] {"Username":"test12","Provider":null,"ProviderUserId":null,"SubjectId":"4137b08b-6aed-7cd9-d363-39fc671aba77","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:0000001D","TimeStamp":"2021-05-10T12:24:38.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 20:24:38.801 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 20:24:38.802 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"test12","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"test12","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 20:24:38.811 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 20:24:38.812 +08:00 [DBG] Getting claims for access token for subject: 4137b08b-6aed-7cd9-d363-39fc671aba77
+2021-05-10 20:24:38.823 +08:00 [DBG] Creating refresh token
+2021-05-10 20:24:38.823 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 20:24:38.828 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"4137b08b-6aed-7cd9-d363-39fc671aba77","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****9694","$type":"Token"},{"TokenType":"access_token","TokenValue":"****I83w","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:0000001D","TimeStamp":"2021-05-10T12:24:38.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 20:24:38.843 +08:00 [DBG] Token request success.
+2021-05-10 20:24:38.844 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 110 - 200 - application/json;+charset=UTF-8 197.4758ms
+2021-05-10 20:26:14.001 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 110
+2021-05-10 20:26:14.003 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 20:26:14.011 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 20:26:14.013 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 20:26:14.014 +08:00 [DBG] Start token request.
+2021-05-10 20:26:14.015 +08:00 [DBG] Start client validation
+2021-05-10 20:26:14.016 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 20:26:14.017 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 20:26:14.018 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 20:26:14.019 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 20:26:14.039 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 20:26:14.041 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 20:26:14.042 +08:00 [DBG] Client validation success
+2021-05-10 20:26:14.043 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:0000001E","TimeStamp":"2021-05-10T12:26:14.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 20:26:14.052 +08:00 [DBG] Start token request validation
+2021-05-10 20:26:14.053 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 20:26:14.146 +08:00 [WRN] Invalid password for user.
+2021-05-10 20:26:14.148 +08:00 [WRN] User failed to provide the correct password.
+2021-05-10 20:26:14.196 +08:00 [INF] Authentication failed for username: test12, reason: invalid credentials
+2021-05-10 20:26:14.225 +08:00 [INF] User authentication failed: Invalid username or password!, details: {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"test12","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"test12","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 20:26:14.236 +08:00 [INF] {"Username":"test12","Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"Invalid username or password!","ActivityId":"0HM8JAN7979G7:0000001E","TimeStamp":"2021-05-10T12:26:14.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2021-05-10 20:26:14.244 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Error":"invalid_grant","ErrorDescription":"Invalid username or password!","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HM8JAN7979G7:0000001E","TimeStamp":"2021-05-10T12:26:14.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2021-05-10 20:26:14.256 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 110 - 400 - application/json;+charset=UTF-8 254.7986ms
+2021-05-10 20:26:21.444 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 111
+2021-05-10 20:26:21.447 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-10 20:26:21.461 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-10 20:26:21.464 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-10 20:26:21.465 +08:00 [DBG] Start token request.
+2021-05-10 20:26:21.466 +08:00 [DBG] Start client validation
+2021-05-10 20:26:21.467 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-10 20:26:21.467 +08:00 [DBG] Start parsing for secret in post body
+2021-05-10 20:26:21.468 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-10 20:26:21.471 +08:00 [DBG] Secret id found: public-website-client
+2021-05-10 20:26:21.480 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-10 20:26:21.481 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-10 20:26:21.483 +08:00 [DBG] Client validation success
+2021-05-10 20:26:21.483 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8JAN7979G7:0000001F","TimeStamp":"2021-05-10T12:26:21.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-10 20:26:21.491 +08:00 [DBG] Start token request validation
+2021-05-10 20:26:21.492 +08:00 [DBG] Start resource owner password token request validation
+2021-05-10 20:26:21.568 +08:00 [INF] Credentials validated for username: test12
+2021-05-10 20:26:21.591 +08:00 [INF] {"Username":"test12","Provider":null,"ProviderUserId":null,"SubjectId":"4137b08b-6aed-7cd9-d363-39fc671aba77","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8JAN7979G7:0000001F","TimeStamp":"2021-05-10T12:26:21.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-10 20:26:21.606 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-10 20:26:21.606 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"test12","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"test12","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-10 20:26:21.622 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-10 20:26:21.623 +08:00 [DBG] Getting claims for access token for subject: 4137b08b-6aed-7cd9-d363-39fc671aba77
+2021-05-10 20:26:21.635 +08:00 [DBG] Creating refresh token
+2021-05-10 20:26:21.636 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-10 20:26:21.646 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"4137b08b-6aed-7cd9-d363-39fc671aba77","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****414D","$type":"Token"},{"TokenType":"access_token","TokenValue":"****d3gg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8JAN7979G7:0000001F","TimeStamp":"2021-05-10T12:26:21.0000000Z","ProcessId":38088,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-10 20:26:21.663 +08:00 [DBG] Token request success.
+2021-05-10 20:26:21.664 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 111 - 200 - application/json;+charset=UTF-8 219.3529ms
+2021-05-11 08:21:16.068 +08:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2021-05-11 08:21:16.070 +08:00 [INF] Application is shutting down...

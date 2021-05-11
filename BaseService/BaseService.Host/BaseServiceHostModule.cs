@@ -13,6 +13,7 @@ using System.Linq;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.MultiTenancy;
 using Volo.Abp.AspNetCore.Mvc;
+using Volo.Abp.AspNetCore.Mvc.AntiForgery;
 using Volo.Abp.AspNetCore.Serilog;
 using Volo.Abp.Auditing;
 using Volo.Abp.Autofac;
@@ -50,6 +51,8 @@ namespace BaseService
                 // 默认不启用多租户
                 options.IsEnabled = false;
             });
+
+            Configure<AbpAntiForgeryOptions>(options => { options.AutoValidate = false; });
 
             Configure<AbpAspNetCoreMvcOptions>(options =>
             {

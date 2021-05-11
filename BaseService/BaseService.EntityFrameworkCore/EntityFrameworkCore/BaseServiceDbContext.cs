@@ -1,8 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.Modeling;
 using Volo.Abp.Identity;
+using Volo.Abp.Identity.EntityFrameworkCore;
+using Volo.Abp.PermissionManagement.EntityFrameworkCore;
+using Volo.Abp.SettingManagement.EntityFrameworkCore;
+using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.Users.EntityFrameworkCore;
 
 namespace BaseService.EntityFrameworkCore
@@ -31,6 +36,11 @@ namespace BaseService.EntityFrameworkCore
             //    b.Property(x => x.Enable).HasDefaultValue(true);
 
             //});
+            builder.ConfigurePermissionManagement();
+            builder.ConfigureSettingManagement();
+            builder.ConfigureAuditLogging();
+            builder.ConfigureIdentity();
+            builder.ConfigureTenantManagement();
 
             builder.ConfigureBaseService();
         }

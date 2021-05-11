@@ -9,11 +9,11 @@ namespace BaseService
     [DependsOn(
         typeof(BaseServiceDomainSharedModule),
         typeof(AbpAuditLoggingDomainModule),
-        typeof(AbpIdentityDomainModule),
+        //typeof(AbpIdentityDomainModule),
         //typeof(AbpIdentityServerDomainModule),
-        typeof(AbpPermissionManagementDomainIdentityModule),
+        typeof(AbpPermissionManagementDomainIdentityModule)
         //typeof(AbpPermissionManagementDomainIdentityServerModule),
-        typeof(AbpTenantManagementDomainModule)
+        //typeof(AbpTenantManagementDomainModule)
     )]
     public class BaseServiceDomainModule : AbpModule
     {
