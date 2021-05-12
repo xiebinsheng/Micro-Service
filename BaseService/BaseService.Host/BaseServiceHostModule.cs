@@ -10,6 +10,7 @@ using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using TestService;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.MultiTenancy;
 using Volo.Abp.AspNetCore.Mvc;
@@ -36,6 +37,7 @@ namespace BaseService
         typeof(AbpPermissionManagementHttpApiModule),
         typeof(AbpTenantManagementHttpApiModule),
         typeof(AbpIdentityHttpApiModule),
+        typeof(TestServiceHttpApiModule),
         typeof(AbpAspNetCoreSerilogModule)
     )]
     public class BaseServiceHostModule : AbpModule

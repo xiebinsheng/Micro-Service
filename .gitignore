@@ -77,5 +77,8 @@ ModelManifest.xml
 #Backup file  
 *.bak
 
-#zzzili
+#
 v15/
+
+#Logs Folders
+Logs/

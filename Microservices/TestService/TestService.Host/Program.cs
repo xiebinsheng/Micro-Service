@@ -30,11 +30,18 @@ namespace TestService.Host
 #endif
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
                 .MinimumLevel.Override("Microsoft.EntityFrameworkCore", LogEventLevel.Warning)
-                .Enrich.WithProperty("Application", "BaseService")
+                .Enrich.WithProperty("Application", "TestService")
                 .Enrich.FromLogContext()
-                .WriteTo.Async(c => c.File("Logs/logs.txt"))
+                .WriteTo.Async(c => c.File(
+                    "Logs/logs.txt",
+                    rollingInterval: RollingInterval.Day,
+                    shared: true))
 #if DEBUG
-                .WriteTo.Async(c=>c.Console())
+                .WriteTo.Async(c => c.File(
+                    "Logs/logs.txt",
+                    rollingInterval: RollingInterval.Hour,
+                    shared: true))
+                .WriteTo.Async(c => c.Console())
 #endif
                 //.WriteTo.Elasticsearch(
                 //    new ElasticsearchSinkOptions(new Uri(configuration["ElasticSearch:Url"]))

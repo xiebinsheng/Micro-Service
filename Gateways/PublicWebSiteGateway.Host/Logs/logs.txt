@@ -5351,3 +5351,573 @@ Cannot resolve parameter 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGr
 2021-05-10 20:26:00.335 +08:00 [DBG] requestId: 0HM8JIC65LH5P:00000015, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
 2021-05-10 20:26:00.336 +08:00 [DBG] requestId: 0HM8JIC65LH5P:00000015, previousRequestId: no previous request id, message: ocelot pipeline finished
 2021-05-10 20:26:00.338 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/identity/my-profile/change-password application/json 66 - 204 0 - 193.6805ms
+2021-05-11 10:39:27.296 +08:00 [INF] Starting PublicWebSiteGateway.Host
+2021-05-11 10:39:37.629 +08:00 [INF] Loaded ABP modules:
+2021-05-11 10:39:37.632 +08:00 [INF] - PublicWebSiteGateway.Host.PublicWebSiteGatewayHostModule
+2021-05-11 10:39:37.633 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-05-11 10:39:37.633 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-05-11 10:39:37.634 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-05-11 10:39:37.635 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-05-11 10:39:37.635 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2021-05-11 10:39:37.636 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2021-05-11 10:39:37.637 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2021-05-11 10:39:37.638 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-05-11 10:39:37.638 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-05-11 10:39:37.639 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-05-11 10:39:37.640 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-05-11 10:39:37.640 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-05-11 10:39:37.641 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2021-05-11 10:39:37.642 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2021-05-11 10:39:37.643 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationModule
+2021-05-11 10:39:37.645 +08:00 [INF]                 - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-05-11 10:39:37.646 +08:00 [INF]                 - Volo.Abp.Settings.AbpSettingsModule
+2021-05-11 10:39:37.646 +08:00 [INF]                   - Volo.Abp.Security.AbpSecurityModule
+2021-05-11 10:39:37.647 +08:00 [INF]                   - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-05-11 10:39:37.648 +08:00 [INF]           - Volo.Abp.Threading.AbpThreadingModule
+2021-05-11 10:39:37.648 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-05-11 10:39:37.649 +08:00 [INF]         - Volo.Abp.Guids.AbpGuidsModule
+2021-05-11 10:39:37.650 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-05-11 10:39:37.650 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-05-11 10:39:37.651 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-05-11 10:39:37.652 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2021-05-11 10:39:37.652 +08:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-05-11 10:39:37.653 +08:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2021-05-11 10:39:37.655 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-05-11 10:39:37.656 +08:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2021-05-11 10:39:37.657 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-05-11 10:39:37.660 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-05-11 10:39:37.661 +08:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2021-05-11 10:39:37.663 +08:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-05-11 10:39:37.663 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-05-11 10:39:37.664 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-05-11 10:39:37.666 +08:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-05-11 10:39:37.667 +08:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-05-11 10:39:37.668 +08:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-05-11 10:39:37.669 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-05-11 10:39:37.671 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-05-11 10:39:37.672 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2021-05-11 10:39:37.675 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2021-05-11 10:39:37.676 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2021-05-11 10:39:37.677 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2021-05-11 10:39:37.679 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-05-11 10:39:37.680 +08:00 [INF]             - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-05-11 10:39:37.681 +08:00 [INF]             - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-05-11 10:39:37.682 +08:00 [INF]               - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-05-11 10:39:37.683 +08:00 [INF]             - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-05-11 10:39:37.684 +08:00 [INF]               - Volo.Abp.UI.AbpUiModule
+2021-05-11 10:39:37.685 +08:00 [INF]             - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-05-11 10:39:37.686 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationModule
+2021-05-11 10:39:37.688 +08:00 [INF]               - Volo.Abp.Features.AbpFeaturesModule
+2021-05-11 10:39:37.689 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2021-05-11 10:39:37.692 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2021-05-11 10:39:37.693 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2021-05-11 10:39:37.695 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2021-05-11 10:39:37.696 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-05-11 10:39:38.139 +08:00 [INF] Initialized all ABP modules.
+2021-05-11 10:39:38.179 +08:00 [INF] Now listening on: http://localhost:50001
+2021-05-11 10:39:38.182 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-11 10:39:38.184 +08:00 [INF] Hosting environment: Development
+2021-05-11 10:39:38.185 +08:00 [INF] Content root path: E:\2_Repositories\Micro-Service\Gateways\PublicWebSiteGateway.Host
+2021-05-11 10:39:39.606 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50001/Swagger/index.html - -
+2021-05-11 10:39:41.123 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-11 10:39:41.217 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50001/Swagger/index.html - - - 200 - text/html;charset=utf-8 1611.4998ms
+2021-05-11 10:39:41.327 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50001/swagger/v1/swagger.json - -
+2021-05-11 10:39:41.329 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-11 10:39:41.745 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 417.7891ms
+2021-05-11 10:40:13.660 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/identity/my-profile/change-password application/json 66
+2021-05-11 10:40:15.466 +08:00 [INF] Successfully validated the token.
+2021-05-11 10:40:15.470 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 10:40:15.500 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000002, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 10:40:15.516 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000002, previousRequestId: no previous request id, message: Upstream url path is /api/identity/my-profile/change-password
+2021-05-11 10:40:15.519 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000002, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 10:40:15.526 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000002, previousRequestId: no previous request id, message: downstream templates are /api/identity/my-profile/change-password
+2021-05-11 10:40:15.562 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000002, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/identity/my-profile/change-password
+2021-05-11 10:40:15.567 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000002, previousRequestId: no previous request id, message: No authentication needed for /api/identity/my-profile/change-password
+2021-05-11 10:40:15.569 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000002, previousRequestId: no previous request id, message: /api/identity/my-profile/change-password route does not require user to be authorized
+2021-05-11 10:40:15.709 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000002, previousRequestId: no previous request id, message: Downstream url is http://localhost:50003/api/identity/my-profile/change-password
+2021-05-11 10:40:17.821 +08:00 [WRN] requestId: 0HM8K4O2QFJF1:00000002, previousRequestId: no previous request id, message: 403 (Forbidden) status code, request uri: http://localhost:50003/api/identity/my-profile/change-password
+2021-05-11 10:40:17.824 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000002, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 10:40:17.843 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000002, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 10:40:17.851 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000002, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 10:40:17.862 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/identity/my-profile/change-password application/json 66 - 403 136 application/json;+charset=utf-8 4202.1094ms
+2021-05-11 10:41:36.139 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50001/api/abp/application-configuration - -
+2021-05-11 10:41:36.189 +08:00 [INF] Successfully validated the token.
+2021-05-11 10:41:36.190 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 10:41:36.192 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000003, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 10:41:36.194 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000003, previousRequestId: no previous request id, message: Upstream url path is /api/abp/application-configuration
+2021-05-11 10:41:36.196 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000003, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 10:41:36.197 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000003, previousRequestId: no previous request id, message: downstream templates are /api/abp/application-configuration
+2021-05-11 10:41:36.200 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000003, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/abp/application-configuration
+2021-05-11 10:41:36.201 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000003, previousRequestId: no previous request id, message: No authentication needed for /api/abp/application-configuration
+2021-05-11 10:41:36.203 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000003, previousRequestId: no previous request id, message: /api/abp/application-configuration route does not require user to be authorized
+2021-05-11 10:41:36.227 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000003, previousRequestId: no previous request id, message: Downstream url is http://localhost:50003/api/abp/application-configuration
+2021-05-11 10:41:37.307 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000003, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:50003/api/abp/application-configuration
+2021-05-11 10:41:37.308 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000003, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 10:41:37.312 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000003, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 10:41:37.314 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000003, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 10:41:37.315 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50001/api/abp/application-configuration - - - 200 46793 application/json;+charset=utf-8 1176.8141ms
+2021-05-11 10:45:21.404 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 10:45:21.405 +08:00 [INF] Successfully validated the token.
+2021-05-11 10:45:21.406 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 10:45:21.407 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000004, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 10:45:21.410 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000004, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 10:45:21.411 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000004, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 10:45:21.413 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000004, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 10:45:21.415 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000004, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 10:45:21.419 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000004, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 10:45:21.422 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000004, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 10:45:21.436 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000004, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 10:45:30.204 +08:00 [WRN] requestId: 0HM8K4O2QFJF1:00000004, previousRequestId: no previous request id, message: 403 (Forbidden) status code, request uri: http://localhost:50004/api/testService/faultGrade
+2021-05-11 10:45:30.205 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000004, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 10:45:30.207 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000004, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 10:45:30.208 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000004, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 10:45:30.210 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 403 3841 application/json;+charset=utf-8 8806.9338ms
+2021-05-11 10:45:38.119 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 10:45:38.121 +08:00 [INF] Successfully validated the token.
+2021-05-11 10:45:38.122 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 10:45:38.123 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000005, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 10:45:38.124 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000005, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 10:45:38.125 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000005, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 10:45:38.128 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000005, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 10:45:38.132 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000005, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 10:45:38.133 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000005, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 10:45:38.135 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000005, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 10:45:38.141 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000005, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 10:45:43.166 +08:00 [WRN] requestId: 0HM8K4O2QFJF1:00000005, previousRequestId: no previous request id, message: 403 (Forbidden) status code, request uri: http://localhost:50004/api/testService/faultGrade
+2021-05-11 10:45:43.168 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000005, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 10:45:43.172 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000005, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 10:45:43.174 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000005, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 10:45:43.177 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 403 3837 application/json;+charset=utf-8 5058.1131ms
+2021-05-11 10:46:10.524 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 10:46:10.526 +08:00 [INF] Successfully validated the token.
+2021-05-11 10:46:10.527 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 10:46:10.529 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000006, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 10:46:10.531 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000006, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 10:46:10.532 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000006, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 10:46:10.534 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000006, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 10:46:10.535 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000006, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 10:46:10.537 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000006, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 10:46:10.541 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000006, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 10:46:10.561 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000006, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 10:46:10.660 +08:00 [WRN] requestId: 0HM8K4O2QFJF1:00000006, previousRequestId: no previous request id, message: 403 (Forbidden) status code, request uri: http://localhost:50004/api/testService/faultGrade
+2021-05-11 10:46:10.663 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000006, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 10:46:10.666 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000006, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 10:46:10.668 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000006, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 10:46:10.670 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 403 3837 application/json;+charset=utf-8 146.0747ms
+2021-05-11 10:46:25.110 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 10:46:25.111 +08:00 [INF] Successfully validated the token.
+2021-05-11 10:46:25.112 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 10:46:25.113 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000007, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 10:46:25.116 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000007, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 10:46:25.118 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000007, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 10:46:25.121 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000007, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 10:46:25.122 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000007, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 10:46:25.123 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000007, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 10:46:25.124 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000007, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 10:46:25.129 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000007, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 10:46:25.193 +08:00 [WRN] requestId: 0HM8K4O2QFJF1:00000007, previousRequestId: no previous request id, message: 403 (Forbidden) status code, request uri: http://localhost:50004/api/testService/faultGrade
+2021-05-11 10:46:25.195 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000007, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 10:46:25.198 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000007, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 10:46:25.203 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000007, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 10:46:25.207 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 403 3841 application/json;+charset=utf-8 97.0352ms
+2021-05-11 10:50:13.405 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 10:50:13.408 +08:00 [INF] Successfully validated the token.
+2021-05-11 10:50:13.409 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 10:50:13.411 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000008, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 10:50:13.413 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000008, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 10:50:13.415 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000008, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 10:50:13.416 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000008, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 10:50:13.421 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000008, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 10:50:13.423 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000008, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 10:50:13.424 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000008, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 10:50:13.446 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000008, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 10:50:13.518 +08:00 [WRN] requestId: 0HM8K4O2QFJF1:00000008, previousRequestId: no previous request id, message: 403 (Forbidden) status code, request uri: http://localhost:50004/api/testService/faultGrade
+2021-05-11 10:50:13.520 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000008, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 10:50:13.522 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000008, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 10:50:13.525 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000008, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 10:50:13.532 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 403 3841 application/json;+charset=utf-8 126.8909ms
+2021-05-11 10:50:22.879 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 10:50:22.882 +08:00 [INF] Successfully validated the token.
+2021-05-11 10:50:22.899 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 10:50:22.905 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000009, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 10:50:22.906 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000009, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 10:50:22.908 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000009, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 10:50:22.910 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000009, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 10:50:22.911 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000009, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 10:50:22.913 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000009, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 10:50:22.916 +08:00 [INF] requestId: 0HM8K4O2QFJF1:00000009, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 10:50:22.929 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000009, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 10:50:22.996 +08:00 [WRN] requestId: 0HM8K4O2QFJF1:00000009, previousRequestId: no previous request id, message: 403 (Forbidden) status code, request uri: http://localhost:50004/api/testService/faultGrade
+2021-05-11 10:50:23.002 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000009, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 10:50:23.008 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000009, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 10:50:23.011 +08:00 [DBG] requestId: 0HM8K4O2QFJF1:00000009, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 10:50:23.032 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 403 3837 application/json;+charset=utf-8 152.7597ms
+2021-05-11 13:33:21.336 +08:00 [INF] Starting PublicWebSiteGateway.Host
+2021-05-11 13:33:24.017 +08:00 [INF] Loaded ABP modules:
+2021-05-11 13:33:24.020 +08:00 [INF] - PublicWebSiteGateway.Host.PublicWebSiteGatewayHostModule
+2021-05-11 13:33:24.020 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-05-11 13:33:24.021 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-05-11 13:33:24.022 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-05-11 13:33:24.022 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-05-11 13:33:24.023 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2021-05-11 13:33:24.023 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2021-05-11 13:33:24.024 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2021-05-11 13:33:24.024 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-05-11 13:33:24.025 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-05-11 13:33:24.026 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-05-11 13:33:24.027 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-05-11 13:33:24.027 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-05-11 13:33:24.028 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2021-05-11 13:33:24.028 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2021-05-11 13:33:24.029 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationModule
+2021-05-11 13:33:24.029 +08:00 [INF]                 - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-05-11 13:33:24.030 +08:00 [INF]                 - Volo.Abp.Settings.AbpSettingsModule
+2021-05-11 13:33:24.030 +08:00 [INF]                   - Volo.Abp.Security.AbpSecurityModule
+2021-05-11 13:33:24.031 +08:00 [INF]                   - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-05-11 13:33:24.031 +08:00 [INF]           - Volo.Abp.Threading.AbpThreadingModule
+2021-05-11 13:33:24.032 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-05-11 13:33:24.033 +08:00 [INF]         - Volo.Abp.Guids.AbpGuidsModule
+2021-05-11 13:33:24.033 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-05-11 13:33:24.034 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-05-11 13:33:24.034 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-05-11 13:33:24.035 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2021-05-11 13:33:24.035 +08:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-05-11 13:33:24.036 +08:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2021-05-11 13:33:24.037 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-05-11 13:33:24.037 +08:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2021-05-11 13:33:24.038 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-05-11 13:33:24.039 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-05-11 13:33:24.040 +08:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2021-05-11 13:33:24.041 +08:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-05-11 13:33:24.042 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-05-11 13:33:24.043 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-05-11 13:33:24.043 +08:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-05-11 13:33:24.044 +08:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-05-11 13:33:24.045 +08:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-05-11 13:33:24.046 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-05-11 13:33:24.046 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-05-11 13:33:24.047 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2021-05-11 13:33:24.048 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2021-05-11 13:33:24.048 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2021-05-11 13:33:24.049 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2021-05-11 13:33:24.050 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-05-11 13:33:24.051 +08:00 [INF]             - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-05-11 13:33:24.051 +08:00 [INF]             - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-05-11 13:33:24.052 +08:00 [INF]               - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-05-11 13:33:24.053 +08:00 [INF]             - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-05-11 13:33:24.054 +08:00 [INF]               - Volo.Abp.UI.AbpUiModule
+2021-05-11 13:33:24.054 +08:00 [INF]             - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-05-11 13:33:24.055 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationModule
+2021-05-11 13:33:24.057 +08:00 [INF]               - Volo.Abp.Features.AbpFeaturesModule
+2021-05-11 13:33:24.058 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2021-05-11 13:33:24.058 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2021-05-11 13:33:24.059 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2021-05-11 13:33:24.060 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2021-05-11 13:33:24.061 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-05-11 13:33:24.364 +08:00 [INF] Initialized all ABP modules.
+2021-05-11 13:33:24.405 +08:00 [INF] Now listening on: http://localhost:50001
+2021-05-11 13:33:24.408 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-11 13:33:24.409 +08:00 [INF] Hosting environment: Development
+2021-05-11 13:33:24.409 +08:00 [INF] Content root path: E:\2_Repositories\Micro-Service\Gateways\PublicWebSiteGateway.Host
+2021-05-11 13:33:26.017 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50001/Swagger/index.html - -
+2021-05-11 13:33:26.279 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-11 13:33:26.376 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50001/Swagger/index.html - - - 200 - text/html;charset=utf-8 359.5679ms
+2021-05-11 13:33:26.495 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50001/swagger/v1/swagger.json - -
+2021-05-11 13:33:26.497 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-05-11 13:33:26.747 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 252.2477ms
+2021-05-11 13:36:35.229 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 13:36:35.835 +08:00 [INF] Successfully validated the token.
+2021-05-11 13:36:35.839 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 13:36:35.844 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000002, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 13:36:35.850 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000002, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 13:36:35.853 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000002, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 13:36:35.860 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000002, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 13:36:35.899 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000002, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 13:36:35.905 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000002, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 13:36:35.908 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000002, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 13:36:36.122 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000002, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 13:36:38.211 +08:00 [WRN] requestId: 0HM8K7P61VS3D:00000002, previousRequestId: no previous request id, message: 403 (Forbidden) status code, request uri: http://localhost:50004/api/testService/faultGrade
+2021-05-11 13:36:38.212 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000002, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 13:36:38.231 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000002, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 13:36:38.238 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000002, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 13:36:38.242 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 403 3837 application/json;+charset=utf-8 3012.6671ms
+2021-05-11 13:37:00.444 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 13:37:00.446 +08:00 [INF] Successfully validated the token.
+2021-05-11 13:37:00.446 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 13:37:00.447 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000003, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 13:37:00.448 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000003, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 13:37:00.449 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000003, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 13:37:00.451 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000003, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 13:37:00.452 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000003, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 13:37:00.453 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000003, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 13:37:00.456 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000003, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 13:37:00.470 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000003, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 13:37:00.549 +08:00 [WRN] requestId: 0HM8K7P61VS3D:00000003, previousRequestId: no previous request id, message: 403 (Forbidden) status code, request uri: http://localhost:50004/api/testService/faultGrade
+2021-05-11 13:37:00.551 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000003, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 13:37:00.554 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000003, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 13:37:00.556 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000003, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 13:37:00.558 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 403 3841 application/json;+charset=utf-8 114.0221ms
+2021-05-11 13:40:34.694 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50001/api/abp/application-configuration - -
+2021-05-11 13:40:34.715 +08:00 [INF] Successfully validated the token.
+2021-05-11 13:40:34.716 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 13:40:34.717 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000004, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 13:40:34.719 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000004, previousRequestId: no previous request id, message: Upstream url path is /api/abp/application-configuration
+2021-05-11 13:40:34.720 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000004, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 13:40:34.722 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000004, previousRequestId: no previous request id, message: downstream templates are /api/abp/application-configuration
+2021-05-11 13:40:34.724 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000004, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/abp/application-configuration
+2021-05-11 13:40:34.725 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000004, previousRequestId: no previous request id, message: No authentication needed for /api/abp/application-configuration
+2021-05-11 13:40:34.726 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000004, previousRequestId: no previous request id, message: /api/abp/application-configuration route does not require user to be authorized
+2021-05-11 13:40:34.742 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000004, previousRequestId: no previous request id, message: Downstream url is http://localhost:50003/api/abp/application-configuration
+2021-05-11 13:40:35.955 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000004, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:50003/api/abp/application-configuration
+2021-05-11 13:40:35.956 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000004, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 13:40:35.958 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000004, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 13:40:35.960 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000004, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 13:40:35.961 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50001/api/abp/application-configuration - - - 200 46781 application/json;+charset=utf-8 1267.9884ms
+2021-05-11 16:10:18.269 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 16:10:18.277 +08:00 [INF] Successfully validated the token.
+2021-05-11 16:10:18.279 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 16:10:18.280 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000005, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 16:10:18.281 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000005, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 16:10:18.282 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000005, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 16:10:18.283 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000005, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 16:10:18.285 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000005, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 16:10:18.286 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000005, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 16:10:18.287 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000005, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 16:10:18.337 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000005, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 16:10:19.085 +08:00 [WRN] requestId: 0HM8K7P61VS3D:00000005, previousRequestId: no previous request id, message: 500 (Internal Server Error) status code, request uri: http://localhost:50004/api/testService/faultGrade
+2021-05-11 16:10:19.087 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000005, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 16:10:19.089 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000005, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 16:10:19.090 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000005, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 16:10:19.091 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 500 3704 application/json;+charset=utf-8 823.3081ms
+2021-05-11 16:10:32.607 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 16:10:32.608 +08:00 [INF] Successfully validated the token.
+2021-05-11 16:10:32.609 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 16:10:32.611 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000006, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 16:10:32.613 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000006, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 16:10:32.614 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000006, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 16:10:32.615 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000006, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 16:10:32.617 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000006, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 16:10:32.619 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000006, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 16:10:32.620 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000006, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 16:10:32.631 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000006, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 16:10:32.642 +08:00 [WRN] requestId: 0HM8K7P61VS3D:00000006, previousRequestId: no previous request id, message: 500 (Internal Server Error) status code, request uri: http://localhost:50004/api/testService/faultGrade
+2021-05-11 16:10:32.643 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000006, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 16:10:32.645 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000006, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 16:10:32.647 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000006, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 16:10:32.650 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 500 3704 application/json;+charset=utf-8 43.6149ms
+2021-05-11 16:10:51.695 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 16:10:51.698 +08:00 [INF] Successfully validated the token.
+2021-05-11 16:10:51.699 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 16:10:51.702 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000007, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 16:10:51.704 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000007, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 16:10:51.707 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000007, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 16:10:51.710 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000007, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 16:10:51.711 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000007, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 16:10:51.712 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000007, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 16:10:51.714 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000007, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 16:10:51.733 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000007, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 16:10:51.746 +08:00 [WRN] requestId: 0HM8K7P61VS3D:00000007, previousRequestId: no previous request id, message: 500 (Internal Server Error) status code, request uri: http://localhost:50004/api/testService/faultGrade
+2021-05-11 16:10:51.748 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000007, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 16:10:51.749 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000007, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 16:10:51.751 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000007, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 16:10:51.752 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 500 3704 application/json;+charset=utf-8 57.1150ms
+2021-05-11 16:11:49.714 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50001/api/baseService/user/4137B08B-6AED-7CD9-D363-39FC671ABA77 - -
+2021-05-11 16:11:49.717 +08:00 [INF] Successfully validated the token.
+2021-05-11 16:11:49.718 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 16:11:49.720 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000008, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 16:11:49.721 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000008, previousRequestId: no previous request id, message: Upstream url path is /api/baseService/user/4137B08B-6AED-7CD9-D363-39FC671ABA77
+2021-05-11 16:11:49.722 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000008, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 16:11:49.726 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000008, previousRequestId: no previous request id, message: downstream templates are /api/baseService/user/4137B08B-6AED-7CD9-D363-39FC671ABA77
+2021-05-11 16:11:49.727 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000008, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/baseService/user/4137B08B-6AED-7CD9-D363-39FC671ABA77
+2021-05-11 16:11:49.728 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000008, previousRequestId: no previous request id, message: No authentication needed for /api/baseService/user/4137B08B-6AED-7CD9-D363-39FC671ABA77
+2021-05-11 16:11:49.729 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000008, previousRequestId: no previous request id, message: /api/baseService/user/4137B08B-6AED-7CD9-D363-39FC671ABA77 route does not require user to be authorized
+2021-05-11 16:11:49.780 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000008, previousRequestId: no previous request id, message: Downstream url is http://localhost:50003/api/baseService/user/4137B08B-6AED-7CD9-D363-39FC671ABA77
+2021-05-11 16:11:51.196 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000008, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:50003/api/baseService/user/4137B08B-6AED-7CD9-D363-39FC671ABA77
+2021-05-11 16:11:51.198 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000008, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 16:11:51.200 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000008, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 16:11:51.201 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000008, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 16:11:51.202 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50001/api/baseService/user/4137B08B-6AED-7CD9-D363-39FC671ABA77 - - - 200 621 application/json;+charset=utf-8 1487.7907ms
+2021-05-11 16:11:53.911 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 16:11:53.913 +08:00 [INF] Successfully validated the token.
+2021-05-11 16:11:53.913 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 16:11:53.915 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000009, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 16:11:53.916 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000009, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 16:11:53.917 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000009, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 16:11:53.918 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000009, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 16:11:53.920 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000009, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 16:11:53.923 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000009, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 16:11:53.925 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000009, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 16:11:53.939 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000009, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 16:11:54.817 +08:00 [WRN] requestId: 0HM8K7P61VS3D:00000009, previousRequestId: no previous request id, message: 500 (Internal Server Error) status code, request uri: http://localhost:50004/api/testService/faultGrade
+2021-05-11 16:11:54.819 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000009, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 16:11:54.822 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000009, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 16:11:54.823 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000009, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 16:11:54.824 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 500 3704 application/json;+charset=utf-8 913.3838ms
+2021-05-11 16:12:32.739 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 16:12:32.742 +08:00 [INF] Successfully validated the token.
+2021-05-11 16:12:32.744 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 16:12:32.746 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000A, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 16:12:32.748 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000A, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 16:12:32.750 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000A, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 16:12:32.751 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000A, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 16:12:32.753 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000A, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 16:12:32.754 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000A, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 16:12:32.755 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000A, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 16:12:32.779 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000A, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 16:12:40.081 +08:00 [WRN] requestId: 0HM8K7P61VS3D:0000000A, previousRequestId: no previous request id, message: 403 (Forbidden) status code, request uri: http://localhost:50004/api/testService/faultGrade
+2021-05-11 16:12:40.083 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000A, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 16:12:40.085 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000A, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 16:12:40.086 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000A, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 16:12:40.087 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 403 3840 application/json;+charset=utf-8 7348.6588ms
+2021-05-11 16:15:03.376 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 16:15:03.397 +08:00 [INF] Successfully validated the token.
+2021-05-11 16:15:03.398 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 16:15:03.400 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000B, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 16:15:03.404 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000B, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 16:15:03.407 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000B, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 16:15:03.408 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000B, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 16:15:03.409 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000B, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 16:15:03.410 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000B, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 16:15:03.411 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000B, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 16:15:03.427 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000B, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 16:15:54.520 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000B, previousRequestId: no previous request id, message: IHttpRequester returned an error, setting pipeline error
+2021-05-11 16:15:54.524 +08:00 [WRN] requestId: 0HM8K7P61VS3D:0000000B, previousRequestId: no previous request id, message: Error Code: ConnectionToDownstreamServiceError Message: Error connecting to downstream service, exception: System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: Unable to read data from the transport connection: 远程主机强迫关闭了一个现有的连接。.
+ ---> System.Net.Sockets.SocketException (10054): 远程主机强迫关闭了一个现有的连接。
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.FillAsync(Boolean async)
+   at System.Net.Http.HttpConnection.ReadNextResponseHeaderLineAsync(Boolean async, Boolean foldedHeadersAllowed)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Ocelot.Requester.HttpClientHttpRequester.GetResponse(HttpContext httpContext) errors found in ResponderMiddleware. Setting error response for request path:/api/testService/faultGrade, request method: POST
+2021-05-11 16:15:54.533 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000B, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 16:15:54.536 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 502 0 - 51161.1025ms
+2021-05-11 16:16:06.214 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 16:16:06.216 +08:00 [INF] Successfully validated the token.
+2021-05-11 16:16:06.216 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 16:16:06.217 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000C, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 16:16:06.218 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000C, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 16:16:06.219 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000C, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 16:16:06.220 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000C, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 16:16:06.221 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000C, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 16:16:06.222 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000C, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 16:16:06.224 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000C, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 16:16:06.244 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000C, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 16:16:25.248 +08:00 [WRN] requestId: 0HM8K7P61VS3D:0000000C, previousRequestId: no previous request id, message: 403 (Forbidden) status code, request uri: http://localhost:50004/api/testService/faultGrade
+2021-05-11 16:16:25.250 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000C, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 16:16:25.254 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000C, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 16:16:25.257 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000C, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 16:16:25.258 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 403 3840 application/json;+charset=utf-8 19044.3776ms
+2021-05-11 16:16:29.136 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 16:16:29.138 +08:00 [INF] Successfully validated the token.
+2021-05-11 16:16:29.139 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 16:16:29.140 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000D, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 16:16:29.141 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000D, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 16:16:29.142 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000D, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 16:16:29.143 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000D, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 16:16:29.144 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000D, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 16:16:29.145 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000D, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 16:16:29.146 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000D, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 16:16:29.157 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000D, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 16:17:12.453 +08:00 [WRN] requestId: 0HM8K7P61VS3D:0000000D, previousRequestId: no previous request id, message: 403 (Forbidden) status code, request uri: http://localhost:50004/api/testService/faultGrade
+2021-05-11 16:17:12.456 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000D, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 16:17:12.460 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000D, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 16:17:12.462 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000D, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 16:17:12.464 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 403 3836 application/json;+charset=utf-8 43328.3268ms
+2021-05-11 16:17:19.148 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84
+2021-05-11 16:17:19.150 +08:00 [INF] Successfully validated the token.
+2021-05-11 16:17:19.151 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 16:17:19.152 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000E, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 16:17:19.153 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000E, previousRequestId: no previous request id, message: Upstream url path is /api/testService/faultGrade
+2021-05-11 16:17:19.154 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000E, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 16:17:19.156 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000E, previousRequestId: no previous request id, message: downstream templates are /api/testService/faultGrade
+2021-05-11 16:17:19.158 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000E, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/testService/faultGrade
+2021-05-11 16:17:19.159 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000E, previousRequestId: no previous request id, message: No authentication needed for /api/testService/faultGrade
+2021-05-11 16:17:19.161 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000E, previousRequestId: no previous request id, message: /api/testService/faultGrade route does not require user to be authorized
+2021-05-11 16:17:19.176 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000E, previousRequestId: no previous request id, message: Downstream url is http://localhost:50004/api/testService/faultGrade
+2021-05-11 16:18:49.195 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000E, previousRequestId: no previous request id, message: IHttpRequester returned an error, setting pipeline error
+2021-05-11 16:18:49.200 +08:00 [WRN] requestId: 0HM8K7P61VS3D:0000000E, previousRequestId: no previous request id, message: Error Code: RequestCanceled Message: The request was canceled due to the configured HttpClient.Timeout of 90 seconds elapsing. errors found in ResponderMiddleware. Setting error response for request path:/api/testService/faultGrade, request method: POST
+2021-05-11 16:18:49.201 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000E, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 16:18:49.203 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50001/api/testService/faultGrade application/json 84 - 499 0 - 90055.1546ms
+2021-05-11 18:29:22.744 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50001/api/abp/application-configuration - -
+2021-05-11 18:29:22.750 +08:00 [INF] Successfully validated the token.
+2021-05-11 18:29:22.751 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 18:29:22.754 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000F, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 18:29:22.755 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000F, previousRequestId: no previous request id, message: Upstream url path is /api/abp/application-configuration
+2021-05-11 18:29:22.756 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000F, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 18:29:22.757 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000F, previousRequestId: no previous request id, message: downstream templates are /api/abp/application-configuration
+2021-05-11 18:29:22.758 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000F, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/abp/application-configuration
+2021-05-11 18:29:22.759 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000F, previousRequestId: no previous request id, message: No authentication needed for /api/abp/application-configuration
+2021-05-11 18:29:22.760 +08:00 [INF] requestId: 0HM8K7P61VS3D:0000000F, previousRequestId: no previous request id, message: /api/abp/application-configuration route does not require user to be authorized
+2021-05-11 18:29:22.924 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000F, previousRequestId: no previous request id, message: there was an error leasing the loadbalancer, setting pipeline error
+2021-05-11 18:29:22.927 +08:00 [WRN] requestId: 0HM8K7P61VS3D:0000000F, previousRequestId: no previous request id, message: Error Code: ServicesAreEmptyError Message: services were empty for baseService errors found in ResponderMiddleware. Setting error response for request path:/api/abp/application-configuration, request method: GET
+2021-05-11 18:29:22.928 +08:00 [DBG] requestId: 0HM8K7P61VS3D:0000000F, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 18:29:22.930 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50001/api/abp/application-configuration - - - 404 0 - 186.0023ms
+2021-05-11 18:29:35.988 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50001/api/abp/application-configuration - -
+2021-05-11 18:29:35.990 +08:00 [INF] Successfully validated the token.
+2021-05-11 18:29:35.991 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 18:29:35.995 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000010, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 18:29:35.997 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000010, previousRequestId: no previous request id, message: Upstream url path is /api/abp/application-configuration
+2021-05-11 18:29:35.999 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000010, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 18:29:36.001 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000010, previousRequestId: no previous request id, message: downstream templates are /api/abp/application-configuration
+2021-05-11 18:29:36.002 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000010, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/abp/application-configuration
+2021-05-11 18:29:36.004 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000010, previousRequestId: no previous request id, message: No authentication needed for /api/abp/application-configuration
+2021-05-11 18:29:36.005 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000010, previousRequestId: no previous request id, message: /api/abp/application-configuration route does not require user to be authorized
+2021-05-11 18:29:36.053 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000010, previousRequestId: no previous request id, message: there was an error leasing the loadbalancer, setting pipeline error
+2021-05-11 18:29:36.055 +08:00 [WRN] requestId: 0HM8K7P61VS3D:00000010, previousRequestId: no previous request id, message: Error Code: ServicesAreEmptyError Message: services were empty for baseService errors found in ResponderMiddleware. Setting error response for request path:/api/abp/application-configuration, request method: GET
+2021-05-11 18:29:36.056 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000010, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 18:29:36.057 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50001/api/abp/application-configuration - - - 404 0 - 68.9048ms
+2021-05-11 18:29:58.628 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50001/api/baseService/user?Filter=&Sorting=&SkipCount=0&MaxResultCount=10 - -
+2021-05-11 18:29:58.630 +08:00 [INF] Successfully validated the token.
+2021-05-11 18:29:58.631 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 18:29:58.632 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000011, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 18:29:58.633 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000011, previousRequestId: no previous request id, message: Upstream url path is /api/baseService/user
+2021-05-11 18:29:58.634 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000011, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 18:29:58.636 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000011, previousRequestId: no previous request id, message: downstream templates are /api/baseService/user
+2021-05-11 18:29:58.640 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000011, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/baseService/user
+2021-05-11 18:29:58.641 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000011, previousRequestId: no previous request id, message: No authentication needed for /api/baseService/user
+2021-05-11 18:29:58.643 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000011, previousRequestId: no previous request id, message: /api/baseService/user route does not require user to be authorized
+2021-05-11 18:29:58.742 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000011, previousRequestId: no previous request id, message: Downstream url is http://localhost:50003/api/baseService/user?Filter=&Sorting=&SkipCount=0&MaxResultCount=10
+2021-05-11 18:30:02.789 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000011, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:50003/api/baseService/user?Filter=&Sorting=&SkipCount=0&MaxResultCount=10
+2021-05-11 18:30:02.791 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000011, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 18:30:02.792 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000011, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 18:30:02.793 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000011, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 18:30:02.797 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50001/api/baseService/user?Filter=&Sorting=&SkipCount=0&MaxResultCount=10 - - - 200 1195 application/json;+charset=utf-8 4169.1264ms
+2021-05-11 18:30:16.652 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50001/api/abp/application-configuration - -
+2021-05-11 18:30:16.656 +08:00 [INF] Successfully validated the token.
+2021-05-11 18:30:16.657 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 18:30:16.660 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000012, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 18:30:16.662 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000012, previousRequestId: no previous request id, message: Upstream url path is /api/abp/application-configuration
+2021-05-11 18:30:16.664 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000012, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 18:30:16.666 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000012, previousRequestId: no previous request id, message: downstream templates are /api/abp/application-configuration
+2021-05-11 18:30:16.667 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000012, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/abp/application-configuration
+2021-05-11 18:30:16.668 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000012, previousRequestId: no previous request id, message: No authentication needed for /api/abp/application-configuration
+2021-05-11 18:30:16.670 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000012, previousRequestId: no previous request id, message: /api/abp/application-configuration route does not require user to be authorized
+2021-05-11 18:30:16.766 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000012, previousRequestId: no previous request id, message: Downstream url is http://localhost:50003/api/abp/application-configuration
+2021-05-11 18:30:17.491 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000012, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:50003/api/abp/application-configuration
+2021-05-11 18:30:17.492 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000012, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 18:30:17.494 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000012, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 18:30:17.496 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000012, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 18:30:17.497 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50001/api/abp/application-configuration - - - 200 46781 application/json;+charset=utf-8 844.4365ms
+2021-05-11 18:32:04.349 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50001/api/abp/application-configuration - -
+2021-05-11 18:32:04.351 +08:00 [INF] Successfully validated the token.
+2021-05-11 18:32:04.351 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-05-11 18:32:04.353 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000013, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-05-11 18:32:04.353 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000013, previousRequestId: no previous request id, message: Upstream url path is /api/abp/application-configuration
+2021-05-11 18:32:04.354 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000013, previousRequestId: no previous request id, message: Selected DownstreamRouteCreator as DownstreamRouteProvider for this request
+2021-05-11 18:32:04.355 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000013, previousRequestId: no previous request id, message: downstream templates are /api/abp/application-configuration
+2021-05-11 18:32:04.357 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000013, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/abp/application-configuration
+2021-05-11 18:32:04.357 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000013, previousRequestId: no previous request id, message: No authentication needed for /api/abp/application-configuration
+2021-05-11 18:32:04.359 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000013, previousRequestId: no previous request id, message: /api/abp/application-configuration route does not require user to be authorized
+2021-05-11 18:32:04.433 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000013, previousRequestId: no previous request id, message: Downstream url is http://localhost:50003/api/abp/application-configuration
+2021-05-11 18:32:05.823 +08:00 [INF] requestId: 0HM8K7P61VS3D:00000013, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:50003/api/abp/application-configuration
+2021-05-11 18:32:05.826 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000013, previousRequestId: no previous request id, message: setting http response message
+2021-05-11 18:32:05.830 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000013, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-05-11 18:32:05.831 +08:00 [DBG] requestId: 0HM8K7P61VS3D:00000013, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-05-11 18:32:05.832 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50001/api/abp/application-configuration - - - 200 49899 application/json;+charset=utf-8 1482.9286ms
