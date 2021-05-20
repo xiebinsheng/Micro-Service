@@ -10,6 +10,9 @@ using Volo.Abp.ObjectExtending;
 using IdentityUser = Volo.Abp.Identity.IdentityUser;
 using IdentityRole = Volo.Abp.Identity.IdentityRole;
 using Volo.Abp;
+using TestService.Application.Contracts.Base.Faults;
+using TestService.Application.Contracts.Base.Faults.Dtos;
+using Volo.Abp.Auditing;
 
 namespace BaseService.Systems.UserManagement
 {
@@ -19,14 +22,18 @@ namespace BaseService.Systems.UserManagement
         protected IIdentityUserRepository _userRepository { get; }
         public IIdentityRoleRepository _roleRepository { get; }
 
+        private readonly IFaultGradeAppService _faultGradeRemoteAppService;
+
         public UserAppService(
             IdentityUserManager userManager,
             IIdentityUserRepository userRepository,
-            IIdentityRoleRepository roleRepository)
+            IIdentityRoleRepository roleRepository,
+            IFaultGradeAppService faultGradeRemoteAppService)
         {
             _userManager = userManager;
             _userRepository = userRepository;
             _roleRepository = roleRepository;
+            _faultGradeRemoteAppService = faultGradeRemoteAppService;
         }
 
         /// <summary>
@@ -35,9 +42,19 @@ namespace BaseService.Systems.UserManagement
         /// <param name="id"></param>
         /// <returns></returns>
         [Authorize(IdentityPermissions.Users.Default)]
+        [DisableAuditing]
         public virtual async Task<IdentityUserDto> GetAsync(Guid id)
         {
             var user = await _userManager.GetByIdAsync(id);
+
+            //var input = new CreateFaultGradeInput
+            //{
+            //    FaultGradeNo = "11111",
+            //    FaultGradeName = "111",
+            //    FaultGradeColor = 1
+            //};
+            //var aaa = await _faultGradeRemoteAppService.CreateAsync(input);
+
             return ObjectMapper.Map<IdentityUser, IdentityUserDto>(user);
         }
 

@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Volo.Abp.Application.Dtos;
 
 namespace TestService.Application.Contracts.Base.Faults.Dtos
 {
-    public class FaultGradeDto: EntityDto<int>
+    /// <summary>
+    /// 【数据传输对象】创建或更新报警级别
+    /// </summary>
+    public class UpdateFaultGradeInput
     {
+        public int Id { get; set; }
         /// <summary>
         /// 报警级别编码
         /// </summary>

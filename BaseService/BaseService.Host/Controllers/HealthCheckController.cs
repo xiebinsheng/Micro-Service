@@ -1,13 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Threading.Tasks;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Auditing;
 
 namespace BaseService.Controllers
 {
-    [Route("HealthCheck")]
-    [ApiController]
+    [ControllerName("HealthCheck")]
+    //[ApiController]
     [DisableAuditing]
     public class HealthCheckController : AbpController
     {
@@ -16,7 +17,9 @@ namespace BaseService.Controllers
         }
 
         [HttpGet]
-        public ActionResult Get()
+        [Route("HealthCheck")]
+        [DisableAuditing]
+        public async Task<ActionResult> Get()
         {
             var IPAddress = HttpContext.Connection.LocalIpAddress.MapToIPv4();
             var port = HttpContext.Connection.LocalPort;

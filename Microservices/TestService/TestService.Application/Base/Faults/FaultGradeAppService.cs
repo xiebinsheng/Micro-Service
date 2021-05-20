@@ -11,6 +11,9 @@ using Volo.Abp.Users;
 using System;
 using Volo.Abp.Localization;
 using System.Globalization;
+using Volo.Abp.Application.Dtos;
+using Volo.Abp.Auditing;
+using Microsoft.Extensions.Logging;
 //using Abp.Web.Models;
 
 namespace TestService.Application.Base.Faults
@@ -24,6 +27,7 @@ namespace TestService.Application.Base.Faults
         private readonly ICurrentUser _currentUser;
         private readonly ILanguageProvider _languageProvider;
         //private readonly ILanguageInfo _languageInfo;
+        private readonly ILogger<FaultGradeAppService> _logger;
 
         public FaultGradeAppService(
             IRepository<FaultGrade, int> faultGradeRepository,
@@ -31,7 +35,8 @@ namespace TestService.Application.Base.Faults
             //ILanguageInfo languageInfo,
             ILanguageProvider languageProvider,
             //IIdentityUserLookupAppService identityUserLookupAppService,
-            ICurrentUser currentUser)
+            ICurrentUser currentUser,
+            ILogger<FaultGradeAppService> logger)
         {
             _faultGradeRepository = faultGradeRepository;
             _localizer = localizer;
@@ -39,6 +44,22 @@ namespace TestService.Application.Base.Faults
             _languageProvider = languageProvider;
             //_identityUserLookupAppService = identityUserLookupAppService;
             _currentUser = currentUser;
+            _logger = logger;
+        }
+
+        public virtual async Task<FaultGradeDto> UpdateAsync(UpdateFaultGradeInput input)
+        {
+            var existFaultGrade = await _faultGradeRepository.FindAsync(input.Id);
+            if (existFaultGrade == null)
+            {
+                throw new UserFriendlyException(_localizer["FaultNoAlreadyExistsException", input.FaultGradeNo]);
+            }
+
+            ObjectMapper.Map(input, existFaultGrade);
+
+            var result = await _faultGradeRepository.UpdateAsync(existFaultGrade);
+
+            return ObjectMapper.Map<FaultGrade, FaultGradeDto>(result);
         }
 
         /// <summary>
@@ -57,6 +78,8 @@ namespace TestService.Application.Base.Faults
                 CultureInfo.CurrentCulture.Name,
                 CultureInfo.CurrentUICulture.Name
             );
+
+            _logger.LogInformation(currentLanguage.CultureName);
 
             //var ddd =await _identityUserLookupAppService.FindByIdAsync(new Guid("B3A4DE5A-0338-F82F-C71F-39FC33D8558A"));
 
@@ -84,6 +107,14 @@ namespace TestService.Application.Base.Faults
             var result = await _faultGradeRepository.InsertAsync(entity);
 
             return ObjectMapper.Map<FaultGrade, FaultGradeDto>(result);
+        }
+
+        [Audited]
+        public virtual async Task<FaultGradeDto> GetAsync(int id)
+        {
+            var entity = await _faultGradeRepository.GetAsync(id);
+            var dto = ObjectMapper.Map<FaultGrade, FaultGradeDto>(entity);
+            return dto;
         }
     }
 }

@@ -14,4 +14,8 @@
     <ProjectReference Include="..\TestService.Domain\TestService.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="CustomRepositories\" />
+  </ItemGroup>
+
 </Project>

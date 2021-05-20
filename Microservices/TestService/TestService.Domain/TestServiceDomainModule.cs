@@ -1,13 +1,16 @@
-﻿using Volo.Abp.Modularity;
+﻿using Volo.Abp.AuditLogging;
+using Volo.Abp.FeatureManagement;
+using Volo.Abp.Modularity;
 using Volo.Abp.MultiTenancy;
+using Volo.Abp.VirtualFileSystem;
 
 namespace TestService
 {
     [DependsOn(
-        typeof(TestServiceDomainSharedModule)
-        //typeof(AbpAuditLoggingDomainModule)
+        typeof(TestServiceDomainSharedModule),
+        typeof(AbpAuditLoggingDomainModule),
         //typeof(AbpBackgroundJobsDomainModule),
-        //typeof(AbpFeatureManagementDomainModule),
+        typeof(AbpFeatureManagementDomainModule)
         //typeof(AbpIdentityDomainModule),
         //typeof(AbpPermissionManagementDomainIdentityModule),
         //typeof(AbpIdentityServerDomainModule),
@@ -20,6 +23,12 @@ namespace TestService
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
+            Configure<AbpVirtualFileSystemOptions>(options =>
+            {
+                options.FileSets.AddEmbedded<TestServiceDomainModule>();
+            });
+
+
             // 注释原因，在TestServiceHttpApiHostModule中注入
             //Configure<AbpMultiTenancyOptions>(options =>
             //{

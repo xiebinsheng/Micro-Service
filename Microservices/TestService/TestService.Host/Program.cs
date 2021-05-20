@@ -35,6 +35,7 @@ namespace TestService.Host
                 .WriteTo.Async(c => c.File(
                     "Logs/logs.txt",
                     rollingInterval: RollingInterval.Day,
+                    retainedFileCountLimit:31,  //Ä¬ÈÏ¾ÍÊÇ31
                     shared: true))
 #if DEBUG
                 .WriteTo.Async(c => c.File(
@@ -74,7 +75,7 @@ namespace TestService.Host
             Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseUrls("http://*:50004").UseStartup<Startup>();
                 })
                 .UseAutofac()
                 .UseSerilog();

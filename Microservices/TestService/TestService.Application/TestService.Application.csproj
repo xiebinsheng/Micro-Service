@@ -4,6 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <AssemblyName>TestService.Application</AssemblyName>
     <RootNamespace>TestService.Application</RootNamespace>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>

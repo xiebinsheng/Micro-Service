@@ -25,6 +25,7 @@ namespace PublicWebSiteGateway.Host
     [DependsOn(
         typeof(AbpAutofacModule),
         typeof(AbpEntityFrameworkCoreSqlServerModule),
+        //typeof(AbpAuditLoggingEntityFrameworkCoreModule),
         typeof(AbpAspNetCoreSerilogModule),
         typeof(AbpPermissionManagementEntityFrameworkCoreModule),
         typeof(AbpSettingManagementEntityFrameworkCoreModule),

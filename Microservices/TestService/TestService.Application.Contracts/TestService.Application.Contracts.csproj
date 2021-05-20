@@ -2,10 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Ddd.Application" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application.Contracts" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,4 +1,5 @@
 ﻿using Consul;
+using Serilog;
 using System;
 
 namespace MicroService.Shared.ConsulServiceRegistration
@@ -7,6 +8,12 @@ namespace MicroService.Shared.ConsulServiceRegistration
     {
         public void Register(ConsulServiceOptions settings)
         {
+            var logger = new LoggerConfiguration().WriteTo.Async(c => c.File(
+                    "Logs/logs1111.txt",
+                    rollingInterval: RollingInterval.Day,
+                    retainedFileCountLimit: 31,  //默认就是31
+                    shared: true)).CreateLogger();
+
             // 1. 创建Consul客户端链接
             var consulClient = new ConsulClient(config =>
             {
@@ -36,6 +43,8 @@ namespace MicroService.Shared.ConsulServiceRegistration
                     TLSSkipVerify = true
                 }
             };
+
+            logger.Information("准备注册");
 
             // 3. 注册服务
             consulClient.Agent.ServiceRegister(registration).Wait();

@@ -6,8 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="TestService.Application.Contracts" Version="1.0.2" />
     <PackageReference Include="Volo.Abp.Account.Application" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.Http.Client" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.Http.Client.IdentityModel" Version="4.3.0" />
     <PackageReference Include="Volo.Abp.Identity.Application" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.IdentityModel" Version="4.3.0" />
     <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="4.3.0" />
     <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="4.3.0" />
   </ItemGroup>

@@ -17,6 +17,7 @@ using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc.AntiForgery;
 using Volo.Abp.AspNetCore.Serilog;
 using Volo.Abp.Auditing;
+using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.Autofac;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.Identity;
@@ -24,6 +25,7 @@ using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
 using Volo.Abp.MultiTenancy;
 using Volo.Abp.PermissionManagement.HttpApi;
+using Volo.Abp.SecurityLog;
 using Volo.Abp.TenantManagement;
 
 namespace BaseService
@@ -34,6 +36,7 @@ namespace BaseService
         typeof(BaseServiceEntityFrameworkCoreModule),
         typeof(BaseServiceHttpApiModule),
         typeof(AbpAspNetCoreMultiTenancyModule),
+        //typeof(AbpAuditLoggingEntityFrameworkCoreModule),
         typeof(AbpPermissionManagementHttpApiModule),
         typeof(AbpTenantManagementHttpApiModule),
         typeof(AbpIdentityHttpApiModule),
@@ -54,6 +57,7 @@ namespace BaseService
                 options.IsEnabled = false;
             });
 
+            // TODO:暂时禁用防止跨站请求伪造（XSRF/CSRF）攻击，待研究
             Configure<AbpAntiForgeryOptions>(options => { options.AutoValidate = false; });
 
             Configure<AbpAspNetCoreMvcOptions>(options =>
@@ -67,7 +71,7 @@ namespace BaseService
                      * 2、接着是路由路径，默认值为/app，如果我们需要修改成我们服务的名称，如下：给RootPath赋值为testService
                      * https://docs.abp.io/zh-Hans/abp/latest/API/Auto-API-Controllers
                      */
-                    settings.RootPath = "baseService";
+                    settings.RootPath = configuration["App:ServiceName"];
                     settings.UseV3UrlStyle = true;
                 });
             });
@@ -84,7 +88,7 @@ namespace BaseService
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "BaseService Service API",
+                    Title = "BaseService API",
                     Version = "v1",
                     Description="基础服务，用于管理平台公共业务"
                 });
@@ -119,6 +123,7 @@ namespace BaseService
                     });
             });
 
+            // 数据库上下文选项注入
             Configure<AbpDbContextOptions>(options =>
             {
                 options.UseSqlServer();
@@ -133,12 +138,16 @@ namespace BaseService
             context.Services.AddTransient<ConsulServiceOptions>();
             context.Services.AddTransient<IConsulServiceRegistry, ConsulServiceRegistry>();
 
+            // 审计日志选项注入
             Configure<AbpAuditingOptions>(options =>
             {
+                options.IsEnabled = true;
                 options.IsEnabledForGetRequests = true;
-                options.ApplicationName = "BaseService";
+                options.ApplicationName = configuration["App:ServiceName"];
+                //options.EntityHistorySelectors.AddAllEntities();
             });
 
+            // 跨域配置注入
             context.Services.AddCors(options =>
             {
                 options.AddPolicy(DefaultCorsPolicyName, builder =>
@@ -201,10 +210,11 @@ namespace BaseService
             app.UseSwagger();
             app.UseSwaggerUI(options =>
             {
-                options.SwaggerEndpoint("/swagger/v1/swagger.json", "BaseService Service API");
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "BaseService API");
                 options.RoutePrefix=string.Empty;
             });
 
+            //UseAuditing() 中间件应该被添加到ASP.NET Core请求管道,用于创建和保存审计日志
             app.UseAuditing();
             app.UseAbpSerilogEnrichers();
 

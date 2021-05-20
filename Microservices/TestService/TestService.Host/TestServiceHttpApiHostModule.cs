@@ -27,6 +27,10 @@ using Volo.Abp.AspNetCore.Mvc.ExceptionHandling;
 using Volo.Abp.AspNetCore.ExceptionHandling;
 using Volo.Abp.AspNetCore.Mvc.AntiForgery;
 using MicroService.Shared.ConsulServiceRegistration;
+using Volo.Abp.AuditLogging.EntityFrameworkCore;
+using TestService.Controllers;
+using Volo.Abp.AspNetCore.Auditing;
+using Microsoft.Extensions.Hosting;
 
 namespace TestService.Host
 {
@@ -46,7 +50,8 @@ namespace TestService.Host
         typeof(AbpAspNetCoreMvcModule),
         //typeof(AbpEventBusRabbitMqModule),
         typeof(AbpEntityFrameworkCoreSqlServerModule),
-        //typeof(AbpAuditLoggingEntityFrameworkCoreModule),
+        typeof(AbpAuditLoggingEntityFrameworkCoreModule),
+        typeof(AbpVirtualFileSystemModule),
         //typeof(AbpPermissionManagementEntityFrameworkCoreModule),
         //typeof(AbpSettingManagementEntityFrameworkCoreModule),
         typeof(TestServiceApplicationModule),
@@ -64,6 +69,8 @@ namespace TestService.Host
         {
             var configuration = context.Services.GetConfiguration();
             var hostingEnvironment = context.Services.GetHostingEnvironment();
+
+            var aaa = Convert.ToBoolean(configuration["Auditing:IsEnabledEntityAuditing"]);
 
             //Configure<MvcOptions>(options =>
             //{
@@ -89,10 +96,9 @@ namespace TestService.Host
                 options.IsEnabled = false;
             });
 
-#if DEBUG
+            // TODO:暂时禁用防止跨站请求伪造（XSRF/CSRF）攻击，待研究
             Configure<AbpAntiForgeryOptions>(options => { options.AutoValidate = false; });
-#else
-#endif
+
 
             // TODO:将动态API注入移动到httpapi层
             Configure<AbpAspNetCoreMvcOptions>(options =>
@@ -116,12 +122,12 @@ namespace TestService.Host
                 {
                     options.Authority = configuration["AuthServer:Authority"];
                     options.RequireHttpsMetadata = false;
-                    options.ApiName = "TestService";
+                    options.ApiName = configuration["App:ServiceName"];
                 });
 
             context.Services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc("v1", new OpenApiInfo { Title = "TestService Service API", Version = "v1" });
+                options.SwaggerDoc("v1", new OpenApiInfo { Title = "TestService API", Version = "v1" });
                 options.DocInclusionPredicate((docName, description) => true);
                 options.CustomSchemaIds(type => type.FullName);
                 options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -167,10 +173,30 @@ namespace TestService.Host
             context.Services.AddTransient<ConsulServiceOptions>();
             context.Services.AddTransient<IConsulServiceRegistry, ConsulServiceRegistry>();
 
+            // 审计日志选项
             Configure<AbpAuditingOptions>(options =>
             {
-                options.IsEnabledForGetRequests = true;
-                options.ApplicationName = "TestService";
+                // 是否开启审计
+                options.IsEnabled = Convert.ToBoolean(configuration["Auditing:IsEnabled"]);
+
+                // 是否对GET请求进行审计
+                options.IsEnabledForGetRequests = Convert.ToBoolean(configuration["Auditing:IsEnabledForGetRequests"]);
+
+                // 审计日志记录的应用程序/服务名称
+                options.ApplicationName = configuration["App:ServiceName"];
+
+                //options.ig.Add();
+
+                // 启用实体审计，ABP vNext默认是关闭的
+                //if (Convert.ToBoolean(configuration["Auditing:IsEnabledEntityAuditing"]))
+                //{
+                options.EntityHistorySelectors.AddAllEntities();
+                //}
+            });
+
+            Configure<AbpAspNetCoreAuditingOptions>(options =>
+            {
+                options.IgnoredUrls.AddIfNotContains("/HealthCheck");
             });
 
             context.Services.AddCors(options =>
@@ -201,21 +227,34 @@ namespace TestService.Host
                 options.Languages.Add(new LanguageInfo("en", "en", "English"));
             });
 
-            Configure<AbpVirtualFileSystemOptions>(options =>
-            {
-                options.FileSets.ReplaceEmbeddedByPhysical<TestServiceDomainSharedModule>(
-                    Path.Combine(hostingEnvironment.ContentRootPath,
-                        $"..{Path.DirectorySeparatorChar}TestService.Domain.Shared"));
-                options.FileSets.ReplaceEmbeddedByPhysical<TestServiceDomainModule>(
-                    Path.Combine(hostingEnvironment.ContentRootPath,
-                        $"..{Path.DirectorySeparatorChar}TestService.Domain"));
-                options.FileSets.ReplaceEmbeddedByPhysical<TestServiceApplicationContractsModule>(
-                    Path.Combine(hostingEnvironment.ContentRootPath,
-                        $"..{Path.DirectorySeparatorChar}TestService.Application.Contracts"));
-                options.FileSets.ReplaceEmbeddedByPhysical<TestServiceApplicationModule>(
-                    Path.Combine(hostingEnvironment.ContentRootPath,
-                        $"..{Path.DirectorySeparatorChar}TestService.Application"));
-            });
+            //if (hostingEnvironment.IsDevelopment())
+            //{
+            //    Configure<AbpVirtualFileSystemOptions>(options =>
+            //    {
+            //        options.FileSets.ReplaceEmbeddedByPhysical<TestServiceDomainSharedModule>(
+            //            Path.Combine(hostingEnvironment.ContentRootPath,
+            //                $"..{Path.DirectorySeparatorChar}TestService.Domain.Shared"));
+            //        options.FileSets.ReplaceEmbeddedByPhysical<TestServiceDomainModule>(
+            //            Path.Combine(hostingEnvironment.ContentRootPath,
+            //                $"..{Path.DirectorySeparatorChar}TestService.Domain"));
+            //        options.FileSets.ReplaceEmbeddedByPhysical<TestServiceApplicationContractsModule>(
+            //            Path.Combine(hostingEnvironment.ContentRootPath,
+            //                $"..{Path.DirectorySeparatorChar}TestService.Application.Contracts"));
+            //        options.FileSets.ReplaceEmbeddedByPhysical<TestServiceApplicationModule>(
+            //            Path.Combine(hostingEnvironment.ContentRootPath,
+            //                $"..{Path.DirectorySeparatorChar}TestService.Application"));
+            //    });
+            //}
+            //else
+            //{
+            //    Configure<AbpVirtualFileSystemOptions>(options =>
+            //    {
+            //        options.FileSets.AddEmbedded<TestServiceDomainSharedModule>();
+            //        options.FileSets.AddEmbedded<TestServiceDomainModule>();
+            //        options.FileSets.AddEmbedded<TestServiceApplicationContractsModule>();
+            //        options.FileSets.AddEmbedded<TestServiceApplicationModule>();
+            //    });
+            //}
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
@@ -249,7 +288,7 @@ namespace TestService.Host
             app.UseSwagger();
             app.UseSwaggerUI(options =>
             {
-                options.SwaggerEndpoint("/swagger/v1/swagger.json", "BaseService Service API");
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "TestService API");
             });
 
             app.UseAuditing();

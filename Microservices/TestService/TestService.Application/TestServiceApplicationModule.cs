@@ -1,7 +1,9 @@
 ﻿using Volo.Abp.AutoMapper;
+using Volo.Abp.FeatureManagement;
 using Volo.Abp.Http.Client.IdentityModel;
 using Volo.Abp.Identity;
 using Volo.Abp.Modularity;
+using Volo.Abp.VirtualFileSystem;
 
 namespace TestService
 {
@@ -11,11 +13,11 @@ namespace TestService
         typeof(TestServiceApplicationContractsModule),
         typeof(AbpHttpClientIdentityModelModule),
         typeof(AbpIdentityHttpApiClientModule),
-        typeof(AbpAutoMapperModule)
+        typeof(AbpAutoMapperModule),
         //typeof(AbpIdentityApplicationModule),
         //typeof(AbpPermissionManagementApplicationModule),
         //typeof(AbpTenantManagementApplicationModule),
-        //typeof(AbpFeatureManagementApplicationModule)
+        typeof(AbpFeatureManagementApplicationModule)
         )]
     public class TestServiceApplicationModule : AbpModule
     {
@@ -25,6 +27,11 @@ namespace TestService
             {
                 options.AddMaps<TestServiceApplicationModule>();
                 //options.AddProfile<TestServiceApplicationAutoMapperProfile>(validate: true);
+            });
+
+            Configure<AbpVirtualFileSystemOptions>(options =>
+            {
+                options.FileSets.AddEmbedded<TestServiceApplicationModule>();
             });
         }
     }

@@ -26,6 +26,7 @@ using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
 using Volo.Abp.MultiTenancy;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
+using Volo.Abp.SecurityLog;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
@@ -46,8 +47,8 @@ namespace AuthenticationServer.Host
         typeof(AbpAccountWebIdentityServerModule),
         typeof(AbpAccountApplicationModule),
         typeof(AbpAspNetCoreMvcUiBasicThemeModule)
-        //typeof(AbpTenantManagementEntityFrameworkCoreModule),
-        //typeof(AbpTenantManagementApplicationContractsModule)
+    //typeof(AbpTenantManagementEntityFrameworkCoreModule),
+    //typeof(AbpTenantManagementApplicationContractsModule)
     )]
     public class AuthenticationServerHostModule : AbpModule
     {
@@ -93,19 +94,24 @@ namespace AuthenticationServer.Host
             // 注入跨域配置
             context.Services.AddCors(options =>
             {
-                options.AddPolicy(DefaultCorsPolicyName,
-                builder =>
-                {
-                    builder.WithOrigins(configuration["CorsOrigins"]
-                                .Split(",", StringSplitOptions.RemoveEmptyEntries)
-                                .Select(o => o.RemovePostFix("/"))
-                                .ToArray())
-                        .WithAbpExposedHeaders()
-                        .SetIsOriginAllowedToAllowWildcardSubdomains()
-                        .AllowAnyHeader()
-                        .AllowAnyMethod()
-                        .AllowCredentials();
-                });
+                options.AddPolicy(DefaultCorsPolicyName, builder =>
+                 {
+                     builder.WithOrigins(configuration["App:CorsOrigins"]
+                                 .Split(",", StringSplitOptions.RemoveEmptyEntries)
+                                 .Select(o => o.RemovePostFix("/"))
+                                 .ToArray())
+                         .WithAbpExposedHeaders()
+                         .SetIsOriginAllowedToAllowWildcardSubdomains()
+                         .AllowAnyHeader()
+                         .AllowAnyMethod()
+                         .AllowCredentials();
+                 });
+            });
+
+            // 配置Identity安全日志
+            Configure<AbpSecurityLogOptions>(options =>
+            {
+                options.ApplicationName = configuration["App:ServiceName"];
             });
 
             context.Services.AddStackExchangeRedisCache(options =>
@@ -121,6 +127,7 @@ namespace AuthenticationServer.Host
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
         {
             var app = context.GetApplicationBuilder();
+            var env = context.GetEnvironment();
 
             app.UseCorrelationId();
             app.UseVirtualFiles();

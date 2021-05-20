@@ -1,4 +1,5 @@
 ﻿using TestService.Localization;
+using Volo.Abp.FeatureManagement;
 using Volo.Abp.Localization;
 using Volo.Abp.Localization.ExceptionHandling;
 using Volo.Abp.Modularity;
@@ -9,7 +10,7 @@ namespace TestService
 {
     [DependsOn(
         //typeof(AbpAuditLoggingDomainSharedModule),
-        //typeof(AbpFeatureManagementDomainSharedModule),
+        typeof(AbpFeatureManagementDomainSharedModule),
         //typeof(AbpIdentityDomainSharedModule),
         //typeof(AbpIdentityServerDomainSharedModule),
         //typeof(AbpPermissionManagementDomainSharedModule),

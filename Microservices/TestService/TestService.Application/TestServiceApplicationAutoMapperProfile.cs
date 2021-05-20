@@ -15,6 +15,8 @@ namespace TestService
             CreateMap<FaultGrade, FaultGradeDto>();
 
             CreateMap<CreateFaultGradeInput, FaultGrade>();
+
+            CreateMap<UpdateFaultGradeInput, FaultGrade>();
         }
     }
 }

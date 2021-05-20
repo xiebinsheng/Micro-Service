@@ -5,8 +5,8 @@ using Volo.Abp.Modularity;
 namespace TestService
 {
     [DependsOn(
-        typeof(TestServiceApplicationContractsModule),  //包含应用服务接口
-        typeof(AbpHttpClientModule)     //用来创建客户端代理
+        typeof(AbpHttpClientModule),     //用来创建客户端代理
+        typeof(TestServiceApplicationContractsModule)  //包含应用服务接口
         //typeof(AbpAccountHttpApiClientModule),
         //typeof(AbpIdentityHttpApiClientModule),
         //typeof(AbpPermissionManagementHttpApiClientModule),

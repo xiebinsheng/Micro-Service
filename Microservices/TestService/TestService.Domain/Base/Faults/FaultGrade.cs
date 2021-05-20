@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Volo.Abp.Auditing;
+using Volo.Abp.Domain.Entities;
 using Volo.Abp.Domain.Entities.Auditing;
 
 namespace TestService.Domain.Base.Faults
 {
-    public class FaultGrade : AuditedAggregateRoot<int>
+   
+    public class FaultGrade : Entity<int>
     {
 
         #region 属性
@@ -20,6 +23,7 @@ namespace TestService.Domain.Base.Faults
         /// <summary>
         /// 报警级别名称
         /// </summary>
+        [DisableAuditing]
         public string FaultGradeName { get; set; }
 
         /// <summary>
