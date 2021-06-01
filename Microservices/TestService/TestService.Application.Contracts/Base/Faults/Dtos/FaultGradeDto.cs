@@ -5,7 +5,7 @@ using Volo.Abp.Application.Dtos;
 
 namespace TestService.Application.Contracts.Base.Faults.Dtos
 {
-    public class FaultGradeDto: EntityDto<int>
+    public class FaultGradeDto: AuditedEntityDto<int>
     {
         /// <summary>
         /// 报警级别编码

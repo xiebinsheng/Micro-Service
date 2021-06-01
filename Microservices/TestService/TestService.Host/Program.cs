@@ -75,7 +75,9 @@ namespace TestService.Host
             Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseUrls("http://*:50004").UseStartup<Startup>();
+                    webBuilder
+                        .UseUrls("http://localhost:50004")
+                        .UseStartup<Startup>();
                 })
                 .UseAutofac()
                 .UseSerilog();

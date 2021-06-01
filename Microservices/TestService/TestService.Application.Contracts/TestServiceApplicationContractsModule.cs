@@ -10,7 +10,7 @@ namespace TestService
         typeof(AbpDddApplicationModule),
         //typeof(AbpAccountApplicationContractsModule),
         typeof(AbpFeatureManagementApplicationContractsModule)
-        //typeof(AbpIdentityApplicationContractsModule),
+        //typeof(AbpIdentityApplicationContractsModule)
         //typeof(AbpPermissionManagementApplicationContractsModule),
         //typeof(AbpTenantManagementApplicationContractsModule),
         //typeof(AbpObjectExtendingModule)

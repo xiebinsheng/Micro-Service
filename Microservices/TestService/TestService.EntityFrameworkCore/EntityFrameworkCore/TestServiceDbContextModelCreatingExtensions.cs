@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Volo.Abp;
 using Volo.Abp.EntityFrameworkCore.Modeling;
 using TestService.Domain.EFTest.FluntApi;
+using TestService.TestEntities.BillManagement;
 
 namespace TestService.EntityFrameworkCore
 {
@@ -34,7 +35,11 @@ namespace TestService.EntityFrameworkCore
                     .HasMaxLength(StringPropertyLength.MaxNoOrCodeLength)
                     .IsRequired();
                 b.Property(x => x.FaultGradeName).IsRequired().HasMaxLength(StringPropertyLength.MaxNameLength);
-                b.Property(x => x.FaultGradeColor).HasDefaultValue(0);
+                b.Property(x => x.FaultGradeColor).HasDefaultValue(1).ValueGeneratedNever();
+                b.Property(x => x.CreationTime).HasColumnName("CREATE_TIME");
+                b.Property(x => x.CreatorId).HasColumnName("CREATE_USERID");
+                b.Property(x => x.LastModificationTime).HasColumnName("UPDATE_TIME");
+                b.Property(x => x.LastModifierId).HasColumnName("UPDATE_USERID");
 
                 //b.HasIndex(q => q.FaultGradeNo);
             });
@@ -57,6 +62,29 @@ namespace TestService.EntityFrameworkCore
                 //b.Ignore(x => x.Price);
                 b.Property(x => x.RecordTime).HasDefaultValueSql("getdate()").IsRequired();
             });
+
+
+            builder.Entity<BillMembers>(b =>
+            {
+                b.ToTable($"BillMembers");
+
+                b.Property(x => x.MemberName)
+                    .HasComment("成员名称")
+                    .HasMaxLength(StringPropertyLength.MaxNameLength)
+                    .IsRequired();
+                b.Property(x => x.MemberEName)
+                    .HasComment("成员英文名称")
+                    .HasMaxLength(StringPropertyLength.MaxNameLength)
+                    .IsRequired();
+                b.Property(x => x.MemberType)
+                    .HasComment("成员类型")
+                    .HasDefaultValue(1)
+                    .IsRequired();
+                b.Property(x => x.Comments)
+                    .HasComment("备注")
+                    .HasMaxLength(StringPropertyLength.MaxDescLength);
+            });
+                
         }
     }
 }

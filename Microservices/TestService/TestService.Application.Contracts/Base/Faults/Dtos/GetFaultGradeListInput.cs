@@ -7,7 +7,7 @@ using Volo.Abp.Application.Dtos;
 
 namespace TestService.Application.Contracts.Base.Faults.Dtos
 {
-    public class GetFaultGradeListInput: PagedAndSortedResultRequestDto
+    public class GetFaultGradeListInput : PagedAndSortedResultRequestDto
     {
         /// <summary>
         /// 报警级别编码

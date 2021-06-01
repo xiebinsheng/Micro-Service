@@ -28,10 +28,17 @@ namespace TestService.Host.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("CREATE_TIME");
+
+                    b.Property<Guid?>("CreatorId")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("CREATE_USERID");
+
                     b.Property<int>("FaultGradeColor")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasDefaultValue(0);
+                        .HasDefaultValue(1);
 
                     b.Property<string>("FaultGradeName")
                         .IsRequired()
@@ -44,6 +51,14 @@ namespace TestService.Host.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("FAULT_GRADE_NO")
                         .HasComment("警报级别编号");
+
+                    b.Property<DateTime?>("LastModificationTime")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("UPDATE_TIME");
+
+                    b.Property<Guid?>("LastModifierId")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("UPDATE_USERID");
 
                     b.HasKey("Id");
 
@@ -117,6 +132,41 @@ namespace TestService.Host.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TEST_ENTITY_PROPERTY");
+                });
+
+            modelBuilder.Entity("TestService.TestEntities.BillManagement.BillMembers", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Comments")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)")
+                        .HasComment("备注");
+
+                    b.Property<string>("MemberEName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasComment("成员英文名称");
+
+                    b.Property<string>("MemberName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasComment("成员名称");
+
+                    b.Property<int>("MemberType")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(1)
+                        .HasComment("成员类型");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("BillMembers");
                 });
 #pragma warning restore 612, 618
         }

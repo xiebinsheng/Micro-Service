@@ -5,6 +5,8 @@
     "Welcome": "Welcome",
     "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
     "FaultNoAlreadyExistsException": "the fault code {0} is exists",
-    "HelloWorld": "Hello! World!"
+    "HelloWorld": "Hello! World!",
+
+    "Exception:MemberNameAlreadyExists": "the member name {0} is exists"
   }
 }

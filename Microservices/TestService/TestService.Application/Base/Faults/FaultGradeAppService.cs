@@ -14,6 +14,7 @@ using System.Globalization;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Auditing;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 //using Abp.Web.Models;
 
 namespace TestService.Application.Base.Faults
@@ -28,6 +29,7 @@ namespace TestService.Application.Base.Faults
         private readonly ILanguageProvider _languageProvider;
         //private readonly ILanguageInfo _languageInfo;
         private readonly ILogger<FaultGradeAppService> _logger;
+        private readonly IAuditingManager _auditingManager;
 
         public FaultGradeAppService(
             IRepository<FaultGrade, int> faultGradeRepository,
@@ -36,7 +38,8 @@ namespace TestService.Application.Base.Faults
             ILanguageProvider languageProvider,
             //IIdentityUserLookupAppService identityUserLookupAppService,
             ICurrentUser currentUser,
-            ILogger<FaultGradeAppService> logger)
+            ILogger<FaultGradeAppService> logger,
+            IAuditingManager auditingManager)
         {
             _faultGradeRepository = faultGradeRepository;
             _localizer = localizer;
@@ -45,6 +48,7 @@ namespace TestService.Application.Base.Faults
             //_identityUserLookupAppService = identityUserLookupAppService;
             _currentUser = currentUser;
             _logger = logger;
+            _auditingManager = auditingManager;
         }
 
         public virtual async Task<FaultGradeDto> UpdateAsync(UpdateFaultGradeInput input)
@@ -78,6 +82,10 @@ namespace TestService.Application.Base.Faults
                 CultureInfo.CurrentCulture.Name,
                 CultureInfo.CurrentUICulture.Name
             );
+
+            var json = JsonConvert.SerializeObject(input);
+
+            var obj = JsonConvert.DeserializeObject(json);
 
             _logger.LogInformation(currentLanguage.CultureName);
 

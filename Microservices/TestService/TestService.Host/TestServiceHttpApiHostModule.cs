@@ -1,36 +1,36 @@
-﻿using TestService.EntityFrameworkCore;
+﻿using MicroService.Shared.ConsulServiceRegistration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Claims;
+using TestService.EntityFrameworkCore;
 using Volo.Abp;
+using Volo.Abp.AspNetCore.Auditing;
+using Volo.Abp.AspNetCore.ExceptionHandling;
 using Volo.Abp.AspNetCore.MultiTenancy;
 using Volo.Abp.AspNetCore.Mvc;
+using Volo.Abp.AspNetCore.Mvc.AntiForgery;
+using Volo.Abp.AspNetCore.Serilog;
 using Volo.Abp.Auditing;
+using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.Autofac;
+using Volo.Abp.Data;
+using Volo.Abp.EntityFrameworkCore.SqlServer;
+using Volo.Abp.Identity;
 using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
 using Volo.Abp.MultiTenancy;
 using Volo.Abp.Security.Claims;
-using Volo.Abp.EntityFrameworkCore.SqlServer;
-using Volo.Abp.AspNetCore.Serilog;
+using Volo.Abp.Threading;
 using Volo.Abp.VirtualFileSystem;
-using System.IO;
-using Microsoft.AspNetCore.Mvc;
-using Volo.Abp.AspNetCore.Mvc.ExceptionHandling;
-using Volo.Abp.AspNetCore.ExceptionHandling;
-using Volo.Abp.AspNetCore.Mvc.AntiForgery;
-using MicroService.Shared.ConsulServiceRegistration;
-using Volo.Abp.AuditLogging.EntityFrameworkCore;
-using TestService.Controllers;
-using Volo.Abp.AspNetCore.Auditing;
-using Microsoft.Extensions.Hosting;
 
 namespace TestService.Host
 {
@@ -51,12 +51,13 @@ namespace TestService.Host
         //typeof(AbpEventBusRabbitMqModule),
         typeof(AbpEntityFrameworkCoreSqlServerModule),
         typeof(AbpAuditLoggingEntityFrameworkCoreModule),
-        typeof(AbpVirtualFileSystemModule),
+        //typeof(AbpVirtualFileSystemModule),
         //typeof(AbpPermissionManagementEntityFrameworkCoreModule),
         //typeof(AbpSettingManagementEntityFrameworkCoreModule),
         typeof(TestServiceApplicationModule),
         typeof(TestServiceHttpApiModule),
         typeof(TestServiceEntityFrameworkCoreModule),
+        //typeof(AbpIdentityHttpApiModule),
         typeof(AbpAspNetCoreMultiTenancyModule),
         typeof(AbpAspNetCoreSerilogModule)
         //typeof(AbpTenantManagementEntityFrameworkCoreModule)
@@ -122,7 +123,7 @@ namespace TestService.Host
                 {
                     options.Authority = configuration["AuthServer:Authority"];
                     options.RequireHttpsMetadata = false;
-                    options.ApiName = configuration["App:ServiceName"];
+                    options.ApiName = "TestService";
                 });
 
             context.Services.AddSwaggerGen(options =>
@@ -190,7 +191,7 @@ namespace TestService.Host
                 // 启用实体审计，ABP vNext默认是关闭的
                 //if (Convert.ToBoolean(configuration["Auditing:IsEnabledEntityAuditing"]))
                 //{
-                options.EntityHistorySelectors.AddAllEntities();
+                //options.EntityHistorySelectors.AddAllEntities();
                 //}
             });
 
@@ -227,34 +228,24 @@ namespace TestService.Host
                 options.Languages.Add(new LanguageInfo("en", "en", "English"));
             });
 
-            //if (hostingEnvironment.IsDevelopment())
-            //{
-            //    Configure<AbpVirtualFileSystemOptions>(options =>
-            //    {
-            //        options.FileSets.ReplaceEmbeddedByPhysical<TestServiceDomainSharedModule>(
-            //            Path.Combine(hostingEnvironment.ContentRootPath,
-            //                $"..{Path.DirectorySeparatorChar}TestService.Domain.Shared"));
-            //        options.FileSets.ReplaceEmbeddedByPhysical<TestServiceDomainModule>(
-            //            Path.Combine(hostingEnvironment.ContentRootPath,
-            //                $"..{Path.DirectorySeparatorChar}TestService.Domain"));
-            //        options.FileSets.ReplaceEmbeddedByPhysical<TestServiceApplicationContractsModule>(
-            //            Path.Combine(hostingEnvironment.ContentRootPath,
-            //                $"..{Path.DirectorySeparatorChar}TestService.Application.Contracts"));
-            //        options.FileSets.ReplaceEmbeddedByPhysical<TestServiceApplicationModule>(
-            //            Path.Combine(hostingEnvironment.ContentRootPath,
-            //                $"..{Path.DirectorySeparatorChar}TestService.Application"));
-            //    });
-            //}
-            //else
-            //{
-            //    Configure<AbpVirtualFileSystemOptions>(options =>
-            //    {
-            //        options.FileSets.AddEmbedded<TestServiceDomainSharedModule>();
-            //        options.FileSets.AddEmbedded<TestServiceDomainModule>();
-            //        options.FileSets.AddEmbedded<TestServiceApplicationContractsModule>();
-            //        options.FileSets.AddEmbedded<TestServiceApplicationModule>();
-            //    });
-            //}
+            if (hostingEnvironment.IsDevelopment())
+            {
+                Configure<AbpVirtualFileSystemOptions>(options =>
+                {
+                    options.FileSets.ReplaceEmbeddedByPhysical<TestServiceDomainSharedModule>(
+                        Path.Combine(hostingEnvironment.ContentRootPath,
+                            $"..{Path.DirectorySeparatorChar}TestService.Domain.Shared"));
+                    options.FileSets.ReplaceEmbeddedByPhysical<TestServiceDomainModule>(
+                        Path.Combine(hostingEnvironment.ContentRootPath,
+                            $"..{Path.DirectorySeparatorChar}TestService.Domain"));
+                    options.FileSets.ReplaceEmbeddedByPhysical<TestServiceApplicationContractsModule>(
+                        Path.Combine(hostingEnvironment.ContentRootPath,
+                            $"..{Path.DirectorySeparatorChar}TestService.Application.Contracts"));
+                    options.FileSets.ReplaceEmbeddedByPhysical<TestServiceApplicationModule>(
+                        Path.Combine(hostingEnvironment.ContentRootPath,
+                            $"..{Path.DirectorySeparatorChar}TestService.Application"));
+                });
+            }
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
@@ -268,21 +259,22 @@ namespace TestService.Host
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseMultiTenancy();
+            app.UseAbpClaimsMap();
 
-            app.Use(async (ctx, next) =>
-            {
-                var currentPrincipalAccessor = ctx.RequestServices.GetRequiredService<ICurrentPrincipalAccessor>();
-                var map = new Dictionary<string, string>()
-                {
-                    { "sub", AbpClaimTypes.UserId },
-                    { "role", AbpClaimTypes.Role },
-                    { "email", AbpClaimTypes.Email },
-                    { "name", AbpClaimTypes.UserName },
-                };
-                var mapClaims = currentPrincipalAccessor.Principal.Claims.Where(p => map.Keys.Contains(p.Type)).ToList();
-                currentPrincipalAccessor.Principal.AddIdentity(new ClaimsIdentity(mapClaims.Select(p => new Claim(map[p.Type], p.Value, p.ValueType, p.Issuer))));
-                await next();
-            });
+            //app.Use(async (ctx, next) =>
+            //{
+            //    var currentPrincipalAccessor = ctx.RequestServices.GetRequiredService<ICurrentPrincipalAccessor>();
+            //    var map = new Dictionary<string, string>()
+            //    {
+            //        { "sub", AbpClaimTypes.UserId },
+            //        { "role", AbpClaimTypes.Role },
+            //        { "email", AbpClaimTypes.Email },
+            //        { "name", AbpClaimTypes.UserName },
+            //    };
+            //    var mapClaims = currentPrincipalAccessor.Principal.Claims.Where(p => map.Keys.Contains(p.Type)).ToList();
+            //    currentPrincipalAccessor.Principal.AddIdentity(new ClaimsIdentity(mapClaims.Select(p => new Claim(map[p.Type], p.Value, p.ValueType, p.Issuer))));
+            //    await next();
+            //});
 
             app.UseAbpRequestLocalization();
             app.UseSwagger();
@@ -295,15 +287,15 @@ namespace TestService.Host
             app.UseAbpSerilogEnrichers();
             app.UseConfiguredEndpoints();
 
-            //AsyncHelper.RunSync(async () =>
-            //{
-            //    using (var scope = context.ServiceProvider.CreateScope())
-            //    {
-            //        await scope.ServiceProvider
-            //            .GetRequiredService<IDataSeeder>()
-            //            .SeedAsync();
-            //    }
-            //});
+            AsyncHelper.RunSync(async () =>
+            {
+                using (var scope = context.ServiceProvider.CreateScope())
+                {
+                    await scope.ServiceProvider
+                        .GetRequiredService<IDataSeeder>()
+                        .SeedAsync();
+                }
+            });
             app.UseConsulRegistry();
         }
     }

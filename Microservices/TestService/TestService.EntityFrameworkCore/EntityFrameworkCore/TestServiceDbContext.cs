@@ -1,8 +1,37 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Volo.Abp.Data;
-using Volo.Abp.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using TestService.Domain.Base.Faults;
 using TestService.Domain.EFTest.FluntApi;
+using TestService.TestEntities.BillManagement;
+using Volo.Abp.Auditing;
+using Volo.Abp.Data;
+using Volo.Abp.EntityFrameworkCore;
+using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Globalization;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Reflection;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
+using Volo.Abp.DependencyInjection;
+using Volo.Abp.Domain.Entities;
+using Volo.Abp.Domain.Entities.Events;
+using Volo.Abp.Domain.Repositories;
+using Volo.Abp.EntityFrameworkCore.EntityHistory;
+using Volo.Abp.EntityFrameworkCore.Modeling;
+using Volo.Abp.EntityFrameworkCore.ValueConverters;
+using Volo.Abp.Guids;
+using Volo.Abp.MultiTenancy;
+using Volo.Abp.ObjectExtending;
+using Volo.Abp.Reflection;
+using Volo.Abp.Timing;
+using Volo.Abp.Uow;
 
 namespace TestService.EntityFrameworkCore
 {
@@ -28,10 +57,12 @@ namespace TestService.EntityFrameworkCore
 
         public DbSet<TestEntityProperties> TestEntityProperties { get; set; }
 
+        public DbSet<BillMembers> BillMembers { get; set; }
+
         public TestServiceDbContext(DbContextOptions<TestServiceDbContext> options)
             : base(options)
         {
-            
+
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -56,5 +87,6 @@ namespace TestService.EntityFrameworkCore
 
             builder.ConfigureTestService();
         }
+
     }
 }

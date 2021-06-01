@@ -9369,3 +9369,1148 @@ Volo.Abp.Authorization.AbpAuthorizationException: Exception of type 'Volo.Abp.Au
 2021-05-20 17:20:49.442 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
 2021-05-20 17:20:49.443 +08:00 [DBG] Start key discovery request
 2021-05-20 17:20:49.448 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 16.0833ms
+2021-05-20 19:44:52.302 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-20 19:44:52.318 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-20 19:44:52.325 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-20 19:44:52.327 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-20 19:44:52.328 +08:00 [DBG] Start discovery request
+2021-05-20 19:44:52.397 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 95.0297ms
+2021-05-20 19:44:52.525 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-20 19:44:52.529 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-20 19:44:52.536 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-20 19:44:52.538 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-20 19:44:52.539 +08:00 [DBG] Start key discovery request
+2021-05-20 19:44:52.541 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 15.4948ms
+2021-05-20 21:13:22.818 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-20 21:13:22.827 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-20 21:13:22.841 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-20 21:13:22.843 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-20 21:13:22.845 +08:00 [DBG] Start discovery request
+2021-05-20 21:13:23.007 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 188.6443ms
+2021-05-20 21:13:23.138 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-20 21:13:23.149 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-20 21:13:23.156 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-20 21:13:23.160 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-20 21:13:23.162 +08:00 [DBG] Start key discovery request
+2021-05-20 21:13:23.163 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 27.2290ms
+2021-05-20 21:14:39.367 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-20 21:14:39.370 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-20 21:14:39.379 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-20 21:14:39.381 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-20 21:14:39.383 +08:00 [DBG] Start discovery request
+2021-05-20 21:14:39.393 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 26.5134ms
+2021-05-20 21:14:39.522 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-20 21:14:39.526 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-20 21:14:39.539 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-20 21:14:39.540 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-20 21:14:39.542 +08:00 [DBG] Start key discovery request
+2021-05-20 21:14:39.543 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 20.9118ms
+2021-05-20 21:25:18.013 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-20 21:25:18.016 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-20 21:25:18.024 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-20 21:25:18.027 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-20 21:25:18.028 +08:00 [DBG] Start discovery request
+2021-05-20 21:25:18.037 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 23.5110ms
+2021-05-20 21:25:18.167 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-20 21:25:18.170 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-20 21:25:18.181 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-20 21:25:18.183 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-20 21:25:18.184 +08:00 [DBG] Start key discovery request
+2021-05-20 21:25:18.186 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 18.8980ms
+2021-05-20 23:46:14.371 +08:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2021-05-20 23:46:14.373 +08:00 [INF] Application is shutting down...
+2021-05-21 17:11:23.325 +08:00 [INF] Starting AuthenticationServer.Host.
+2021-05-21 17:11:36.455 +08:00 [INF] Loaded ABP modules:
+2021-05-21 17:11:36.459 +08:00 [INF] - AuthenticationServer.Host.AuthenticationServerHostModule
+2021-05-21 17:11:36.459 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-05-21 17:11:36.460 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-05-21 17:11:36.461 +08:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-05-21 17:11:36.462 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-05-21 17:11:36.463 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-05-21 17:11:36.463 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-05-21 17:11:36.464 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-05-21 17:11:36.465 +08:00 [INF]             - Volo.Abp.Data.AbpDataModule
+2021-05-21 17:11:36.465 +08:00 [INF]               - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-05-21 17:11:36.466 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-05-21 17:11:36.467 +08:00 [INF]                 - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-05-21 17:11:36.477 +08:00 [INF]               - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-05-21 17:11:36.478 +08:00 [INF]               - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-05-21 17:11:36.479 +08:00 [INF]             - Volo.Abp.Security.AbpSecurityModule
+2021-05-21 17:11:36.480 +08:00 [INF]         - Volo.Abp.Localization.AbpLocalizationModule
+2021-05-21 17:11:36.490 +08:00 [INF]           - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-05-21 17:11:36.507 +08:00 [INF]           - Volo.Abp.Settings.AbpSettingsModule
+2021-05-21 17:11:36.507 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2021-05-21 17:11:36.508 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2021-05-21 17:11:36.509 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2021-05-21 17:11:36.509 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2021-05-21 17:11:36.510 +08:00 [INF]           - Volo.Abp.Threading.AbpThreadingModule
+2021-05-21 17:11:36.511 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-05-21 17:11:36.511 +08:00 [INF]         - Volo.Abp.Guids.AbpGuidsModule
+2021-05-21 17:11:36.512 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-05-21 17:11:36.513 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-05-21 17:11:36.513 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-05-21 17:11:36.514 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-05-21 17:11:36.515 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2021-05-21 17:11:36.516 +08:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-05-21 17:11:36.519 +08:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-05-21 17:11:36.520 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-05-21 17:11:36.521 +08:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-05-21 17:11:36.522 +08:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-05-21 17:11:36.523 +08:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-05-21 17:11:36.524 +08:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-05-21 17:11:36.525 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-05-21 17:11:36.526 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-05-21 17:11:36.527 +08:00 [INF]   - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2021-05-21 17:11:36.529 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityDomainModule
+2021-05-21 17:11:36.530 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-05-21 17:11:36.531 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-05-21 17:11:36.532 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2021-05-21 17:11:36.534 +08:00 [INF]       - Volo.Abp.Users.AbpUsersDomainModule
+2021-05-21 17:11:36.536 +08:00 [INF]         - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-05-21 17:11:36.537 +08:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-05-21 17:11:36.537 +08:00 [INF]     - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2021-05-21 17:11:36.538 +08:00 [INF]   - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-05-21 17:11:36.540 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2021-05-21 17:11:36.541 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-05-21 17:11:36.542 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-05-21 17:11:36.543 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-05-21 17:11:36.544 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-05-21 17:11:36.545 +08:00 [INF]   - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2021-05-21 17:11:36.546 +08:00 [INF]     - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2021-05-21 17:11:36.549 +08:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2021-05-21 17:11:36.551 +08:00 [INF]       - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2021-05-21 17:11:36.552 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-05-21 17:11:36.553 +08:00 [INF]   - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+2021-05-21 17:11:36.554 +08:00 [INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+2021-05-21 17:11:36.555 +08:00 [INF]       - Volo.Abp.Account.AbpAccountHttpApiModule
+2021-05-21 17:11:36.556 +08:00 [INF]         - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2021-05-21 17:11:36.557 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-05-21 17:11:36.558 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-05-21 17:11:36.559 +08:00 [INF]             - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-05-21 17:11:36.560 +08:00 [INF]               - Volo.Abp.Http.AbpHttpModule
+2021-05-21 17:11:36.561 +08:00 [INF]                 - Volo.Abp.Minify.AbpMinifyModule
+2021-05-21 17:11:36.561 +08:00 [INF]             - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-05-21 17:11:36.564 +08:00 [INF]             - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-05-21 17:11:36.565 +08:00 [INF]             - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-05-21 17:11:36.565 +08:00 [INF]               - Volo.Abp.UI.AbpUiModule
+2021-05-21 17:11:36.566 +08:00 [INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2021-05-21 17:11:36.568 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2021-05-21 17:11:36.568 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2021-05-21 17:11:36.569 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2021-05-21 17:11:36.570 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2021-05-21 17:11:36.571 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2021-05-21 17:11:36.572 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2021-05-21 17:11:36.573 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2021-05-21 17:11:36.574 +08:00 [INF]   - Volo.Abp.Account.AbpAccountApplicationModule
+2021-05-21 17:11:36.575 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationModule
+2021-05-21 17:11:36.575 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-05-21 17:11:36.576 +08:00 [INF]     - Volo.Abp.Emailing.AbpEmailingModule
+2021-05-21 17:11:36.577 +08:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2021-05-21 17:11:36.580 +08:00 [INF]       - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2021-05-21 17:11:36.581 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2021-05-21 17:11:36.582 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2021-05-21 17:11:36.583 +08:00 [INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-05-21 17:11:36.834 +08:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2021-05-21 17:11:36.869 +08:00 [INF] Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f
+2021-05-21 17:11:37.981 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2021-05-21 17:11:37.982 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2021-05-21 17:11:37.984 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2021-05-21 17:11:37.986 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2021-05-21 17:11:37.987 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2021-05-21 17:11:37.989 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2021-05-21 17:11:44.162 +08:00 [INF] Initialized all ABP modules.
+2021-05-21 17:11:44.212 +08:00 [INF] Now listening on: http://localhost:50000
+2021-05-21 17:11:44.214 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-21 17:11:44.215 +08:00 [INF] Hosting environment: Development
+2021-05-21 17:11:44.216 +08:00 [INF] Content root path: E:\2_Repositories\Micro-Service\AuthenticationServer
+2021-05-21 17:12:08.573 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-21 17:12:08.666 +08:00 [DBG] Login Url: /Account/Login
+2021-05-21 17:12:08.667 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-05-21 17:12:08.668 +08:00 [DBG] Logout Url: /Account/Logout
+2021-05-21 17:12:08.669 +08:00 [DBG] ConsentUrl Url: /Consent
+2021-05-21 17:12:08.671 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-05-21 17:12:08.672 +08:00 [DBG] Error Url: /Account/Error
+2021-05-21 17:12:08.673 +08:00 [DBG] Error Id Parameter: errorId
+2021-05-21 17:12:08.697 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-21 17:12:09.233 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-21 17:12:09.237 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-21 17:12:09.245 +08:00 [DBG] Start token request.
+2021-05-21 17:12:09.248 +08:00 [DBG] Start client validation
+2021-05-21 17:12:09.253 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-21 17:12:09.257 +08:00 [DBG] Start parsing for secret in post body
+2021-05-21 17:12:09.276 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-21 17:12:09.278 +08:00 [DBG] Secret id found: public-website-client
+2021-05-21 17:12:09.453 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-21 17:12:09.563 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-21 17:12:09.564 +08:00 [DBG] Client validation success
+2021-05-21 17:12:09.574 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8S721A6O1N:00000002","TimeStamp":"2021-05-21T09:12:09.0000000Z","ProcessId":15068,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-21 17:12:09.595 +08:00 [DBG] Start token request validation
+2021-05-21 17:12:09.602 +08:00 [DBG] Start resource owner password token request validation
+2021-05-21 17:12:10.075 +08:00 [INF] Credentials validated for username: admin
+2021-05-21 17:12:10.443 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8S721A6O1N:00000002","TimeStamp":"2021-05-21T09:12:10.0000000Z","ProcessId":15068,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-21 17:12:10.457 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-21 17:12:10.465 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-21 17:12:10.494 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-21 17:12:10.496 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-21 17:12:11.533 +08:00 [DBG] Creating refresh token
+2021-05-21 17:12:11.535 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-21 17:12:11.683 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****9E8D","$type":"Token"},{"TokenType":"access_token","TokenValue":"****WoSg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8S721A6O1N:00000002","TimeStamp":"2021-05-21T09:12:11.0000000Z","ProcessId":15068,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-21 17:12:11.705 +08:00 [DBG] Token request success.
+2021-05-21 17:12:11.727 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 3156.7043ms
+2021-05-21 17:12:16.405 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-21 17:12:16.410 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-21 17:12:16.418 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-21 17:12:16.420 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-21 17:12:16.425 +08:00 [DBG] Start discovery request
+2021-05-21 17:12:16.621 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 215.5386ms
+2021-05-21 17:12:16.775 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-21 17:12:16.778 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-21 17:12:16.785 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-21 17:12:16.787 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-21 17:12:16.790 +08:00 [DBG] Start key discovery request
+2021-05-21 17:12:16.799 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 23.3193ms
+2021-05-21 17:12:17.520 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-21 17:12:17.523 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-21 17:12:17.530 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-21 17:12:17.531 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-21 17:12:17.533 +08:00 [DBG] Start discovery request
+2021-05-21 17:12:17.542 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 21.9613ms
+2021-05-21 17:12:17.660 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-21 17:12:17.663 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-21 17:12:17.671 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-21 17:12:17.673 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-21 17:12:17.675 +08:00 [DBG] Start key discovery request
+2021-05-21 17:12:17.676 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 15.5374ms
+2021-05-21 18:46:11.862 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-21 18:46:11.898 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-21 18:46:11.906 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-21 18:46:11.908 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-21 18:46:11.912 +08:00 [DBG] Start discovery request
+2021-05-21 18:46:11.995 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 134.7256ms
+2021-05-21 18:46:12.125 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-21 18:46:12.130 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-21 18:46:12.137 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-21 18:46:12.139 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-21 18:46:12.140 +08:00 [DBG] Start key discovery request
+2021-05-21 18:46:12.142 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 16.0864ms
+2021-05-21 18:56:43.306 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-21 18:56:43.311 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-21 18:56:43.319 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-21 18:56:43.321 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-21 18:56:43.324 +08:00 [DBG] Start discovery request
+2021-05-21 18:56:43.342 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 35.1451ms
+2021-05-21 18:56:43.522 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-21 18:56:43.525 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-21 18:56:43.531 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-21 18:56:43.532 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-21 18:56:43.536 +08:00 [DBG] Start key discovery request
+2021-05-21 18:56:43.539 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 17.1637ms
+2021-05-21 18:59:16.366 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-21 18:59:16.377 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-21 18:59:16.384 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-21 18:59:16.388 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-21 18:59:16.391 +08:00 [DBG] Start discovery request
+2021-05-21 18:59:16.402 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 35.5724ms
+2021-05-21 18:59:16.541 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-21 18:59:16.544 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-21 18:59:16.549 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-21 18:59:16.551 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-21 18:59:16.553 +08:00 [DBG] Start key discovery request
+2021-05-21 18:59:16.555 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 13.3953ms
+2021-05-21 19:10:42.604 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-21 19:10:42.607 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-21 19:10:42.614 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-21 19:10:42.616 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-21 19:10:42.617 +08:00 [DBG] Start discovery request
+2021-05-21 19:10:42.744 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 140.9120ms
+2021-05-21 19:10:42.874 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-21 19:10:42.877 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-21 19:10:42.883 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-21 19:10:42.884 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-21 19:10:42.889 +08:00 [DBG] Start key discovery request
+2021-05-21 19:10:42.891 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 16.3161ms
+2021-05-21 19:13:21.560 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-21 19:13:21.564 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-21 19:13:21.578 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-21 19:13:21.580 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-21 19:13:21.582 +08:00 [DBG] Start discovery request
+2021-05-21 19:13:21.600 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 39.8788ms
+2021-05-21 19:13:21.756 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-21 19:13:21.758 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-21 19:13:21.767 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-21 19:13:21.768 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-21 19:13:21.770 +08:00 [DBG] Start key discovery request
+2021-05-21 19:13:21.772 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 15.5341ms
+2021-05-21 19:16:13.240 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-21 19:16:13.251 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-21 19:16:13.260 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-21 19:16:13.262 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-21 19:16:13.264 +08:00 [DBG] Start discovery request
+2021-05-21 19:16:13.282 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 43.4100ms
+2021-05-21 19:16:13.440 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-21 19:16:13.445 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-21 19:16:13.454 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-21 19:16:13.474 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-21 19:16:13.476 +08:00 [DBG] Start key discovery request
+2021-05-21 19:16:13.478 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 37.2103ms
+2021-05-21 19:17:21.214 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-21 19:17:21.218 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-21 19:17:21.226 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-21 19:17:21.227 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-21 19:17:21.230 +08:00 [DBG] Start discovery request
+2021-05-21 19:17:21.238 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 23.9195ms
+2021-05-21 19:17:21.374 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-21 19:17:21.376 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-21 19:17:21.384 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-21 19:17:21.385 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-21 19:17:21.388 +08:00 [DBG] Start key discovery request
+2021-05-21 19:17:21.389 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 15.3493ms
+2021-05-21 19:17:52.279 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-21 19:17:52.282 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-21 19:17:52.292 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-21 19:17:52.294 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-21 19:17:52.296 +08:00 [DBG] Start discovery request
+2021-05-21 19:17:52.306 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 27.1061ms
+2021-05-21 19:17:52.440 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-21 19:17:52.442 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-21 19:17:52.449 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-21 19:17:52.451 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-21 19:17:52.453 +08:00 [DBG] Start key discovery request
+2021-05-21 19:17:52.455 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 14.7811ms
+2021-05-21 19:19:04.463 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-21 19:19:04.468 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-21 19:19:04.482 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-21 19:19:04.484 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-21 19:19:04.487 +08:00 [DBG] Start discovery request
+2021-05-21 19:19:04.498 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 35.0097ms
+2021-05-21 19:19:04.651 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-21 19:19:04.654 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-21 19:19:04.660 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-21 19:19:04.662 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-21 19:19:04.664 +08:00 [DBG] Start key discovery request
+2021-05-21 19:19:04.665 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 13.9523ms
+2021-05-21 19:24:12.026 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-21 19:24:12.031 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-21 19:24:12.048 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-21 19:24:12.050 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-21 19:24:12.056 +08:00 [DBG] Start discovery request
+2021-05-21 19:24:12.074 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 47.4195ms
+2021-05-21 19:24:12.219 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-21 19:24:12.222 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-21 19:24:12.229 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-21 19:24:12.230 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-21 19:24:12.232 +08:00 [DBG] Start key discovery request
+2021-05-21 19:24:12.235 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 16.3191ms
+2021-05-21 19:25:01.156 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-21 19:25:01.159 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-21 19:25:01.167 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-21 19:25:01.169 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-21 19:25:01.171 +08:00 [DBG] Start discovery request
+2021-05-21 19:25:01.180 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 24.4577ms
+2021-05-21 19:25:01.325 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-21 19:25:01.329 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-21 19:25:01.337 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-21 19:25:01.338 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-21 19:25:01.341 +08:00 [DBG] Start key discovery request
+2021-05-21 19:25:01.344 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 18.5282ms
+2021-05-21 19:25:45.873 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-21 19:25:45.875 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-21 19:25:45.882 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-21 19:25:45.884 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-21 19:25:45.887 +08:00 [DBG] Start discovery request
+2021-05-21 19:25:45.949 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 75.5071ms
+2021-05-21 19:25:46.095 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-21 19:25:46.097 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-21 19:25:46.106 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-21 19:25:46.107 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-21 19:25:46.109 +08:00 [DBG] Start key discovery request
+2021-05-21 19:25:46.110 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 15.2928ms
+2021-05-22 17:28:51.456 +08:00 [INF] Starting AuthenticationServer.Host.
+2021-05-22 17:29:05.974 +08:00 [INF] Loaded ABP modules:
+2021-05-22 17:29:05.977 +08:00 [INF] - AuthenticationServer.Host.AuthenticationServerHostModule
+2021-05-22 17:29:05.978 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-05-22 17:29:05.979 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-05-22 17:29:05.979 +08:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-05-22 17:29:05.980 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-05-22 17:29:05.981 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-05-22 17:29:05.982 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-05-22 17:29:05.983 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-05-22 17:29:05.984 +08:00 [INF]             - Volo.Abp.Data.AbpDataModule
+2021-05-22 17:29:05.985 +08:00 [INF]               - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-05-22 17:29:05.986 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-05-22 17:29:05.987 +08:00 [INF]                 - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-05-22 17:29:05.988 +08:00 [INF]               - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-05-22 17:29:05.989 +08:00 [INF]               - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-05-22 17:29:05.989 +08:00 [INF]             - Volo.Abp.Security.AbpSecurityModule
+2021-05-22 17:29:05.990 +08:00 [INF]         - Volo.Abp.Localization.AbpLocalizationModule
+2021-05-22 17:29:05.991 +08:00 [INF]           - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-05-22 17:29:05.991 +08:00 [INF]           - Volo.Abp.Settings.AbpSettingsModule
+2021-05-22 17:29:05.992 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2021-05-22 17:29:05.993 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2021-05-22 17:29:05.994 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2021-05-22 17:29:05.995 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2021-05-22 17:29:05.996 +08:00 [INF]           - Volo.Abp.Threading.AbpThreadingModule
+2021-05-22 17:29:05.996 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-05-22 17:29:05.997 +08:00 [INF]         - Volo.Abp.Guids.AbpGuidsModule
+2021-05-22 17:29:05.998 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-05-22 17:29:05.998 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-05-22 17:29:06.004 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-05-22 17:29:06.004 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-05-22 17:29:06.006 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2021-05-22 17:29:06.007 +08:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-05-22 17:29:06.007 +08:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-05-22 17:29:06.009 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-05-22 17:29:06.010 +08:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-05-22 17:29:06.011 +08:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-05-22 17:29:06.012 +08:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-05-22 17:29:06.013 +08:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-05-22 17:29:06.014 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-05-22 17:29:06.017 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-05-22 17:29:06.021 +08:00 [INF]   - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2021-05-22 17:29:06.022 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityDomainModule
+2021-05-22 17:29:06.024 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-05-22 17:29:06.025 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-05-22 17:29:06.026 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2021-05-22 17:29:06.028 +08:00 [INF]       - Volo.Abp.Users.AbpUsersDomainModule
+2021-05-22 17:29:06.032 +08:00 [INF]         - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-05-22 17:29:06.033 +08:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-05-22 17:29:06.035 +08:00 [INF]     - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2021-05-22 17:29:06.036 +08:00 [INF]   - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-05-22 17:29:06.037 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2021-05-22 17:29:06.039 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-05-22 17:29:06.040 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-05-22 17:29:06.041 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-05-22 17:29:06.042 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-05-22 17:29:06.043 +08:00 [INF]   - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2021-05-22 17:29:06.046 +08:00 [INF]     - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2021-05-22 17:29:06.048 +08:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2021-05-22 17:29:06.049 +08:00 [INF]       - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2021-05-22 17:29:06.050 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-05-22 17:29:06.051 +08:00 [INF]   - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+2021-05-22 17:29:06.052 +08:00 [INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+2021-05-22 17:29:06.053 +08:00 [INF]       - Volo.Abp.Account.AbpAccountHttpApiModule
+2021-05-22 17:29:06.056 +08:00 [INF]         - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2021-05-22 17:29:06.058 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-05-22 17:29:06.059 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-05-22 17:29:06.063 +08:00 [INF]             - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-05-22 17:29:06.065 +08:00 [INF]               - Volo.Abp.Http.AbpHttpModule
+2021-05-22 17:29:06.066 +08:00 [INF]                 - Volo.Abp.Minify.AbpMinifyModule
+2021-05-22 17:29:06.067 +08:00 [INF]             - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-05-22 17:29:06.069 +08:00 [INF]             - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-05-22 17:29:06.073 +08:00 [INF]             - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-05-22 17:29:06.076 +08:00 [INF]               - Volo.Abp.UI.AbpUiModule
+2021-05-22 17:29:06.079 +08:00 [INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2021-05-22 17:29:06.082 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2021-05-22 17:29:06.083 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2021-05-22 17:29:06.084 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2021-05-22 17:29:06.086 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2021-05-22 17:29:06.089 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2021-05-22 17:29:06.095 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2021-05-22 17:29:06.097 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2021-05-22 17:29:06.101 +08:00 [INF]   - Volo.Abp.Account.AbpAccountApplicationModule
+2021-05-22 17:29:06.106 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationModule
+2021-05-22 17:29:06.109 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-05-22 17:29:06.112 +08:00 [INF]     - Volo.Abp.Emailing.AbpEmailingModule
+2021-05-22 17:29:06.115 +08:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2021-05-22 17:29:06.117 +08:00 [INF]       - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2021-05-22 17:29:06.118 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2021-05-22 17:29:06.119 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2021-05-22 17:29:06.122 +08:00 [INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-05-22 17:29:06.456 +08:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2021-05-22 17:29:06.510 +08:00 [INF] Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f
+2021-05-22 17:29:08.152 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2021-05-22 17:29:08.154 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2021-05-22 17:29:08.156 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2021-05-22 17:29:08.158 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2021-05-22 17:29:08.159 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2021-05-22 17:29:08.161 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2021-05-22 17:29:15.631 +08:00 [INF] Initialized all ABP modules.
+2021-05-22 17:29:15.683 +08:00 [INF] Now listening on: http://localhost:50000
+2021-05-22 17:29:15.685 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-22 17:29:15.686 +08:00 [INF] Hosting environment: Development
+2021-05-22 17:29:15.689 +08:00 [INF] Content root path: E:\2_Repositories\Micro-Service\AuthenticationServer
+2021-05-22 18:28:25.632 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-22 18:28:25.761 +08:00 [DBG] Login Url: /Account/Login
+2021-05-22 18:28:25.762 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-05-22 18:28:25.764 +08:00 [DBG] Logout Url: /Account/Logout
+2021-05-22 18:28:25.766 +08:00 [DBG] ConsentUrl Url: /Consent
+2021-05-22 18:28:25.767 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-05-22 18:28:25.768 +08:00 [DBG] Error Url: /Account/Error
+2021-05-22 18:28:25.769 +08:00 [DBG] Error Id Parameter: errorId
+2021-05-22 18:28:25.789 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-22 18:28:26.234 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-22 18:28:26.235 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-22 18:28:26.240 +08:00 [DBG] Start discovery request
+2021-05-22 18:28:26.604 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 971.9630ms
+2021-05-22 18:28:27.681 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-22 18:28:27.689 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-22 18:28:27.696 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-22 18:28:27.698 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-22 18:28:27.704 +08:00 [DBG] Start key discovery request
+2021-05-22 18:28:27.816 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 134.6068ms
+2021-05-22 18:28:29.272 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-22 18:28:29.276 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-22 18:28:29.288 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-22 18:28:29.290 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-22 18:28:29.295 +08:00 [DBG] Start discovery request
+2021-05-22 18:28:29.318 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 45.6032ms
+2021-05-22 18:28:29.580 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-22 18:28:29.586 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-22 18:28:29.595 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-22 18:28:29.599 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-22 18:28:29.606 +08:00 [DBG] Start key discovery request
+2021-05-22 18:28:29.608 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 28.6043ms
+2021-05-22 18:45:26.721 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-22 18:45:26.727 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-22 18:45:26.740 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-22 18:45:26.742 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-22 18:45:26.745 +08:00 [DBG] Start discovery request
+2021-05-22 18:45:26.829 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 107.9946ms
+2021-05-22 18:45:27.027 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-22 18:45:27.031 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-22 18:45:27.039 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-22 18:45:27.040 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-22 18:45:27.042 +08:00 [DBG] Start key discovery request
+2021-05-22 18:45:27.043 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 15.8390ms
+2021-05-22 18:45:36.699 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-22 18:45:36.702 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-22 18:45:36.727 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-22 18:45:36.729 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-22 18:45:36.827 +08:00 [DBG] Start token request.
+2021-05-22 18:45:36.831 +08:00 [DBG] Start client validation
+2021-05-22 18:45:36.837 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-22 18:45:36.840 +08:00 [DBG] Start parsing for secret in post body
+2021-05-22 18:45:36.851 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-22 18:45:36.853 +08:00 [DBG] Secret id found: public-website-client
+2021-05-22 18:45:37.004 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-22 18:45:37.016 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-22 18:45:37.018 +08:00 [DBG] Client validation success
+2021-05-22 18:45:37.031 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8T1HAJ5QB6:00000002","TimeStamp":"2021-05-22T10:45:37.0000000Z","ProcessId":13004,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-22 18:45:37.057 +08:00 [DBG] Start token request validation
+2021-05-22 18:45:37.098 +08:00 [DBG] Start resource owner password token request validation
+2021-05-22 18:45:37.541 +08:00 [INF] Credentials validated for username: admin
+2021-05-22 18:45:38.047 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8T1HAJ5QB6:00000002","TimeStamp":"2021-05-22T10:45:38.0000000Z","ProcessId":13004,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-22 18:45:38.072 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-22 18:45:38.083 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-22 18:45:38.115 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-22 18:45:38.119 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-22 18:45:38.555 +08:00 [DBG] Creating refresh token
+2021-05-22 18:45:38.556 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-22 18:45:38.669 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****7BE9","$type":"Token"},{"TokenType":"access_token","TokenValue":"****iBXg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8T1HAJ5QB6:00000002","TimeStamp":"2021-05-22T10:45:38.0000000Z","ProcessId":13004,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-22 18:45:38.690 +08:00 [DBG] Token request success.
+2021-05-22 18:45:38.696 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 1996.9927ms
+2021-05-22 18:47:16.815 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-22 18:47:16.817 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-22 18:47:16.824 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-22 18:47:16.825 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-22 18:47:16.827 +08:00 [DBG] Start discovery request
+2021-05-22 18:47:16.844 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 29.3144ms
+2021-05-22 18:47:17.028 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-22 18:47:17.031 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-22 18:47:17.039 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-22 18:47:17.044 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-22 18:47:17.047 +08:00 [DBG] Start key discovery request
+2021-05-22 18:47:17.048 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 20.2079ms
+2021-05-22 18:53:34.930 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-22 18:53:34.947 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-22 18:53:34.955 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-22 18:53:34.956 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-22 18:53:34.959 +08:00 [DBG] Start discovery request
+2021-05-22 18:53:34.969 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 39.3050ms
+2021-05-22 18:53:35.150 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-22 18:53:35.153 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-22 18:53:35.162 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-22 18:53:35.164 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-22 18:53:35.167 +08:00 [DBG] Start key discovery request
+2021-05-22 18:53:35.168 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 18.6137ms
+2021-05-22 19:29:40.651 +08:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2021-05-22 19:29:40.652 +08:00 [INF] Application is shutting down...
+2021-05-23 13:40:30.827 +08:00 [INF] Starting AuthenticationServer.Host.
+2021-05-23 13:40:50.029 +08:00 [INF] Loaded ABP modules:
+2021-05-23 13:40:50.034 +08:00 [INF] - AuthenticationServer.Host.AuthenticationServerHostModule
+2021-05-23 13:40:50.068 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-05-23 13:40:50.069 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-05-23 13:40:50.070 +08:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-05-23 13:40:50.071 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-05-23 13:40:50.072 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-05-23 13:40:50.073 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-05-23 13:40:50.073 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-05-23 13:40:50.074 +08:00 [INF]             - Volo.Abp.Data.AbpDataModule
+2021-05-23 13:40:50.076 +08:00 [INF]               - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-05-23 13:40:50.077 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-05-23 13:40:50.078 +08:00 [INF]                 - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-05-23 13:40:50.079 +08:00 [INF]               - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-05-23 13:40:50.080 +08:00 [INF]               - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-05-23 13:40:50.080 +08:00 [INF]             - Volo.Abp.Security.AbpSecurityModule
+2021-05-23 13:40:50.081 +08:00 [INF]         - Volo.Abp.Localization.AbpLocalizationModule
+2021-05-23 13:40:50.082 +08:00 [INF]           - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-05-23 13:40:50.083 +08:00 [INF]           - Volo.Abp.Settings.AbpSettingsModule
+2021-05-23 13:40:50.084 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2021-05-23 13:40:50.085 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2021-05-23 13:40:50.086 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2021-05-23 13:40:50.087 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2021-05-23 13:40:50.087 +08:00 [INF]           - Volo.Abp.Threading.AbpThreadingModule
+2021-05-23 13:40:50.088 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-05-23 13:40:50.089 +08:00 [INF]         - Volo.Abp.Guids.AbpGuidsModule
+2021-05-23 13:40:50.090 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-05-23 13:40:50.091 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-05-23 13:40:50.106 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-05-23 13:40:50.107 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-05-23 13:40:50.108 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2021-05-23 13:40:50.109 +08:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-05-23 13:40:50.111 +08:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-05-23 13:40:50.112 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-05-23 13:40:50.113 +08:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-05-23 13:40:50.114 +08:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-05-23 13:40:50.115 +08:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-05-23 13:40:50.117 +08:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-05-23 13:40:50.117 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-05-23 13:40:50.118 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-05-23 13:40:50.131 +08:00 [INF]   - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2021-05-23 13:40:50.133 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityDomainModule
+2021-05-23 13:40:50.134 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-05-23 13:40:50.135 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-05-23 13:40:50.136 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2021-05-23 13:40:50.137 +08:00 [INF]       - Volo.Abp.Users.AbpUsersDomainModule
+2021-05-23 13:40:50.137 +08:00 [INF]         - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-05-23 13:40:50.138 +08:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-05-23 13:40:50.139 +08:00 [INF]     - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2021-05-23 13:40:50.140 +08:00 [INF]   - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-05-23 13:40:50.141 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2021-05-23 13:40:50.142 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-05-23 13:40:50.143 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-05-23 13:40:50.144 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-05-23 13:40:50.144 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-05-23 13:40:50.146 +08:00 [INF]   - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2021-05-23 13:40:50.159 +08:00 [INF]     - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2021-05-23 13:40:50.160 +08:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2021-05-23 13:40:50.161 +08:00 [INF]       - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2021-05-23 13:40:50.162 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-05-23 13:40:50.163 +08:00 [INF]   - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+2021-05-23 13:40:50.164 +08:00 [INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+2021-05-23 13:40:50.165 +08:00 [INF]       - Volo.Abp.Account.AbpAccountHttpApiModule
+2021-05-23 13:40:50.166 +08:00 [INF]         - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2021-05-23 13:40:50.167 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-05-23 13:40:50.169 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-05-23 13:40:50.170 +08:00 [INF]             - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-05-23 13:40:50.171 +08:00 [INF]               - Volo.Abp.Http.AbpHttpModule
+2021-05-23 13:40:50.172 +08:00 [INF]                 - Volo.Abp.Minify.AbpMinifyModule
+2021-05-23 13:40:50.173 +08:00 [INF]             - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-05-23 13:40:50.174 +08:00 [INF]             - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-05-23 13:40:50.174 +08:00 [INF]             - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-05-23 13:40:50.175 +08:00 [INF]               - Volo.Abp.UI.AbpUiModule
+2021-05-23 13:40:50.177 +08:00 [INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2021-05-23 13:40:50.179 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2021-05-23 13:40:50.180 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2021-05-23 13:40:50.197 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2021-05-23 13:40:50.198 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2021-05-23 13:40:50.199 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2021-05-23 13:40:50.199 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2021-05-23 13:40:50.200 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2021-05-23 13:40:50.201 +08:00 [INF]   - Volo.Abp.Account.AbpAccountApplicationModule
+2021-05-23 13:40:50.202 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationModule
+2021-05-23 13:40:50.203 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-05-23 13:40:50.204 +08:00 [INF]     - Volo.Abp.Emailing.AbpEmailingModule
+2021-05-23 13:40:50.204 +08:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2021-05-23 13:40:50.205 +08:00 [INF]       - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2021-05-23 13:40:50.206 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2021-05-23 13:40:50.207 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2021-05-23 13:40:50.211 +08:00 [INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-05-23 13:40:51.060 +08:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2021-05-23 13:40:51.118 +08:00 [INF] Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f
+2021-05-23 13:40:54.706 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2021-05-23 13:40:54.720 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2021-05-23 13:40:54.721 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2021-05-23 13:40:54.723 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2021-05-23 13:40:54.724 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2021-05-23 13:40:54.726 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2021-05-23 13:41:02.284 +08:00 [INF] Initialized all ABP modules.
+2021-05-23 13:41:02.337 +08:00 [INF] Now listening on: http://localhost:50000
+2021-05-23 13:41:02.339 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-23 13:41:02.341 +08:00 [INF] Hosting environment: Development
+2021-05-23 13:41:02.344 +08:00 [INF] Content root path: E:\2_Repositories\Micro-Service\AuthenticationServer
+2021-05-23 13:43:08.225 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-23 13:43:08.306 +08:00 [DBG] Login Url: /Account/Login
+2021-05-23 13:43:08.309 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-05-23 13:43:08.310 +08:00 [DBG] Logout Url: /Account/Logout
+2021-05-23 13:43:08.312 +08:00 [DBG] ConsentUrl Url: /Consent
+2021-05-23 13:43:08.313 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-05-23 13:43:08.314 +08:00 [DBG] Error Url: /Account/Error
+2021-05-23 13:43:08.315 +08:00 [DBG] Error Id Parameter: errorId
+2021-05-23 13:43:08.406 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-23 13:43:08.725 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-23 13:43:08.726 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-23 13:43:08.728 +08:00 [DBG] Start discovery request
+2021-05-23 13:43:09.211 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 986.4246ms
+2021-05-23 13:43:09.754 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-23 13:43:09.759 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-23 13:43:09.766 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-23 13:43:09.769 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-23 13:43:09.772 +08:00 [DBG] Start key discovery request
+2021-05-23 13:43:09.862 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 108.2143ms
+2021-05-23 13:43:11.185 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-23 13:43:11.188 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-23 13:43:11.195 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-23 13:43:11.196 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-23 13:43:11.198 +08:00 [DBG] Start discovery request
+2021-05-23 13:43:11.211 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 25.1202ms
+2021-05-23 13:43:11.345 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-23 13:43:11.349 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-23 13:43:11.358 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-23 13:43:11.360 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-23 13:43:11.361 +08:00 [DBG] Start key discovery request
+2021-05-23 13:43:11.363 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 17.3600ms
+2021-05-23 19:28:39.196 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-23 19:28:39.203 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-23 19:28:39.235 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-23 19:28:39.236 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-23 19:28:39.307 +08:00 [DBG] Start token request.
+2021-05-23 19:28:39.324 +08:00 [DBG] Start client validation
+2021-05-23 19:28:39.330 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-23 19:28:39.335 +08:00 [DBG] Start parsing for secret in post body
+2021-05-23 19:28:39.346 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-23 19:28:39.348 +08:00 [DBG] Secret id found: public-website-client
+2021-05-23 19:28:39.491 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-23 19:28:39.506 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-23 19:28:39.507 +08:00 [DBG] Client validation success
+2021-05-23 19:28:39.544 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8TLMIDFQSD:00000002","TimeStamp":"2021-05-23T11:28:39.0000000Z","ProcessId":14208,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-23 19:28:39.566 +08:00 [DBG] Start token request validation
+2021-05-23 19:28:39.584 +08:00 [DBG] Start resource owner password token request validation
+2021-05-23 19:28:40.105 +08:00 [INF] Credentials validated for username: admin
+2021-05-23 19:28:40.532 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8TLMIDFQSD:00000002","TimeStamp":"2021-05-23T11:28:40.0000000Z","ProcessId":14208,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-23 19:28:40.543 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-23 19:28:40.551 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-23 19:28:40.577 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-23 19:28:40.579 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-23 19:28:40.940 +08:00 [DBG] Creating refresh token
+2021-05-23 19:28:40.942 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-23 19:28:41.032 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****F91B","$type":"Token"},{"TokenType":"access_token","TokenValue":"****-xYQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8TLMIDFQSD:00000002","TimeStamp":"2021-05-23T11:28:41.0000000Z","ProcessId":14208,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-23 19:28:41.052 +08:00 [DBG] Token request success.
+2021-05-23 19:28:41.058 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 1862.1638ms
+2021-05-23 19:28:52.931 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-23 19:28:52.935 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-23 19:28:52.944 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-23 19:28:52.946 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-23 19:28:52.948 +08:00 [DBG] Start discovery request
+2021-05-23 19:28:52.981 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 50.6752ms
+2021-05-23 19:28:53.097 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-23 19:28:53.100 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-23 19:28:53.110 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-23 19:28:53.111 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-23 19:28:53.113 +08:00 [DBG] Start key discovery request
+2021-05-23 19:28:53.114 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 17.1055ms
+2021-05-23 20:21:58.013 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-23 20:21:58.016 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-23 20:21:58.024 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-23 20:21:58.025 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-23 20:21:58.029 +08:00 [DBG] Start discovery request
+2021-05-23 20:21:58.110 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 96.9599ms
+2021-05-23 20:21:58.228 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-23 20:21:58.232 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-23 20:21:58.237 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-23 20:21:58.239 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-23 20:21:58.240 +08:00 [DBG] Start key discovery request
+2021-05-23 20:21:58.243 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 15.0266ms
+2021-05-23 20:39:08.729 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-23 20:39:08.734 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-23 20:39:08.743 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-23 20:39:08.744 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-23 20:39:08.746 +08:00 [DBG] Start discovery request
+2021-05-23 20:39:08.806 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 77.7817ms
+2021-05-23 20:39:08.929 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-23 20:39:08.934 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-23 20:39:08.943 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-23 20:39:08.944 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-23 20:39:08.946 +08:00 [DBG] Start key discovery request
+2021-05-23 20:39:08.949 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 20.0551ms
+2021-05-23 20:44:32.486 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-23 20:44:32.490 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-23 20:44:32.499 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-23 20:44:32.504 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-23 20:44:32.509 +08:00 [DBG] Start discovery request
+2021-05-23 20:44:32.516 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 29.9612ms
+2021-05-23 20:44:32.631 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-23 20:44:32.634 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-23 20:44:32.641 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-23 20:44:32.643 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-23 20:44:32.645 +08:00 [DBG] Start key discovery request
+2021-05-23 20:44:32.646 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 14.9906ms
+2021-05-23 20:49:34.357 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-23 20:49:34.360 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-23 20:49:34.377 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-23 20:49:34.379 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-23 20:49:34.381 +08:00 [DBG] Start token request.
+2021-05-23 20:49:34.381 +08:00 [DBG] Start client validation
+2021-05-23 20:49:34.383 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-23 20:49:34.385 +08:00 [DBG] Start parsing for secret in post body
+2021-05-23 20:49:34.387 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-23 20:49:34.388 +08:00 [DBG] Secret id found: public-website-client
+2021-05-23 20:49:34.454 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-23 20:49:34.456 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-23 20:49:34.457 +08:00 [DBG] Client validation success
+2021-05-23 20:49:34.458 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8TLMIDFQSD:00000003","TimeStamp":"2021-05-23T12:49:34.0000000Z","ProcessId":14208,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-23 20:49:34.466 +08:00 [DBG] Start token request validation
+2021-05-23 20:49:34.467 +08:00 [DBG] Start resource owner password token request validation
+2021-05-23 20:49:34.592 +08:00 [INF] Credentials validated for username: admin
+2021-05-23 20:49:34.714 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8TLMIDFQSD:00000003","TimeStamp":"2021-05-23T12:49:34.0000000Z","ProcessId":14208,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-23 20:49:34.730 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-23 20:49:34.732 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-23 20:49:34.747 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-23 20:49:34.748 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-23 20:49:34.768 +08:00 [DBG] Creating refresh token
+2021-05-23 20:49:34.770 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-23 20:49:34.784 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****6EBB","$type":"Token"},{"TokenType":"access_token","TokenValue":"****5ejg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8TLMIDFQSD:00000003","TimeStamp":"2021-05-23T12:49:34.0000000Z","ProcessId":14208,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-23 20:49:34.802 +08:00 [DBG] Token request success.
+2021-05-23 20:49:34.803 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 446.0514ms
+2021-05-23 20:51:20.759 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-23 20:51:20.762 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-23 20:51:20.779 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-23 20:51:20.781 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-23 20:51:20.782 +08:00 [DBG] Start token request.
+2021-05-23 20:51:20.783 +08:00 [DBG] Start client validation
+2021-05-23 20:51:20.783 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-23 20:51:20.786 +08:00 [DBG] Start parsing for secret in post body
+2021-05-23 20:51:20.789 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-23 20:51:20.792 +08:00 [DBG] Secret id found: public-website-client
+2021-05-23 20:51:20.821 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-23 20:51:20.824 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-23 20:51:20.825 +08:00 [DBG] Client validation success
+2021-05-23 20:51:20.826 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8TLMIDFQSD:00000004","TimeStamp":"2021-05-23T12:51:20.0000000Z","ProcessId":14208,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-23 20:51:20.835 +08:00 [DBG] Start token request validation
+2021-05-23 20:51:20.836 +08:00 [DBG] Start resource owner password token request validation
+2021-05-23 20:51:20.958 +08:00 [INF] Credentials validated for username: admin
+2021-05-23 20:51:21.015 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8TLMIDFQSD:00000004","TimeStamp":"2021-05-23T12:51:21.0000000Z","ProcessId":14208,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-23 20:51:21.026 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-23 20:51:21.027 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-23 20:51:21.041 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-23 20:51:21.042 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-23 20:51:21.057 +08:00 [DBG] Creating refresh token
+2021-05-23 20:51:21.058 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-23 20:51:21.068 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****A08E","$type":"Token"},{"TokenType":"access_token","TokenValue":"****-7sg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8TLMIDFQSD:00000004","TimeStamp":"2021-05-23T12:51:21.0000000Z","ProcessId":14208,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-23 20:51:21.085 +08:00 [DBG] Token request success.
+2021-05-23 20:51:21.086 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 327.6720ms
+2021-05-23 20:52:01.373 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-23 20:52:01.378 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-23 20:52:01.396 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-23 20:52:01.399 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-23 20:52:01.404 +08:00 [DBG] Start discovery request
+2021-05-23 20:52:01.428 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 55.5316ms
+2021-05-23 20:52:01.679 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-23 20:52:01.683 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-23 20:52:01.695 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-23 20:52:01.697 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-23 20:52:01.699 +08:00 [DBG] Start key discovery request
+2021-05-23 20:52:01.700 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 21.5591ms
+2021-05-23 20:55:34.333 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-23 20:55:34.338 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-23 20:55:34.351 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-23 20:55:34.353 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-23 20:55:34.360 +08:00 [DBG] Start discovery request
+2021-05-23 20:55:34.413 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 79.5259ms
+2021-05-23 20:55:34.527 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-23 20:55:34.531 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-23 20:55:34.537 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-23 20:55:34.538 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-23 20:55:34.542 +08:00 [DBG] Start key discovery request
+2021-05-23 20:55:34.543 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 15.8929ms
+2021-05-23 20:57:19.925 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-23 20:57:19.928 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-23 20:57:19.936 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-23 20:57:19.938 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-23 20:57:19.941 +08:00 [DBG] Start discovery request
+2021-05-23 20:57:19.956 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 31.3899ms
+2021-05-23 20:57:20.071 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-23 20:57:20.075 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-23 20:57:20.081 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-23 20:57:20.083 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-23 20:57:20.085 +08:00 [DBG] Start key discovery request
+2021-05-23 20:57:20.086 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 14.2655ms
+2021-05-23 21:01:02.727 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-23 21:01:02.729 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-23 21:01:02.736 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-23 21:01:02.737 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-23 21:01:02.739 +08:00 [DBG] Start discovery request
+2021-05-23 21:01:02.748 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 20.8298ms
+2021-05-23 21:01:02.896 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-23 21:01:02.900 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-23 21:01:02.909 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-23 21:01:02.911 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-23 21:01:02.913 +08:00 [DBG] Start key discovery request
+2021-05-23 21:01:02.916 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 20.8182ms
+2021-05-23 21:05:18.477 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-23 21:05:18.480 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-23 21:05:18.486 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-23 21:05:18.488 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-23 21:05:18.489 +08:00 [DBG] Start discovery request
+2021-05-23 21:05:18.498 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 21.0923ms
+2021-05-23 21:05:18.609 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-23 21:05:18.612 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-23 21:05:18.618 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-23 21:05:18.620 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-23 21:05:18.622 +08:00 [DBG] Start key discovery request
+2021-05-23 21:05:18.623 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 13.5328ms
+2021-05-23 21:08:19.392 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-23 21:08:19.394 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-23 21:08:19.399 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-23 21:08:19.401 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-23 21:08:19.403 +08:00 [DBG] Start discovery request
+2021-05-23 21:08:19.412 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 19.6634ms
+2021-05-23 21:08:19.547 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-23 21:08:19.549 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-23 21:08:19.556 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-23 21:08:19.559 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-23 21:08:19.561 +08:00 [DBG] Start key discovery request
+2021-05-23 21:08:19.562 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 14.7680ms
+2021-05-23 21:09:14.911 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-23 21:09:14.914 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-23 21:09:14.924 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-23 21:09:14.925 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-23 21:09:14.928 +08:00 [DBG] Start discovery request
+2021-05-23 21:09:14.935 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 24.0719ms
+2021-05-23 21:09:15.248 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-23 21:09:15.251 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-23 21:09:15.258 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-23 21:09:15.259 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-23 21:09:15.261 +08:00 [DBG] Start key discovery request
+2021-05-23 21:09:15.264 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 16.1983ms
+2021-05-23 21:11:28.956 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-23 21:11:28.958 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-23 21:11:28.972 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-23 21:11:28.973 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-23 21:11:28.974 +08:00 [DBG] Start token request.
+2021-05-23 21:11:28.975 +08:00 [DBG] Start client validation
+2021-05-23 21:11:28.976 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-23 21:11:28.977 +08:00 [DBG] Start parsing for secret in post body
+2021-05-23 21:11:28.978 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-23 21:11:28.982 +08:00 [DBG] Secret id found: public-website-client
+2021-05-23 21:11:29.043 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-23 21:11:29.045 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-23 21:11:29.049 +08:00 [DBG] Client validation success
+2021-05-23 21:11:29.051 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8TLMIDFQSD:00000005","TimeStamp":"2021-05-23T13:11:29.0000000Z","ProcessId":14208,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-23 21:11:29.068 +08:00 [DBG] Start token request validation
+2021-05-23 21:11:29.070 +08:00 [DBG] Start resource owner password token request validation
+2021-05-23 21:11:29.195 +08:00 [INF] Credentials validated for username: admin
+2021-05-23 21:11:29.261 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8TLMIDFQSD:00000005","TimeStamp":"2021-05-23T13:11:29.0000000Z","ProcessId":14208,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-23 21:11:29.273 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-23 21:11:29.274 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-23 21:11:29.288 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-23 21:11:29.289 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-23 21:11:29.304 +08:00 [DBG] Creating refresh token
+2021-05-23 21:11:29.305 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-23 21:11:29.314 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****5DAD","$type":"Token"},{"TokenType":"access_token","TokenValue":"****ULmw","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8TLMIDFQSD:00000005","TimeStamp":"2021-05-23T13:11:29.0000000Z","ProcessId":14208,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-23 21:11:29.332 +08:00 [DBG] Token request success.
+2021-05-23 21:11:29.334 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 377.7681ms
+2021-05-23 21:20:48.674 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-23 21:20:48.678 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-23 21:20:48.685 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-23 21:20:48.687 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-23 21:20:48.688 +08:00 [DBG] Start discovery request
+2021-05-23 21:20:48.767 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 93.8274ms
+2021-05-23 21:20:48.913 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-23 21:20:48.916 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-23 21:20:48.922 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-23 21:20:48.924 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-23 21:20:48.925 +08:00 [DBG] Start key discovery request
+2021-05-23 21:20:48.926 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 13.4738ms
+2021-05-23 21:22:59.980 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-23 21:22:59.985 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-23 21:23:00.013 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-23 21:23:00.031 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-23 21:23:00.034 +08:00 [DBG] Start discovery request
+2021-05-23 21:23:00.046 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 66.2691ms
+2021-05-23 21:23:00.231 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-23 21:23:00.234 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-23 21:23:00.242 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-23 21:23:00.245 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-23 21:23:00.246 +08:00 [DBG] Start key discovery request
+2021-05-23 21:23:00.247 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 16.6257ms
+2021-05-23 21:31:27.795 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-23 21:31:27.799 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-23 21:31:27.811 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-23 21:31:27.813 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-23 21:31:27.816 +08:00 [DBG] Start discovery request
+2021-05-23 21:31:27.825 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 30.1085ms
+2021-05-23 21:31:27.952 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-23 21:31:27.954 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-23 21:31:27.959 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-23 21:31:27.961 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-23 21:31:27.963 +08:00 [DBG] Start key discovery request
+2021-05-23 21:31:27.964 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 12.2862ms
+2021-05-24 01:33:00.806 +08:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2021-05-24 01:33:00.809 +08:00 [INF] Application is shutting down...
+2021-05-26 09:28:04.980 +08:00 [INF] Starting AuthenticationServer.Host.
+2021-05-26 09:28:18.547 +08:00 [INF] Loaded ABP modules:
+2021-05-26 09:28:18.550 +08:00 [INF] - AuthenticationServer.Host.AuthenticationServerHostModule
+2021-05-26 09:28:18.551 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-05-26 09:28:18.552 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-05-26 09:28:18.552 +08:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-05-26 09:28:18.553 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-05-26 09:28:18.553 +08:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-05-26 09:28:18.554 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-05-26 09:28:18.555 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-05-26 09:28:18.555 +08:00 [INF]             - Volo.Abp.Data.AbpDataModule
+2021-05-26 09:28:18.556 +08:00 [INF]               - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-05-26 09:28:18.556 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-05-26 09:28:18.557 +08:00 [INF]                 - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-05-26 09:28:18.558 +08:00 [INF]               - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-05-26 09:28:18.558 +08:00 [INF]               - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-05-26 09:28:18.559 +08:00 [INF]             - Volo.Abp.Security.AbpSecurityModule
+2021-05-26 09:28:18.560 +08:00 [INF]         - Volo.Abp.Localization.AbpLocalizationModule
+2021-05-26 09:28:18.560 +08:00 [INF]           - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-05-26 09:28:18.561 +08:00 [INF]           - Volo.Abp.Settings.AbpSettingsModule
+2021-05-26 09:28:18.561 +08:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2021-05-26 09:28:18.562 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2021-05-26 09:28:18.562 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2021-05-26 09:28:18.563 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2021-05-26 09:28:18.568 +08:00 [INF]           - Volo.Abp.Threading.AbpThreadingModule
+2021-05-26 09:28:18.569 +08:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-05-26 09:28:18.570 +08:00 [INF]         - Volo.Abp.Guids.AbpGuidsModule
+2021-05-26 09:28:18.570 +08:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-05-26 09:28:18.571 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-05-26 09:28:18.572 +08:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-05-26 09:28:18.572 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-05-26 09:28:18.573 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2021-05-26 09:28:18.575 +08:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-05-26 09:28:18.576 +08:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-05-26 09:28:18.577 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-05-26 09:28:18.578 +08:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-05-26 09:28:18.579 +08:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-05-26 09:28:18.581 +08:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-05-26 09:28:18.582 +08:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-05-26 09:28:18.582 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-05-26 09:28:18.583 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-05-26 09:28:18.584 +08:00 [INF]   - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2021-05-26 09:28:18.585 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityDomainModule
+2021-05-26 09:28:18.586 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-05-26 09:28:18.587 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-05-26 09:28:18.587 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2021-05-26 09:28:18.588 +08:00 [INF]       - Volo.Abp.Users.AbpUsersDomainModule
+2021-05-26 09:28:18.589 +08:00 [INF]         - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-05-26 09:28:18.590 +08:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-05-26 09:28:18.591 +08:00 [INF]     - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2021-05-26 09:28:18.591 +08:00 [INF]   - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-05-26 09:28:18.592 +08:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2021-05-26 09:28:18.593 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-05-26 09:28:18.594 +08:00 [INF]       - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-05-26 09:28:18.595 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-05-26 09:28:18.597 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-05-26 09:28:18.598 +08:00 [INF]   - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2021-05-26 09:28:18.599 +08:00 [INF]     - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2021-05-26 09:28:18.600 +08:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2021-05-26 09:28:18.601 +08:00 [INF]       - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2021-05-26 09:28:18.602 +08:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-05-26 09:28:18.603 +08:00 [INF]   - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+2021-05-26 09:28:18.603 +08:00 [INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+2021-05-26 09:28:18.604 +08:00 [INF]       - Volo.Abp.Account.AbpAccountHttpApiModule
+2021-05-26 09:28:18.605 +08:00 [INF]         - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2021-05-26 09:28:18.606 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-05-26 09:28:18.607 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-05-26 09:28:18.608 +08:00 [INF]             - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-05-26 09:28:18.608 +08:00 [INF]               - Volo.Abp.Http.AbpHttpModule
+2021-05-26 09:28:18.609 +08:00 [INF]                 - Volo.Abp.Minify.AbpMinifyModule
+2021-05-26 09:28:18.610 +08:00 [INF]             - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-05-26 09:28:18.611 +08:00 [INF]             - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-05-26 09:28:18.613 +08:00 [INF]             - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-05-26 09:28:18.614 +08:00 [INF]               - Volo.Abp.UI.AbpUiModule
+2021-05-26 09:28:18.615 +08:00 [INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2021-05-26 09:28:18.616 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2021-05-26 09:28:18.617 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2021-05-26 09:28:18.618 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2021-05-26 09:28:18.619 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2021-05-26 09:28:18.620 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2021-05-26 09:28:18.620 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2021-05-26 09:28:18.621 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2021-05-26 09:28:18.622 +08:00 [INF]   - Volo.Abp.Account.AbpAccountApplicationModule
+2021-05-26 09:28:18.623 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationModule
+2021-05-26 09:28:18.624 +08:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-05-26 09:28:18.625 +08:00 [INF]     - Volo.Abp.Emailing.AbpEmailingModule
+2021-05-26 09:28:18.626 +08:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2021-05-26 09:28:18.628 +08:00 [INF]       - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2021-05-26 09:28:18.629 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2021-05-26 09:28:18.630 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2021-05-26 09:28:18.631 +08:00 [INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-05-26 09:28:18.802 +08:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2021-05-26 09:28:18.839 +08:00 [INF] Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f
+2021-05-26 09:28:19.937 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2021-05-26 09:28:19.939 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2021-05-26 09:28:19.941 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2021-05-26 09:28:19.942 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2021-05-26 09:28:19.943 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2021-05-26 09:28:19.944 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2021-05-26 09:28:27.475 +08:00 [INF] Initialized all ABP modules.
+2021-05-26 09:28:27.523 +08:00 [INF] Now listening on: http://localhost:50000
+2021-05-26 09:28:27.525 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-26 09:28:27.526 +08:00 [INF] Hosting environment: Development
+2021-05-26 09:28:27.528 +08:00 [INF] Content root path: E:\2_Repositories\Micro-Service\AuthenticationServer
+2021-05-26 09:29:45.402 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109
+2021-05-26 09:29:45.545 +08:00 [DBG] Login Url: /Account/Login
+2021-05-26 09:29:45.546 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-05-26 09:29:45.547 +08:00 [DBG] Logout Url: /Account/Logout
+2021-05-26 09:29:45.548 +08:00 [DBG] ConsentUrl Url: /Consent
+2021-05-26 09:29:45.549 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-05-26 09:29:45.550 +08:00 [DBG] Error Url: /Account/Error
+2021-05-26 09:29:45.550 +08:00 [DBG] Error Id Parameter: errorId
+2021-05-26 09:29:45.580 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-05-26 09:29:46.167 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-05-26 09:29:46.169 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-05-26 09:29:46.174 +08:00 [DBG] Start token request.
+2021-05-26 09:29:46.177 +08:00 [DBG] Start client validation
+2021-05-26 09:29:46.182 +08:00 [DBG] Start parsing Basic Authentication secret
+2021-05-26 09:29:46.184 +08:00 [DBG] Start parsing for secret in post body
+2021-05-26 09:29:46.200 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2021-05-26 09:29:46.202 +08:00 [DBG] Secret id found: public-website-client
+2021-05-26 09:29:46.394 +08:00 [DBG] client configuration validation for client public-website-client succeeded.
+2021-05-26 09:29:46.521 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-05-26 09:29:46.523 +08:00 [DBG] Client validation success
+2021-05-26 09:29:46.535 +08:00 [INF] {"ClientId":"public-website-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HM8VSMV7CQR1:00000002","TimeStamp":"2021-05-26T01:29:46.0000000Z","ProcessId":49708,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2021-05-26 09:29:46.559 +08:00 [DBG] Start token request validation
+2021-05-26 09:29:46.566 +08:00 [DBG] Start resource owner password token request validation
+2021-05-26 09:29:47.159 +08:00 [INF] Credentials validated for username: admin
+2021-05-26 09:29:47.560 +08:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","DisplayName":null,"Endpoint":"Token","ClientId":"public-website-client","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HM8VSMV7CQR1:00000002","TimeStamp":"2021-05-26T01:29:47.0000000Z","ProcessId":49708,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-05-26 09:29:47.572 +08:00 [DBG] Resource owner password token request validation success.
+2021-05-26 09:29:47.581 +08:00 [INF] Token request validation success, {"ClientId":"public-website-client","ClientName":"public-website-client","GrantType":"password","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","AuthorizationCode":"********","RefreshToken":"********","UserName":"admin","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"public-website-client","client_secret":"***REDACTED***","grant_type":"password","username":"admin","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-05-26 09:29:47.613 +08:00 [DBG] Getting claims for access token for client: public-website-client
+2021-05-26 09:29:47.615 +08:00 [DBG] Getting claims for access token for subject: b3a4de5a-0338-f82f-c71f-39fc33d8558a
+2021-05-26 09:29:47.929 +08:00 [DBG] Creating refresh token
+2021-05-26 09:29:47.931 +08:00 [DBG] Setting an absolute lifetime: 31536000
+2021-05-26 09:29:48.044 +08:00 [INF] {"ClientId":"public-website-client","ClientName":"public-website-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"b3a4de5a-0338-f82f-c71f-39fc33d8558a","Scopes":"BaseService offline_access PublicWebSiteGateway TestService","GrantType":"password","Tokens":[{"TokenType":"refresh_token","TokenValue":"****616B","$type":"Token"},{"TokenType":"access_token","TokenValue":"****sUeg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HM8VSMV7CQR1:00000002","TimeStamp":"2021-05-26T01:29:48.0000000Z","ProcessId":49708,"LocalIpAddress":"::1:50000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2021-05-26 09:29:48.065 +08:00 [DBG] Token request success.
+2021-05-26 09:29:48.092 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:50000/connect/token application/x-www-form-urlencoded 109 - 200 - application/json;+charset=UTF-8 2691.0314ms
+2021-05-26 09:30:15.166 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-26 09:30:15.169 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-26 09:30:15.177 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-26 09:30:15.178 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-26 09:30:15.181 +08:00 [DBG] Start discovery request
+2021-05-26 09:30:15.381 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 215.6204ms
+2021-05-26 09:30:15.551 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-26 09:30:15.554 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-26 09:30:15.560 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-26 09:30:15.561 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-26 09:30:15.564 +08:00 [DBG] Start key discovery request
+2021-05-26 09:30:15.571 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 19.7066ms
+2021-05-26 09:32:41.873 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-26 09:32:41.877 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-26 09:32:41.884 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-26 09:32:41.885 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-26 09:32:41.888 +08:00 [DBG] Start discovery request
+2021-05-26 09:32:41.910 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 36.7528ms
+2021-05-26 09:32:42.113 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-26 09:32:42.116 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-26 09:32:42.122 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-26 09:32:42.125 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-26 09:32:42.127 +08:00 [DBG] Start key discovery request
+2021-05-26 09:32:42.129 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 16.3476ms
+2021-05-26 09:32:43.048 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - -
+2021-05-26 09:32:43.051 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-05-26 09:32:43.058 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-05-26 09:32:43.059 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-05-26 09:32:43.061 +08:00 [DBG] Start discovery request
+2021-05-26 09:32:43.077 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 29.4684ms
+2021-05-26 09:32:43.236 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - -
+2021-05-26 09:32:43.239 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2021-05-26 09:32:43.245 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2021-05-26 09:32:43.247 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2021-05-26 09:32:43.248 +08:00 [DBG] Start key discovery request
+2021-05-26 09:32:43.249 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:50000/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 12.9515ms
+2021-05-26 17:33:11.487 +08:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2021-05-26 17:33:11.489 +08:00 [INF] Application is shutting down...

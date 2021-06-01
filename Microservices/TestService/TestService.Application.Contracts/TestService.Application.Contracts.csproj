@@ -14,4 +14,8 @@
     <ProjectReference Include="..\TestService.Domain.Shared\TestService.Domain.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="test\" />
+  </ItemGroup>
+
 </Project>

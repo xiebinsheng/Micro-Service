@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\MicroService.Extensions\MicroService.Extensions.csproj" />
     <ProjectReference Include="..\TestService.Application.Contracts\TestService.Application.Contracts.csproj" />
     <ProjectReference Include="..\TestService.Domain\TestService.Domain.csproj" />
   </ItemGroup>

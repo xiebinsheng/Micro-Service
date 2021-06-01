@@ -6,6 +6,12 @@
     "LongWelcomeMessage": "欢迎来到该应用程序. 这是一个基于ABP框架的启动项目. 有关更多信息, 请访问 abp.io.",
     "FaultNoAlreadyExistsException": "报警级别编号{0}已存在",
     "P000001": "报警级别编号({0})已存在",
-    "HelloWorld": "你好"
+    "HelloWorld": "你好",
+
+    "Exception:MemberNameAlreadyExists": "成员名称{0}已存在",
+
+    "BillMemberTypeEnum:Family": "家人",
+    "BillMemberTypeEnum:Friend": "朋友"
+
   }
 }

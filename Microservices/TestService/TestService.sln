@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestService.Host", "TestSer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroService.Shared", "..\..\MicroService.Shared\MicroService.Shared.csproj", "{171F0380-69FC-45FD-8998-F32637C40F2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroService.Extensions", "..\..\MicroService.Extensions\MicroService.Extensions.csproj", "{ABCC714B-D10C-404D-AE8A-0573D4DFD400}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{171F0380-69FC-45FD-8998-F32637C40F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{171F0380-69FC-45FD-8998-F32637C40F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{171F0380-69FC-45FD-8998-F32637C40F2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABCC714B-D10C-404D-AE8A-0573D4DFD400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABCC714B-D10C-404D-AE8A-0573D4DFD400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABCC714B-D10C-404D-AE8A-0573D4DFD400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABCC714B-D10C-404D-AE8A-0573D4DFD400}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

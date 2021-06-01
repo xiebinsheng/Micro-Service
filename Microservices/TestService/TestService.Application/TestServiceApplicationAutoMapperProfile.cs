@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using TestService.Application.Contracts.Base.Faults.Dtos;
 using TestService.Domain.Base.Faults;
+using TestService.TestEntities.BillManagement;
 
 namespace TestService
 {
@@ -13,10 +14,19 @@ namespace TestService
              * into multiple profile classes for a better organization. */
 
             CreateMap<FaultGrade, FaultGradeDto>();
-
             CreateMap<CreateFaultGradeInput, FaultGrade>();
 
+            CreateMap<CreateBillMemberInput, FaultGrade>();
+
             CreateMap<UpdateFaultGradeInput, FaultGrade>();
+
+            CreateMap<BillMembers, BillMemberDto>();
+
+            CreateMap<CreateBillMemberInput, BillMembers>();
+
+            CreateMap<BillMembers, GetBillMemberListDto>();
+            
+
         }
     }
 }
